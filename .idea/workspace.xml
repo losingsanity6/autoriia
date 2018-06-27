@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48268fd3-2851-4552-96c8-224d0349315f" name="Default" comment="" />
+    <list default="true" id="d7ca8f84-0f7f-47dc-aac0-358e3b9ad8c7" name="Default" comment="work on asserts">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ResultPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ResultPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ResultPageObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestSuit.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,16 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestSuit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestSuit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="ExtendedSearchPageObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ExtendedSearchPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -30,51 +29,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainPageObject.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestSuit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestSuit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainPageObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MainPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="231">
+              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
               <folding>
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#726#727#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#1015#1016#0" expanded="true" />
+                <element signature="e#1541#1542#0" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultPageObject.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ResultPageObject.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ResultPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="224">
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+              <folding>
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/TestSuit.java" />
         <option value="$PROJECT_DIR$/src/test/java/MainPageObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ResultPageObject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestSuit.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="708" />
-    <option name="y" value="15" />
+    <option name="x" value="635" />
+    <option name="y" value="102" />
     <option name="width" value="841" />
     <option name="height" value="820" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -104,7 +125,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -119,77 +140,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSuit.CheckCarLocator">
-    <configuration name="TestSuit.DropdownSearch" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auto.ria" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSuit" />
-      <option name="METHOD_NAME" value="DropdownSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestSuit.priceFieldTestFromLowestToHighest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="TestSuit.CheckCarLocator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auto.ria" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSuit" />
-      <option name="METHOD_NAME" value="CheckCarLocator" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TestSuit.PriceField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auto.ria" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSuit" />
-      <option name="METHOD_NAME" value="PriceField" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TestSuit.carFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auto.ria" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSuit" />
-      <option name="METHOD_NAME" value="carFilterTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="TestSuit.priceFieldTestFromLowestToHighest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
@@ -198,6 +151,23 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestSuit" />
       <option name="METHOD_NAME" value="priceFieldTestFromLowestToHighest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestSuit.selectCarNew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auto.ria" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSuit" />
+      <option name="METHOD_NAME" value="selectCarNew" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -247,19 +217,13 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Android JUnit.TestSuit.DropdownSearch" />
-      <item itemvalue="JUnit.TestSuit.PriceField" />
+      <item itemvalue="JUnit.TestSuit.selectCarNew" />
       <item itemvalue="JUnit.TestSuit.priceFieldTestFromLowestToHighest" />
-      <item itemvalue="JUnit.TestSuit.carFilterTest" />
-      <item itemvalue="JUnit.TestSuit.CheckCarLocator" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSuit.CheckCarLocator" />
-        <item itemvalue="JUnit.TestSuit.carFilterTest" />
         <item itemvalue="JUnit.TestSuit.priceFieldTestFromLowestToHighest" />
-        <item itemvalue="JUnit.TestSuit.PriceField" />
-        <item itemvalue="Android JUnit.TestSuit.DropdownSearch" />
+        <item itemvalue="JUnit.TestSuit.selectCarNew" />
       </list>
     </recent_temporary>
   </component>
@@ -268,113 +232,91 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="48268fd3-2851-4552-96c8-224d0349315f" name="Default" comment="" />
-      <created>1529993650465</created>
+      <changelist id="d7ca8f84-0f7f-47dc-aac0-358e3b9ad8c7" name="Default" comment="" />
+      <created>1530090468010</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1529993650465</updated>
+      <updated>1530090468010</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSuit_DropdownSearch - 2018.06.26 at 11h 07m 45s.xml">
-      <configuration name="TestSuit.DropdownSearch" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="TestSuit - 2018.06.26 at 11h 09m 09s.xml">
-      <configuration name="TestSuit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSuit_DropdownSearch - 2018.06.26 at 11h 14m 10s.xml">
-      <configuration name="TestSuit.DropdownSearch" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="TestSuit_PriceField - 2018.06.26 at 11h 14m 32s.xml">
-      <configuration name="TestSuit.PriceField" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.26 at 11h 26m 46s.xml">
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 15h 35m 41s.xml">
       <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSuit_carFilterTest - 2018.06.26 at 11h 27m 23s.xml">
-      <configuration name="TestSuit.carFilterTest" configurationId="JUnit" />
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 15h 36m 33s.xml">
+      <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSuit_carFilterTest - 2018.06.26 at 11h 31m 46s.xml">
-      <configuration name="TestSuit.carFilterTest" configurationId="JUnit" />
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 15h 48m 39s.xml">
+      <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSuit_carFilterTest - 2018.06.26 at 11h 32m 20s.xml">
-      <configuration name="TestSuit.carFilterTest" configurationId="JUnit" />
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 15h 51m 58s.xml">
+      <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSuit_CheckCarLocator - 2018.06.26 at 11h 34m 25s.xml">
-      <configuration name="TestSuit.CheckCarLocator" configurationId="JUnit" />
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 16h 00m 37s.xml">
+      <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestSuit_CheckCarLocator - 2018.06.26 at 11h 51m 05s.xml">
-      <configuration name="TestSuit.CheckCarLocator" configurationId="JUnit" />
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 16h 04m 33s.xml">
+      <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 16h 06m 09s.xml">
+      <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 16h 06m 44s.xml">
+      <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 16h 08m 34s.xml">
+      <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSuit_priceFieldTestFromLowestToHighest - 2018.06.27 at 16h 09m 02s.xml">
+      <configuration name="TestSuit.priceFieldTestFromLowestToHighest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.3298292" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.3298292" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298292" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39947438" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="work on asserts" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on asserts" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestSuit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ExtendedSearchPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MainPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ResultPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ExtendedSearchPageObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -384,25 +326,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSuit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ResultPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="136">
+          <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MainPageObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="231">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
           <folding>
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1541#1542#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ResultPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding>
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
           </folding>
         </state>
       </provider>
