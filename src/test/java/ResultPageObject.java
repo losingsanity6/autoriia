@@ -11,7 +11,9 @@ public class ResultPageObject {
     private By inputPtice = By.name("price.USD.lte");
     private By h1 = By.id("h1LabelsAfter");
     private By dropdownCar = By.xpath("//*[@id=\"autoCmplt\"]/label");
-    private By priceInput = By.name("price.USD.gte");
+    private By priceInputFrom = By.name("price.USD.gte");
+    private By priceInputTo = By.name("price.USD.lte");
+    private By noAdsMessage = By.id("emptyResultsNotFoundBlock");
 
     public ResultPageObject(WebDriver driver) {
         this.driver = driver;
@@ -31,12 +33,20 @@ public class ResultPageObject {
         return driver.findElement(dropdownCar).getAttribute("data-text");
 
     }
-    public String getTextFromPriceField(){
+    public void ScrollWindow(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView();", driver.findElement(priceInput));
-         return driver.findElement(priceInput).getAttribute("value");
+        js.executeScript("arguments[0].scrollIntoView();", driver.findElement(priceInputFrom));
+    }
+    public String getTextFromPriceInputFrom(){
+
+     return driver.findElement(priceInputFrom).getAttribute("value");
 
 
-
+    }
+    public String getInputFromPriceFieldTo(){
+        return driver.findElement(priceInputTo).getAttribute("value");
+    }
+    public String noResultsMessage(){
+        return driver.findElement(noAdsMessage).getText();
     }
 }

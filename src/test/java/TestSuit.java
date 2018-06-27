@@ -10,12 +10,9 @@ import java.util.concurrent.TimeUnit;
 
 public class TestSuit {
     private WebDriver driver;
-    String priceFro = Integer.toString(10);
-    String priceToo = Integer.toString(1000000);
-
     @Before
     public void setUP() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "H:\\Testing\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://auto.ria.com/");
@@ -28,19 +25,6 @@ public class TestSuit {
         driver.close();
     }*/
 
-    //@Test
-  /*  public void carFilterTest() {
-        String metaname = "BMW";
-        MainPageObject mainPageObject = new MainPageObject(driver);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        mainPageObject.Selectcar();
-        mainPageObject.clickSearchButton();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        ResultPageObject resultPageObject = new ResultPageObject(driver);
-       // Assert.assertTrue(resultPageObject.getTitle().toLowerCase().contains(metaname));
-
-
-    }*/
     @Test
     public void selectCarNew() {
         MainPageObject mainPageObject = new MainPageObject(driver);
@@ -55,50 +39,57 @@ public class TestSuit {
 
     @Test
     public void priceFieldTestFromLowestToHighest() {
+        String priceFrom = Integer.toString(1);
+        String priceTo = Integer.toString(1000000000);
         MainPageObject mainPageObject = new MainPageObject(driver);
-        mainPageObject.PriceField();
+        mainPageObject.priceFieldInput(priceFrom, priceTo);
         mainPageObject.clickSearchButton();
         ResultPageObject resultPageObject = new ResultPageObject(driver);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        System.out.println("!!1 " + resultPageObject.getTextFromPriceField());
+        resultPageObject.ScrollWindow();
+        System.out.println(""+ resultPageObject.getTextFromPriceInputFrom()+ resultPageObject.getInputFromPriceFieldTo());
+        Assert.assertEquals("1", resultPageObject.getTextFromPriceInputFrom());
         //   String h1 = resultPageObject.getH1Text();
 
     }
 
-    @Test
-    public void PriceField() {
-
-        WebElement priceFrom = driver.findElement(By.id("priceFrom"));
-        WebElement priceTo = driver.findElement(By.id("priceTo"));
-        priceFrom.sendKeys(priceFro);
-        priceTo.sendKeys(priceToo);
-
-    }
 
     @Test
     public void InvalidData() {
-        final String textPrice = "gjjgjg";
         MainPageObject mainPageObject = new MainPageObject(driver);
-        mainPageObject.PriceField();
+        mainPageObject.priceFieldInput("gggggggg","wqwqwqw");
         mainPageObject.clickSearchButton();
-
+        ResultPageObject resultPageObject = new ResultPageObject(driver);
+        Assert.assertEquals("", resultPageObject.getTextFromPriceInputFrom());
 
     }
 
     @Test
-    public void DropdownSearch() {
-        MainPageObject mainPageObject = new MainPageObject(driver);
-        mainPageObject.carBrandDropdownClick();
-        WebElement search = driver.findElement(By.id("brandTooltipBrandAutocompleteInput-brand"));
-        search.sendKeys("Daewoo");
-        search.sendKeys(Keys.RETURN);
+    public void UsedCarsFilterTest() {
+        String yearFrom = Integer.toString(2000);
+        String yearTo = Integer.toString(2018);
+        String priceTo = Integer.toString(19000);
+      MainPageObject mainPageObject = new MainPageObject(driver);
+      mainPageObject.carBrandDropdownUsedInput("Daewoo");
+      mainPageObject.clickCarInAutocompletedSearch();
+      driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+      mainPageObject.Model("Korando");
+      mainPageObject.clickModelInAutocompletedSearch();
+      mainPageObject.clickRegion("Киев");
+      mainPageObject.clickAutocompletedRegion();
+      mainPageObject.selectYearFrom(yearFrom, yearTo);
+      mainPageObject.priceFieldInput("",priceTo);
         mainPageObject.clickSearchButton();
+        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
+        ResultPageObject resultPageObject = new ResultPageObject(driver);
+        Assert.assertTrue(resultPageObject.noResultsMessage().contains("Объявлений не найдено"));
+
     }
 
     @Test
     public void checkBoxes() {
         MainPageObject mainPageObject = new MainPageObject(driver);
-        mainPageObject.ExtendedSechButtonClick();
+        mainPageObject.ExtendedSearchButtonClick();
         ExtendedSearchPageObject extendedSearchPageObject = new ExtendedSearchPageObject(driver);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         extendedSearchPageObject.Checkbox();
