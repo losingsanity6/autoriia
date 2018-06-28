@@ -6,6 +6,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class TestSuit {
@@ -85,24 +86,55 @@ public class TestSuit {
         Assert.assertTrue(resultPageObject.noResultsMessage().contains("Объявлений не найдено"));
 
     }
+@Test
+public void validLoginTest(){
+        driver.get("https://auto.ria.com/login.html");
+driver.switchTo().frame("login_frame");
+LoginPageObject loginPageObject = new LoginPageObject(driver);
+loginPageObject.LoginInput("iamonria", "380637017113");
+loginPageObject.clickLoginBtn();
+
+}
+@Test
+public void InvalidLoginTest(){
+        driver.get("https://auto.ria.com/login.html");
+        driver.switchTo().frame("login_frame");
+        LoginPageObject loginPageObject = new LoginPageObject(driver);
+        loginPageObject.LoginInput("invalidPassword", "thisisinvalidnumber");
+        loginPageObject.clickLoginBtn();
+
+}
 
     @Test
-    public void checkBoxes() {
+    public void loginViaFacebook(){
+        driver.get("https://auto.ria.com/login.html");
+        driver.switchTo().frame("login_frame");
+        LoginPageObject loginPageObject = new LoginPageObject(driver);
+        loginPageObject.loginViaFacebook();
+       // Set<String> handle= driver.getWindowHandles();
+        Set handles = driver.getWindowHandles();
+
+        driver.switchTo().window("Facebook");
+        driver.findElement(By.id("email")).sendKeys("12234");
+
+       // driver.switchTo().window();
+
+
+
+    }
+    @Test
+    public void checkBoxesSedanExtendedSearch() {
         MainPageObject mainPageObject = new MainPageObject(driver);
         mainPageObject.ExtendedSearchButtonClick();
-        ExtendedSearchPageObject extendedSearchPageObject = new ExtendedSearchPageObject(driver);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        ExtendedSearchPageObject extendedSearchPageObject = new ExtendedSearchPageObject(driver);
         extendedSearchPageObject.Checkbox();
         extendedSearchPageObject.clickShowbutton();
+        ResultPageObject resultPageObject = new ResultPageObject(driver);
+        System.out.println(resultPageObject.getH1Text());
+        Assert.assertTrue(resultPageObject.getH1Text().contains("Седан"));
     }
 
-    @Test
-    public void CheckCarLocator() {
-        WebElement cardropdown = driver.findElement(By.id("brandTooltipBrandAutocomplete-brand"));
-        cardropdown.click();
-        Select carFromDropdown = new Select(driver.findElement(By.xpath("//*[@id=\"brandTooltipBrandAutocomplete-brand\"]/ul")));
-        carFromDropdown.selectByVisibleText("BMW");
 
-    }
 
 }

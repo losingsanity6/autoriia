@@ -1,3 +1,4 @@
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,6 +25,7 @@ public class MainPageObject {
     private By region = By.id("regionAutocompleteAutocomplete-1");
     private By regionInput = By.id("regionAutocompleteAutocompleteInput-1");
     private By regionAutocomplete = By.xpath("//*[@id=\"regionAutocompleteAutocomplete-1\"]/ul/li/a");
+    private By loginLocator = By.partialLinkText("Вход в кабинет");
 
     public MainPageObject(WebDriver driver) {
         this.driver = driver;
@@ -87,5 +89,9 @@ public void selectYearFrom(String yearFromInput, String yearToInput){
 
         driver.findElement(priceFieldFrom).sendKeys(priceFrom);
         driver.findElement(priceFieldTo).sendKeys(priceTo);
+    }
+    public void clickLogin(){
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.findElement(loginLocator);
     }
 }

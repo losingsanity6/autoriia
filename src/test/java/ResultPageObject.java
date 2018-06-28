@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ResultPageObject {
     private WebDriver driver;
     private By inputPtice = By.name("price.USD.lte");
-    private By h1 = By.id("h1LabelsAfter");
+    private By h1 = By.xpath("//*[@id=\"headerPage\"]/h1/span[5]");
     private By dropdownCar = By.xpath("//*[@id=\"autoCmplt\"]/label");
     private By priceInputFrom = By.name("price.USD.gte");
     private By priceInputTo = By.name("price.USD.lte");
@@ -24,7 +24,7 @@ public class ResultPageObject {
     }
 
     public String getH1Text() {
-        return driver.findElement(h1).getText();
+        return driver.findElement(h1).getAttribute("innerHTML");
 
 
     }
@@ -33,20 +33,24 @@ public class ResultPageObject {
         return driver.findElement(dropdownCar).getAttribute("data-text");
 
     }
-    public void ScrollWindow(){
+
+    public void ScrollWindow() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView();", driver.findElement(priceInputFrom));
     }
-    public String getTextFromPriceInputFrom(){
 
-     return driver.findElement(priceInputFrom).getAttribute("value");
+    public String getTextFromPriceInputFrom() {
+
+        return driver.findElement(priceInputFrom).getAttribute("value");
 
 
     }
-    public String getInputFromPriceFieldTo(){
+
+    public String getInputFromPriceFieldTo() {
         return driver.findElement(priceInputTo).getAttribute("value");
     }
-    public String noResultsMessage(){
+
+    public String noResultsMessage() {
         return driver.findElement(noAdsMessage).getText();
     }
 }
