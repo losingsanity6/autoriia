@@ -1,3 +1,5 @@
+package Pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +16,7 @@ public class ResultPageObject {
     private By priceInputFrom = By.name("price.USD.gte");
     private By priceInputTo = By.name("price.USD.lte");
     private By noAdsMessage = By.id("emptyResultsNotFoundBlock");
+
 
     public ResultPageObject(WebDriver driver) {
         this.driver = driver;

@@ -1,5 +1,7 @@
+package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -64,12 +66,13 @@ public class MainPageObject {
         Actions action = new Actions(driver);
         action.moveToElement(driver.findElement(regionAutocomplete)).click().build().perform();
     }
-public void selectYearFrom(String yearFromInput, String yearToInput){
+
+    public void selectYearFrom(String yearFromInput, String yearToInput) {
         Select yearFrom = new Select(driver.findElement(By.id("yearFrom")));
         Select yearTo = new Select(driver.findElement(By.id("yearTo")));
         yearFrom.selectByVisibleText(yearFromInput);
         yearTo.selectByVisibleText(yearToInput);
-}
+    }
 
     public void selectCarNew() {
         driver.findElement(newCarsRadioBtn).click();
@@ -90,7 +93,8 @@ public void selectYearFrom(String yearFromInput, String yearToInput){
         driver.findElement(priceFieldFrom).sendKeys(priceFrom);
         driver.findElement(priceFieldTo).sendKeys(priceTo);
     }
-    public void clickLogin(){
+
+    public void clickLogin() {
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.findElement(loginLocator);
     }
