@@ -21,8 +21,7 @@ public class ExtendedSearchPageObject {
     }
 
     public void Checkbox() {
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scrollBy(0,250)", "");
+
         driver.findElement(checkboxSedan).click();
         driver.findElement(checkboxEngland).click();
     }

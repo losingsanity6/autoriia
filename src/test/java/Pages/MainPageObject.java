@@ -1,7 +1,6 @@
 package Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -35,6 +34,7 @@ public class MainPageObject {
 
     public void ExtendedSearchButtonClick() {
         driver.findElement(extendedSeachButton).click();
+
     }
 
     public void carBrandDropdownUsedInput(String carBrand) {
@@ -79,7 +79,7 @@ public class MainPageObject {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         WebElement MarkCarDrpdwn = driver.findElement(By.name("marka_id"));
         Select selectMarkCar = new Select(MarkCarDrpdwn);
-        selectMarkCar.selectByIndex(4);
+        selectMarkCar.selectByValue("6");
 
     }
 

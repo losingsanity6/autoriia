@@ -1,25 +1,31 @@
 package Tests;
 
+import Pages.LoggedInPage;
 import Pages.LoginPageObject;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 public class LoginTest {
     private WebDriver driver;
 
-    @Before
-    public void setUP() {
-        System.setProperty("webdriver.chrome.driver", "H:\\Testing\\chromedriver.exe");
+    @BeforeTest
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "browsers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://auto.ria.com/");
 
 
     }
-
+    @AfterTest
+    public void close() {
+        driver.close();
+    }
     @Test
     public void validLoginTest() {
         driver.get("https://auto.ria.com/login.html");
@@ -27,6 +33,9 @@ public class LoginTest {
         LoginPageObject loginPageObject = new LoginPageObject(driver);
         loginPageObject.LoginInput("iamonria", "380637017113");
         loginPageObject.clickLoginButton();
+        LoggedInPage loggedInPage = new LoggedInPage(driver);
+        System.out.println("!!" +loggedInPage.getTextFromLoggedUser());
+
 
     }
 
