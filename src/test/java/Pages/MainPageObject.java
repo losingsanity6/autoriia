@@ -1,10 +1,11 @@
 package Pages;
 
+import Utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,7 +14,7 @@ public class MainPageObject {
 
     private By usedCarDropdown = By.id("brandTooltipBrandAutocomplete-brand");
     private By usedCarInput = By.id("brandTooltipBrandAutocompleteInput-brand");
-    private By newCarDropdown = By.id("marks");
+    private By newCarDropdown = By.name("marka_id");
     private By searchButton = By.xpath("//*[@id=\"mainSearchForm\"]/div[3]/button");
     private By priceFieldFrom = By.id("priceFrom");
     private By priceFieldTo = By.id("priceTo");
@@ -26,46 +27,42 @@ public class MainPageObject {
     private By region = By.id("regionAutocompleteAutocomplete-1");
     private By regionInput = By.id("regionAutocompleteAutocompleteInput-1");
     private By regionAutocomplete = By.xpath("//*[@id=\"regionAutocompleteAutocomplete-1\"]/ul/li/a");
-    private By loginLocator = By.partialLinkText("Вход в кабинет");
+    private By loginLocator = By.linkText("Вход в кабинет");
+    private By NewCarsLink = By.linkText("Новые авто");
+    ExtendedSearchPageObject ExtendedSearchPageObject;
+
 
     public MainPageObject(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void ExtendedSearchButtonClick() {
+    public ExtendedSearchPageObject clickExtendedSearchButton() {
         driver.findElement(extendedSeachButton).click();
-
+        return new ExtendedSearchPageObject(driver);
     }
 
-    public void carBrandDropdownUsedInput(String carBrand) {
+    public void chooseCarBrand(String carBrand) {
         driver.findElement(usedCarDropdown).click();
         driver.findElement(usedCarInput).sendKeys(carBrand);
+        driver.findElement(autocompletedMarkField).click();
     }
 
-    public void clickCarInAutocompletedSearch() {
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(autocompletedMarkField)).click().build().perform();
-    }
 
-    public void Model(String modelInp) {
+
+    public void clickModel(String modelInp) {
         driver.findElement(model).click();
         driver.findElement(modelInput).sendKeys(modelInp);
+        driver.findElement(modelAutocompleted).click();
     }
 
-    public void clickModelInAutocompletedSearch() {
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(modelAutocompleted)).click().build().perform();
-    }
+
 
     public void clickRegion(String regionName) {
         driver.findElement(region).click();
         driver.findElement(regionInput).sendKeys(regionName);
+        driver.findElement(regionAutocomplete).click();
     }
 
-    public void clickAutocompletedRegion() {
-        Actions action = new Actions(driver);
-        action.moveToElement(driver.findElement(regionAutocomplete)).click().build().perform();
-    }
 
     public void selectYearFrom(String yearFromInput, String yearToInput) {
         Select yearFrom = new Select(driver.findElement(By.id("yearFrom")));
@@ -75,11 +72,12 @@ public class MainPageObject {
     }
 
     public void selectCarNew() {
+        Utils utils = new Utils(driver);
         driver.findElement(newCarsRadioBtn).click();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement MarkCarDrpdwn = driver.findElement(By.name("marka_id"));
-        Select selectMarkCar = new Select(MarkCarDrpdwn);
-        selectMarkCar.selectByValue("6");
+       driver.findElement(newCarDropdown).click();
+       utils.waitTimeout(newCarDropdown);
+        Select selectMarkCar = new Select(driver.findElement(newCarDropdown));
+        selectMarkCar.selectByIndex(6);
 
     }
 
@@ -88,14 +86,18 @@ public class MainPageObject {
     }
 
 
-    public void priceFieldInput(String priceFrom, String priceTo) {
+    public void enterPriceToPriceField(String priceFrom, String priceTo) {
 
         driver.findElement(priceFieldFrom).sendKeys(priceFrom);
         driver.findElement(priceFieldTo).sendKeys(priceTo);
     }
 
-    public void clickLogin() {
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        driver.findElement(loginLocator);
+    public void clickLoginButton() {
+        driver.findElement(loginLocator).click();
+    }
+
+  public void clickNewCars(){
+        driver.findElement(NewCarsLink).click();
+
     }
 }

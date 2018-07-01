@@ -1,48 +1,26 @@
 package Tests;
 
 
-import Pages.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import Pages.ExtendedSearchPageObject;
+import Pages.MainPageObject;
+import Pages.NewCarsPage;
+import Pages.ResultPageObject;
+import Utils.Annotations;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
-import org.apache.log4j.BasicConfigurator;
 
-import java.util.concurrent.TimeUnit;
-
-public class FiltersTest{
-private WebDriver driver;
-    @BeforeTest
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "browsers/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        String baseUrl = "https://auto.ria.com/";
-        driver.get(baseUrl);
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-
-
-    }
-
-    //@AfterTest
-    //public void close() {
-    //  driver.close();
-    // }
+public class FiltersTest extends Annotations {
 
 
     @Test
-    public void selectCarNew() {
+    public void checkWorkOfNewCarsFilter() {
         MainPageObject mainPageObject = new MainPageObject(driver);
         mainPageObject.selectCarNew();
         mainPageObject.clickSearchButton();
         ResultPageObject resultPageObject = new ResultPageObject(driver);
-        String carName = resultPageObject.dropDownCar();
+        String carName = resultPageObject.findCarDropdown();
         System.out.println(carName);
-        Assert.assertEquals("Audi", carName);
+        Assert.assertEquals("BMW", carName);
     }
 
     @Test
@@ -51,26 +29,23 @@ private WebDriver driver;
         String yearTo = "2018";
         String priceTo = "19000";
         MainPageObject mainPageObject = new MainPageObject(driver);
-        mainPageObject.carBrandDropdownUsedInput("Daewoo");
-        mainPageObject.clickCarInAutocompletedSearch();
-        mainPageObject.Model("Korando");
-        mainPageObject.clickModelInAutocompletedSearch();
+        mainPageObject.chooseCarBrand("Daewoo");
+        mainPageObject.clickModel("Korando");
         mainPageObject.clickRegion("Киев");
-        mainPageObject.clickAutocompletedRegion();
         mainPageObject.selectYearFrom(yearFrom, yearTo);
-        mainPageObject.priceFieldInput("", priceTo);
+        mainPageObject.enterPriceToPriceField("", priceTo);
         mainPageObject.clickSearchButton();
         ResultPageObject resultPageObject = new ResultPageObject(driver);
-        Assert.assertTrue(resultPageObject.noResultsMessage().contains("Объявлений не найдено"));
+        Assert.assertTrue(resultPageObject.getTextFromNoResultsMessage().contains("Объявлений не найдено"));
 
     }
 
     @Test
     public void extendedSearchCheckBoxes() {
         MainPageObject mainPageObject = new MainPageObject(driver);
-        mainPageObject.ExtendedSearchButtonClick();
+        mainPageObject.clickExtendedSearchButton();
         ExtendedSearchPageObject extendedSearchPageObject = new ExtendedSearchPageObject(driver);
-        extendedSearchPageObject.Checkbox();
+        extendedSearchPageObject.clickCheckBoxes();
         extendedSearchPageObject.clickShowButton();
         ResultPageObject resultPageObject = new ResultPageObject(driver);
         System.out.println(resultPageObject.getH1Text());
@@ -80,18 +55,15 @@ private WebDriver driver;
 
     @Test
     public void priceFieldTestFromLowestToHighest() {
-        BasicConfigurator.configure();
         String priceFrom = "1";
         String priceTo = "100000000000";
         MainPageObject mainPageObject = new MainPageObject(driver);
-        mainPageObject.priceFieldInput(priceFrom, priceTo);
+        mainPageObject.enterPriceToPriceField(priceFrom, priceTo);
         mainPageObject.clickSearchButton();
         ResultPageObject resultPageObject = new ResultPageObject(driver);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        resultPageObject.ScrollWindow();
         System.out.println("" + resultPageObject.getTextFromPriceInputFrom() + resultPageObject.getInputFromPriceFieldTo());
         Assert.assertEquals("1", resultPageObject.getTextFromPriceInputFrom());
-        //   String h1 = resultPageObject.getH1Text();
+
 
     }
 
@@ -99,7 +71,7 @@ private WebDriver driver;
     @Test
     public void InvalidDataForPriceField() {
         MainPageObject mainPageObject = new MainPageObject(driver);
-        mainPageObject.priceFieldInput("gggggggg", "wqwqwqw");
+        mainPageObject.enterPriceToPriceField("gggggggg", "wqwqwqw");
         mainPageObject.clickSearchButton();
         ResultPageObject resultPageObject = new ResultPageObject(driver);
         Assert.assertEquals("", resultPageObject.getTextFromPriceInputFrom());
@@ -108,13 +80,15 @@ private WebDriver driver;
 
     @Test
     public void checkPages() {
-        MainPageLinks mainPageLinks = new MainPageLinks(driver);
-        mainPageLinks.clickNewCars();
-        NewCarsPAge newCarsPAge = new NewCarsPAge(driver);
-        newCarsPAge.clickCar();
-        System.out.println(driver.getCurrentUrl());
-        newCarsPAge.golfClick();
-        System.out.println(driver.getCurrentUrl());
+        MainPageObject mainPageObject = new MainPageObject(driver);
+        mainPageObject.clickNewCars();
+        NewCarsPage newCarsPage = new NewCarsPage(driver);
+        String VolkswagenUrl = newCarsPage.clickCar();
+        String golfUrl = newCarsPage.clickGolf();
+        String chetchbackUrl = newCarsPage.clickFirstImage();
+        Assert.assertTrue(VolkswagenUrl.contains("volkswagen") && golfUrl.contains("golf") && chetchbackUrl.contains("khetchbek"));
+
+
     }
 }
 

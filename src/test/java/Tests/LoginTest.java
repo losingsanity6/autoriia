@@ -2,70 +2,66 @@ package Tests;
 
 import Pages.LoggedInPage;
 import Pages.LoginPageObject;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import Pages.MainPageObject;
+import Utils.Annotations;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest {
-    private WebDriver driver;
+import java.util.ArrayList;
 
-    @BeforeTest
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "browsers/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://auto.ria.com/");
+public class LoginTest extends Annotations {
 
-
-    }
-    @AfterTest
-    public void close() {
-        driver.close();
-    }
     @Test
     public void validLoginTest() {
-        driver.get("https://auto.ria.com/login.html");
+        MainPageObject mainPageObject = new MainPageObject(driver);
+        mainPageObject.clickLoginButton();
         driver.switchTo().frame("login_frame");
         LoginPageObject loginPageObject = new LoginPageObject(driver);
         loginPageObject.LoginInput("iamonria", "380637017113");
         loginPageObject.clickLoginButton();
-        LoggedInPage loggedInPage = new LoggedInPage(driver);
-        System.out.println("!!" +loggedInPage.getTextFromLoggedUser());
+        try {
+            LoggedInPage loggedInPage = new LoggedInPage(driver);
+           // System.out.println(loggedInPage.getCurrentUrl());
+            System.out.println("!!" + loggedInPage.getTextFromLoggedUser());
+            Assert.assertTrue(loggedInPage.getTextFromLoggedUser().contains("Личный кабинет"));
+        }
+        catch (Exception e){
+
+            System.out.println("Whoops! Captcha has appeared");
+        }
 
 
     }
 
     @Test
-    public void InvalidLoginTest() {
-        driver.get("https://auto.ria.com/login.html");
+    public void invalidLoginTest() {
         driver.switchTo().frame("login_frame");
         LoginPageObject loginPageObject = new LoginPageObject(driver);
-        loginPageObject.LoginInput("invalidPassword", "thisisinvalidnumber");
+        loginPageObject.LoginInput("invalidPassword", "948594835-03-04930459430589458");
         loginPageObject.clickLoginButton();
+        try {
+            Assert.assertTrue(loginPageObject.invalidPhoneMessage().contains("неверный мобильный номер телефона"));
+        }
+        catch (Exception e){
+            System.out.println("Whoops! Captcha has appeared");
+        }
 
     }
 
     @Test
     public void loginViaFacebook() {
-        driver.get("https://auto.ria.com/login.html");
-        driver.switchTo().frame("login_frame");
         LoginPageObject loginPageObject = new LoginPageObject(driver);
+        loginPageObject.switchBetweenFrame();
         loginPageObject.loginViaFacebook();
-        for (String handle : driver.getWindowHandles()) {
-            driver.switchTo().window(handle);
-        }
-        driver.findElement(By.id("email")).sendKeys("tanyalondon1@mail.ru");
-        driver.findElement(By.id("pass")).sendKeys("iamsherlocked");
-        driver.findElement(By.id("loginbutton")).click();
-       // driver.switchTo().window();
+        ArrayList<String> windowHandles = new ArrayList<String> (driver.getWindowHandles());
+        System.out.println(windowHandles);
+        driver.switchTo().window(windowHandles.get(1));
+        loginPageObject.LoginFacebook("tanyalondon1@mail.ru", "donotusethispassword");
+        driver.switchTo().window(windowHandles.get(0));
+        loginPageObject.switchBetweenFrame();
         System.out.println("!!" +loginPageObject.Message());
-
-        // driver.switchTo().window();
-
+        Assert.assertTrue(loginPageObject.Message().contains("Не удалось"));
 
     }
+
 }

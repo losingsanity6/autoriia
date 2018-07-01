@@ -1,7 +1,7 @@
 package Pages;
 
+import Utils.Utils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class ExtendedSearchPageObject {
@@ -20,8 +20,9 @@ public class ExtendedSearchPageObject {
         driver.findElement(showButton).click();
     }
 
-    public void Checkbox() {
-
+    public void clickCheckBoxes() {
+        Utils utils = new Utils(driver);
+        utils.ScrollWindow(checkboxSedan);
         driver.findElement(checkboxSedan).click();
         driver.findElement(checkboxEngland).click();
     }

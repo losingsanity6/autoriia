@@ -13,4 +13,5 @@ public class LoggedInPage {
     public String getTextFromLoggedUser(){
        return driver.findElement(loggedInUserLocator).getAttribute("innerHTML");
     }
+   // public String getCurrentUrl(){return getCurrentUrl(); }
 }
