@@ -1,11 +1,8 @@
-package Tests;
+package tests;
 
 
-import Pages.ExtendedSearchPageObject;
-import Pages.MainPageObject;
-import Pages.NewCarsPage;
-import Pages.ResultPageObject;
-import Utils.Annotations;
+import pages.*;
+import utils.Annotations;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -90,5 +87,18 @@ public class FiltersTest extends Annotations {
 
 
     }
+
+    @Test
+    public void detailsAuto() {
+        MainPageObject mainPageObject = new MainPageObject(driver);
+        mainPageObject.allForCarsDropDown();
+        AllForAutoPage allForAutoPage = new AllForAutoPage(driver);
+        allForAutoPage.clickDetailsForCars();
+        allForAutoPage.selectCarBrand();
+        allForAutoPage.selectCarModel();
+        allForAutoPage.clickSearchButton();
+
+    }
+
 }
 

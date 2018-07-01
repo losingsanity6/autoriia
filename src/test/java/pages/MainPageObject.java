@@ -1,13 +1,9 @@
-package Pages;
+package pages;
 
-import Utils.Utils;
+import utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.concurrent.TimeUnit;
 
 public class MainPageObject {
     private WebDriver driver;
@@ -29,6 +25,7 @@ public class MainPageObject {
     private By regionAutocomplete = By.xpath("//*[@id=\"regionAutocompleteAutocomplete-1\"]/ul/li/a");
     private By loginLocator = By.linkText("Вход в кабинет");
     private By NewCarsLink = By.linkText("Новые авто");
+    private By detailsForCar = By.linkText("Все для авто");
     ExtendedSearchPageObject ExtendedSearchPageObject;
 
 
@@ -48,13 +45,11 @@ public class MainPageObject {
     }
 
 
-
     public void clickModel(String modelInp) {
         driver.findElement(model).click();
         driver.findElement(modelInput).sendKeys(modelInp);
         driver.findElement(modelAutocompleted).click();
     }
-
 
 
     public void clickRegion(String regionName) {
@@ -74,8 +69,8 @@ public class MainPageObject {
     public void selectCarNew() {
         Utils utils = new Utils(driver);
         driver.findElement(newCarsRadioBtn).click();
-       driver.findElement(newCarDropdown).click();
-       utils.waitTimeout(newCarDropdown);
+        driver.findElement(newCarDropdown).click();
+        utils.waitTimeout(newCarDropdown);
         Select selectMarkCar = new Select(driver.findElement(newCarDropdown));
         selectMarkCar.selectByIndex(6);
 
@@ -96,8 +91,12 @@ public class MainPageObject {
         driver.findElement(loginLocator).click();
     }
 
-  public void clickNewCars(){
+    public void clickNewCars() {
         driver.findElement(NewCarsLink).click();
+
+    }
+    public void allForCarsDropDown(){
+        driver.findElement(detailsForCar).click();
 
     }
 }

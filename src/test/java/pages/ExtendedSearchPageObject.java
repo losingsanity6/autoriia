@@ -1,6 +1,6 @@
-package Pages;
+package pages;
 
-import Utils.Utils;
+import utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

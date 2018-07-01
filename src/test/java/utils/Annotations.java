@@ -1,7 +1,7 @@
-package Utils;
+package utils;
 
-import Tests.FiltersTest;
-import dataProvider.ConfigFileReader;
+import tests.FiltersTest;
+import data_provider.ConfigFileReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.slf4j.LoggerFactory;
@@ -11,8 +11,9 @@ import org.testng.annotations.BeforeTest;
 import java.util.concurrent.TimeUnit;
 
 public class Annotations {
-   private final static org.slf4j.Logger log = LoggerFactory.getLogger(FiltersTest.class);
+    private final static org.slf4j.Logger log = LoggerFactory.getLogger(FiltersTest.class);
     protected static WebDriver driver;
+
     @BeforeTest
     public void setUp() {
 

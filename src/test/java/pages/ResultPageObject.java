@@ -1,8 +1,7 @@
-package Pages;
+package pages;
 
-import Utils.Utils;
+import utils.Utils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class ResultPageObject {
@@ -35,8 +34,8 @@ public class ResultPageObject {
 
 
     public String getTextFromPriceInputFrom() {
-Utils utils = new Utils(driver);
-utils.ScrollWindow(priceInputFrom);
+        Utils utils = new Utils(driver);
+        utils.ScrollWindow(priceInputFrom);
         return driver.findElement(priceInputFrom).getAttribute("value");
     }
 

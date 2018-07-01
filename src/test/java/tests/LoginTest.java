@@ -1,9 +1,9 @@
-package Tests;
+package tests;
 
-import Pages.LoggedInPage;
-import Pages.LoginPageObject;
-import Pages.MainPageObject;
-import Utils.Annotations;
+import pages.LoggedInPage;
+import pages.LoginPageObject;
+import pages.MainPageObject;
+import utils.Annotations;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,11 +21,10 @@ public class LoginTest extends Annotations {
         loginPageObject.clickLoginButton();
         try {
             LoggedInPage loggedInPage = new LoggedInPage(driver);
-           // System.out.println(loggedInPage.getCurrentUrl());
+            // System.out.println(loggedInPage.getCurrentUrl());
             System.out.println("!!" + loggedInPage.getTextFromLoggedUser());
             Assert.assertTrue(loggedInPage.getTextFromLoggedUser().contains("Личный кабинет"));
-        }
-        catch (Exception e){
+        } catch (Exception e) {
 
             System.out.println("Whoops! Captcha has appeared");
         }
@@ -41,8 +40,7 @@ public class LoginTest extends Annotations {
         loginPageObject.clickLoginButton();
         try {
             Assert.assertTrue(loginPageObject.invalidPhoneMessage().contains("неверный мобильный номер телефона"));
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Whoops! Captcha has appeared");
         }
 
@@ -53,15 +51,16 @@ public class LoginTest extends Annotations {
         LoginPageObject loginPageObject = new LoginPageObject(driver);
         loginPageObject.switchBetweenFrame();
         loginPageObject.loginViaFacebook();
-        ArrayList<String> windowHandles = new ArrayList<String> (driver.getWindowHandles());
+        ArrayList<String> windowHandles = new ArrayList<String>(driver.getWindowHandles());
         System.out.println(windowHandles);
         driver.switchTo().window(windowHandles.get(1));
         loginPageObject.LoginFacebook("tanyalondon1@mail.ru", "donotusethispassword");
         driver.switchTo().window(windowHandles.get(0));
         loginPageObject.switchBetweenFrame();
-        System.out.println("!!" +loginPageObject.Message());
+        System.out.println("!!" + loginPageObject.Message());
         Assert.assertTrue(loginPageObject.Message().contains("Не удалось"));
 
     }
+
 
 }

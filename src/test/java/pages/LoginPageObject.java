@@ -1,9 +1,7 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import java.util.concurrent.TimeUnit;
 
 public class LoginPageObject {
 
@@ -31,7 +29,8 @@ public class LoginPageObject {
         driver.findElement(FacebookLocator).click();
 
     }
-    public  void switchBetweenFrame(){
+
+    public void switchBetweenFrame() {
         driver.switchTo().frame("login_frame");
     }
 
@@ -40,15 +39,17 @@ public class LoginPageObject {
     }
 
 
+    public String Message() {
+        return driver.findElement(noProfileMessage).getAttribute("innerHTML");
+    }
 
-public String Message(){
-    return driver.findElement(noProfileMessage).getAttribute("innerHTML");
-}
-public String invalidPhoneMessage(){ return driver.findElement(errorLogin).getAttribute("innerHTML");}
+    public String invalidPhoneMessage() {
+        return driver.findElement(errorLogin).getAttribute("innerHTML");
+    }
 
-public void LoginFacebook(String email, String pass){
-    driver.findElement(facebookEmail).sendKeys(email);
-    driver.findElement(facebookPassword).sendKeys(pass);
-    driver.findElement(facebookLoginButton).click();
-}
+    public void LoginFacebook(String email, String pass) {
+        driver.findElement(facebookEmail).sendKeys(email);
+        driver.findElement(facebookPassword).sendKeys(pass);
+        driver.findElement(facebookLoginButton).click();
+    }
 }
