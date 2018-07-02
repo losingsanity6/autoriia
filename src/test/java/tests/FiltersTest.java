@@ -88,7 +88,7 @@ public class FiltersTest extends Annotations {
 
     }
 
-    @Test
+   /* @Test
     public void detailsAuto() {
         MainPageObject mainPageObject = new MainPageObject(driver);
         mainPageObject.allForCarsDropDown();
@@ -99,6 +99,6 @@ public class FiltersTest extends Annotations {
         allForAutoPage.clickSearchButton();
 
     }
-
+*/
 }
 

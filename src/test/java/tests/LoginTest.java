@@ -34,6 +34,8 @@ public class LoginTest extends Annotations {
 
     @Test
     public void invalidLoginTest() {
+        MainPageObject mainPageObject = new MainPageObject(driver);
+        mainPageObject.clickLoginButton();
         driver.switchTo().frame("login_frame");
         LoginPageObject loginPageObject = new LoginPageObject(driver);
         loginPageObject.LoginInput("invalidPassword", "948594835-03-04930459430589458");
@@ -48,6 +50,8 @@ public class LoginTest extends Annotations {
 
     @Test
     public void loginViaFacebook() {
+        MainPageObject mainPageObject = new MainPageObject(driver);
+        mainPageObject.clickLoginButton();
         LoginPageObject loginPageObject = new LoginPageObject(driver);
         loginPageObject.switchBetweenFrame();
         loginPageObject.loginViaFacebook();

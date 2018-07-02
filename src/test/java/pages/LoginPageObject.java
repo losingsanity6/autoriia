@@ -9,7 +9,7 @@ public class LoginPageObject {
     private By numberInput = By.id("emailloginform-email");
     private By passwordInput = By.id("emailloginform-password");
     private By LoginBtn = By.xpath("//*[@id=\"login-form\"]/div[4]/button");
-    private By FacebookLocator = By.xpath("/html/body/div[1]/div[1]/a[1]");
+    private By FacebookLocator = By.linkText("Войти через Facebook");
     private By noProfileMessage = By.xpath("/html/body/div/div[1]");
     private By facebookEmail = By.id("email");
     private By facebookPassword = By.id("pass");
