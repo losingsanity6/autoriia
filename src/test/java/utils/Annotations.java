@@ -1,17 +1,18 @@
 package utils;
 
-import tests.FiltersTest;
 import data_provider.ConfigFileReader;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
 public class Annotations {
-    private final static org.slf4j.Logger log = LoggerFactory.getLogger(FiltersTest.class);
+    private Logger log = Logger.getLogger(Annotations.class);
+
+    //private final static org.slf4j.Logger log = LoggerFactory.getLogger(FiltersTest.class);
     protected static WebDriver driver;
 
     @BeforeTest
@@ -22,7 +23,8 @@ public class Annotations {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         //  String baseUrl = "https://auto.ria.com:443";
-        log.info("The test has started");
+        //log.info("The test has started");
+        log.info("The test started");
         driver.get(configFileReader.getApplicationUrl());
         driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
 
@@ -32,7 +34,7 @@ public class Annotations {
     @AfterTest
     public void close() {
         driver.close();
-        log.info("Test finished");
+     log.info("Test has finished");
     }
 
 
