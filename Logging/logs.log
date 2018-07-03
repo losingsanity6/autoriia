@@ -1,0 +1,134 @@
+2018-07-02 17:29:23 INFO  Annotations:27 - The test started
+2018-07-02 17:29:43 INFO  Annotations:37 - Test has finished
+2018-07-02 17:34:43 INFO  Annotations:27 - The test started
+2018-07-02 17:35:07 INFO  Annotations:37 - Test has finished
+2018-07-03 11:35:59 INFO  Annotations:27 - The test started
+2018-07-03 11:36:03 ERROR FiltersTest:22 - The element was not found
+2018-07-03 11:36:05 INFO  Annotations:37 - Test has finished
+2018-07-03 12:19:15 INFO  Annotations:27 - The test started
+2018-07-03 12:19:33 INFO  FiltersTest:82 - TC Invalid data for price field started
+2018-07-03 12:19:33 INFO  MainPage:102 - Data to price field was inputted
+2018-07-03 12:19:33 INFO  MainPage:104 - Data to price field was inputted
+2018-07-03 12:19:33 INFO  MainPage:95 - Click on search button was perfomed
+2018-07-03 12:19:45 INFO  Utils:20 - Scroll to element
+2018-07-03 12:19:47 INFO  Annotations:37 - Test has finished
+2018-07-03 12:23:06 INFO  Annotations:27 - The test started
+2018-07-03 12:23:25 INFO  FiltersTest:93 - TC check links started
+2018-07-03 12:23:35 INFO  MainPage:114 - Click on New Cars Link was perfomed
+2018-07-03 12:23:35 INFO  Utils:20 - Scroll to element
+2018-07-03 12:23:41 INFO  NewCarsPage:24 - Click on car link was perfomed
+2018-07-03 12:23:43 INFO  NewCarsPage:31 - Click on golf link on Volkswagen page was perfomed
+2018-07-03 12:23:50 INFO  NewCarsPage:37 - Click on first image on Golf page was perfomed
+2018-07-03 12:23:50 INFO  Annotations:37 - Test has finished
+2018-07-03 13:55:40 INFO  Annotations:27 - The test started
+2018-07-03 13:55:45 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-03 13:55:47 INFO  Utils:20 - Scroll to element
+2018-07-03 13:55:47 INFO  ExtendedSearchPage:28 - Click on Sedan checkbox was perfomed
+2018-07-03 13:55:48 INFO  ExtendedSearchPage:30 - Click on England checkbox was perfomed
+2018-07-03 13:55:58 INFO  Annotations:37 - Test has finished
+2018-07-03 13:56:51 INFO  Annotations:27 - The test started
+2018-07-03 13:56:55 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-03 13:56:57 INFO  Utils:20 - Scroll to element
+2018-07-03 13:56:57 INFO  ExtendedSearchPage:28 - Click on Sedan checkbox was perfomed
+2018-07-03 13:56:57 INFO  ExtendedSearchPage:30 - Click on England checkbox was perfomed
+2018-07-03 13:57:04 INFO  Annotations:37 - Test has finished
+2018-07-03 13:58:14 INFO  Annotations:27 - The test started
+2018-07-03 13:58:18 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-03 13:58:20 INFO  Utils:20 - Scroll to element
+2018-07-03 13:58:20 INFO  ExtendedSearchPage:28 - Click on Sedan checkbox was perfomed
+2018-07-03 13:58:20 INFO  ExtendedSearchPage:30 - Click on England checkbox was perfomed
+2018-07-03 13:58:28 INFO  Annotations:37 - Test has finished
+2018-07-03 14:03:47 INFO  Annotations:27 - The test started
+2018-07-03 14:03:50 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-03 14:03:53 INFO  Utils:20 - Scroll to element
+2018-07-03 14:03:53 INFO  ExtendedSearchPage:28 - Click on Sedan checkbox was perfomed
+2018-07-03 14:03:53 INFO  ExtendedSearchPage:30 - Click on England checkbox was perfomed
+2018-07-03 14:03:59 INFO  Annotations:37 - Test has finished
+2018-07-03 14:32:37 INFO  Annotations:27 - The test started
+2018-07-03 14:32:39 INFO  FiltersTest:67 - TC price field started
+2018-07-03 14:35:26 INFO  Annotations:27 - The test started
+2018-07-03 14:35:29 INFO  FiltersTest:84 - TC Invalid data for price field started
+2018-07-03 14:35:29 INFO  MainPage:102 - Data to price field was inputted
+2018-07-03 14:35:29 INFO  MainPage:104 - Data to price field was inputted
+2018-07-03 14:35:30 INFO  MainPage:95 - Click on search button was perfomed
+2018-07-03 14:35:34 INFO  Utils:20 - Scroll to element
+2018-07-03 14:35:34 INFO  FiltersTest:90 - Assertation passed
+2018-07-03 14:35:37 INFO  Annotations:37 - Test has finished
+2018-07-03 14:39:16 INFO  Annotations:27 - The test started
+2018-07-03 14:39:22 INFO  FiltersTest:84 - TC Invalid data for price field started
+2018-07-03 14:39:22 INFO  MainPage:102 - Data to price field was inputted
+2018-07-03 14:39:22 INFO  MainPage:104 - Data to price field was inputted
+2018-07-03 14:39:22 INFO  MainPage:95 - Click on search button was perfomed
+2018-07-03 14:39:27 INFO  Utils:20 - Scroll to element
+2018-07-03 14:39:27 INFO  FiltersTest:90 - Assertation passed
+2018-07-03 14:39:29 INFO  Annotations:37 - Test has finished
+2018-07-03 14:40:34 INFO  Annotations:27 - The test started
+2018-07-03 14:40:38 INFO  FiltersTest:96 - TC check links started
+2018-07-03 14:40:45 INFO  MainPage:114 - Click on New Cars Link was perfomed
+2018-07-03 14:40:45 INFO  Utils:20 - Scroll to element
+2018-07-03 14:40:49 INFO  NewCarsPage:24 - Click on car link was perfomed
+2018-07-03 14:40:53 INFO  NewCarsPage:31 - Click on golf link on Volkswagen page was perfomed
+2018-07-03 14:40:57 INFO  NewCarsPage:37 - Click on first image on Golf page was perfomed
+2018-07-03 14:40:57 INFO  FiltersTest:20 - TC check of new Cars Filters started
+2018-07-03 14:41:07 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-03 14:41:17 INFO  FiltersTest:84 - TC Invalid data for price field started
+2018-07-03 14:41:27 INFO  FiltersTest:67 - TC price field started
+2018-07-03 14:41:37 INFO  FiltersTest:34 - TC Used cars filters started
+2018-07-03 14:41:52 INFO  MainPage:109 - Click on login button was perfomed
+2018-07-03 14:42:03 INFO  LoginPage:26 - Data to e-mail field was inputted
+2018-07-03 14:42:03 INFO  LoginPage:28 - Data to password field was inputted
+2018-07-03 14:42:03 INFO  LoginPage:44 - Click on login button was perfomed
+2018-07-03 14:42:35 INFO  Annotations:37 - Test has finished
+2018-07-03 17:45:43 INFO  Annotations:27 - The test started
+2018-07-03 17:45:49 INFO  FiltersTest:97 - TC check links started
+2018-07-03 17:45:51 INFO  MainPage:114 - Click on New Cars Link was perfomed
+2018-07-03 17:45:51 INFO  Utils:20 - Scroll to element
+2018-07-03 17:46:02 INFO  NewCarsPage:24 - Click on car link was perfomed
+2018-07-03 17:46:03 INFO  NewCarsPage:31 - Click on golf link on Volkswagen page was perfomed
+2018-07-03 17:46:04 INFO  NewCarsPage:37 - Click on first image on Golf page was perfomed
+2018-07-03 17:46:04 INFO  FiltersTest:21 - TC check of new Cars Filters started
+2018-07-03 17:46:14 INFO  FiltersTest:54 - TC checkboxes in extended search started
+2018-07-03 17:46:25 INFO  FiltersTest:85 - TC Invalid data for price field started
+2018-07-03 17:46:35 INFO  FiltersTest:68 - TC price field started
+2018-07-03 17:46:45 INFO  FiltersTest:35 - TC Used cars filters started
+2018-07-03 17:46:59 INFO  MainPage:109 - Click on login button was perfomed
+2018-07-03 17:47:09 INFO  LoginPage:26 - Data to e-mail field was inputted
+2018-07-03 17:47:09 INFO  LoginPage:28 - Data to password field was inputted
+2018-07-03 17:47:09 INFO  LoginPage:44 - Click on login button was perfomed
+2018-07-03 17:47:42 INFO  Annotations:37 - Test has finished
+2018-07-03 17:49:00 INFO  Annotations:27 - The test started
+2018-07-03 17:49:04 INFO  FiltersTest:35 - TC Used cars filters started
+2018-07-03 17:49:04 INFO  MainPage:44 - Click on car brand dropdown
+2018-07-03 17:49:04 INFO  MainPage:46 - input data to car brand dropdown
+2018-07-03 17:49:04 INFO  MainPage:48 - car brand was chosen
+2018-07-03 17:49:17 INFO  Annotations:37 - Test has finished
+2018-07-03 17:50:20 INFO  Annotations:27 - The test started
+2018-07-03 17:50:23 INFO  FiltersTest:35 - TC Used cars filters started
+2018-07-03 17:50:23 INFO  MainPage:44 - Click on car brand dropdown
+2018-07-03 17:50:24 INFO  MainPage:46 - input data to car brand dropdown
+2018-07-03 17:50:24 INFO  MainPage:48 - car brand was chosen
+2018-07-03 17:50:24 INFO  MainPage:56 - Car model was chosen
+2018-07-03 17:50:25 INFO  MainPage:64 - Region was chosen
+2018-07-03 17:50:25 INFO  MainPage:70 - Year from dropdown was found
+2018-07-03 17:50:25 INFO  MainPage:72 - Year to dropdown was found
+2018-07-03 17:50:25 INFO  MainPage:74 - Year from was selected
+2018-07-03 17:50:25 INFO  MainPage:76 - Year to was selected
+2018-07-03 17:50:25 INFO  MainPage:102 - Data to price field was inputted
+2018-07-03 17:50:25 INFO  MainPage:104 - Data to price field was inputted
+2018-07-03 17:50:25 INFO  MainPage:95 - Click on search button was perfomed
+2018-07-03 17:50:30 INFO  Annotations:37 - Test has finished
+2018-07-03 17:51:06 INFO  Annotations:27 - The test started
+2018-07-03 17:51:09 INFO  FiltersTest:35 - TC Used cars filters started
+2018-07-03 17:51:09 INFO  MainPage:44 - Click on car brand dropdown
+2018-07-03 17:51:10 INFO  MainPage:46 - input data to car brand dropdown
+2018-07-03 17:51:10 INFO  MainPage:48 - car brand was chosen
+2018-07-03 17:51:10 INFO  MainPage:56 - Car model was chosen
+2018-07-03 17:51:10 INFO  MainPage:64 - Region was chosen
+2018-07-03 17:51:10 INFO  MainPage:70 - Year from dropdown was found
+2018-07-03 17:51:10 INFO  MainPage:72 - Year to dropdown was found
+2018-07-03 17:51:11 INFO  MainPage:74 - Year from was selected
+2018-07-03 17:51:11 INFO  MainPage:76 - Year to was selected
+2018-07-03 17:51:11 INFO  MainPage:102 - Data to price field was inputted
+2018-07-03 17:51:11 INFO  MainPage:104 - Data to price field was inputted
+2018-07-03 17:51:11 INFO  MainPage:95 - Click on search button was perfomed
+2018-07-03 17:51:23 INFO  Annotations:37 - Test has finished
