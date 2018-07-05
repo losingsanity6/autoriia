@@ -1,9 +1,9 @@
 package tests;
 
 
-
 import org.apache.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.ExtendedSearchPage;
 import pages.MainPage;
@@ -14,9 +14,9 @@ import utils.Annotations;
 
 public class FiltersTest extends Annotations {
 
-private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
+    private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
 
-   @Test
+    @Test(description = "Check work of new cars filter")
     public void checkWorkOfNewCarsFilter() {
         log.info("TC check of new Cars Filters started");
         MainPage mainPage = new MainPage(driver);
@@ -29,7 +29,7 @@ private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
 
     }
 
-    @Test //TODO: add params
+    @Test(description = "Check work of used cars filter") //TODO: add params
     public void usedCarsFilterTest() {
         log.info("TC Used cars filters started");
         String yearFrom = "2000"; //TODO: move to annotation Test
@@ -48,7 +48,7 @@ private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
 
     }
 
-    @Test
+    @Test(description = "Check extended search")
     public void extendedSearchCheckBoxes() {
         log.info("TC checkboxes in extended search started");
         MainPage mainPage = new MainPage(driver);
@@ -62,7 +62,7 @@ private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
     }
 
 
-    @Test
+    @Test(description = "Check work of price fields")
     public void priceFieldTestFromLowestToHighest() {
         log.info("TC price field started");
         String priceFrom = "1";
@@ -78,7 +78,7 @@ private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
     }
 
 
-    @Test
+    @Test(description = "Invalid price to price input")
     public void invalidDataForPriceField() {
         log.info("TC Invalid data for price field started");
         MainPage mainPage = new MainPage(driver);
@@ -88,18 +88,15 @@ private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
         Assert.assertEquals("", resultPage.getTextFromPriceInputFrom(), "The price field does not contain the parameter");
         log.info("Assertation passed");
 
-  }
+    }
 
-    @Test
+    @Test(description = "Check opening links")
     public void checkPages() {
         log.info("TC check links started");
         MainPage mainPage = new MainPage(driver);
         mainPage.clickNewCars();
         NewCarsPage newCarsPage = new NewCarsPage(driver);
-        String VolkswagenUrl = newCarsPage.clickCar();
-        String golfUrl = newCarsPage.clickGolf();
-        String chetchbackUrl = newCarsPage.clickFirstImage();
-        Assert.assertTrue(VolkswagenUrl.contains("volkswagen") && golfUrl.contains("golf") && chetchbackUrl.contains("khetchbek"), "The urls don't contain defined words ");
+        Assert.assertTrue(newCarsPage.clickCar().contains("volkswagen") && newCarsPage.clickGolf().contains("golf") && newCarsPage.clickFirstImage().contains("khetchbek"), "The urls don't contain defined words ");
 
 
     }

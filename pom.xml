@@ -4,10 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <properties>
-        <aspectj.version>1.8.10</aspectj.version>
+        <aspectj.version>1.9.1</aspectj.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <groupId>com.epam</groupId>
     <artifactId>auto.ria</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -94,9 +93,9 @@
                 <version>2.22.0</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <!--<argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.1/aspectjweaver-1.9.1.jar"
-                    </argLine>-->
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
                 </configuration>
                 <dependencies>
                     <dependency>

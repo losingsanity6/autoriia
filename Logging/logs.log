@@ -914,3 +914,764 @@ org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' alr
 2018-07-05 15:15:34 INFO  LoginPage:64 - Click on Facebook login button was perfomed
 2018-07-05 15:15:54 INFO  LoginPage:39 - Switched to login frame
 2018-07-05 15:15:56 INFO  Annotations:54 - Test has finished
+2018-07-05 15:23:40 INFO  Annotations:36 - The test started
+2018-07-05 15:23:49 INFO  FiltersTest:95 - TC check links started
+2018-07-05 15:23:51 INFO  MainPage:117 - Click on New Cars Link was perfomed
+2018-07-05 15:23:51 INFO  Utils:20 - Scroll to element
+2018-07-05 15:23:52 INFO  NewCarsPage:24 - Click on car link was perfomed
+2018-07-05 15:23:57 INFO  NewCarsPage:31 - Click on golf link on Volkswagen page was perfomed
+2018-07-05 15:24:00 INFO  NewCarsPage:37 - Click on first image on Golf page was perfomed
+2018-07-05 15:24:02 INFO  Annotations:54 - Test has finished
+2018-07-05 15:24:06 INFO  Annotations:36 - The test started
+2018-07-05 15:24:09 INFO  FiltersTest:21 - TC check of new Cars Filters started
+2018-07-05 15:24:09 INFO  MainPage:83 - New cars radio button was clicked
+2018-07-05 15:24:30 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 15:24:32 INFO  Annotations:54 - Test has finished
+2018-07-05 15:24:36 INFO  Annotations:36 - The test started
+2018-07-05 15:24:38 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-05 15:24:40 INFO  Utils:20 - Scroll to element
+2018-07-05 15:24:40 INFO  ExtendedSearchPage:28 - Click on Sedan checkbox was perfomed
+2018-07-05 15:24:40 INFO  ExtendedSearchPage:30 - Click on England checkbox was perfomed
+2018-07-05 15:24:44 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:24:44 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:24:46 INFO  Annotations:54 - Test has finished
+2018-07-05 15:24:49 INFO  Annotations:36 - The test started
+2018-07-05 15:24:53 INFO  FiltersTest:83 - TC Invalid data for price field started
+2018-07-05 15:24:53 INFO  MainPage:105 - Data to price field was inputted
+2018-07-05 15:24:53 INFO  MainPage:107 - Data to price field was inputted
+2018-07-05 15:24:53 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:24:53 INFO  MainPage:98 - Click on search button was perfomed
+2018-07-05 15:24:57 INFO  Utils:20 - Scroll to element
+2018-07-05 15:24:57 INFO  FiltersTest:89 - Assertation passed
+2018-07-05 15:24:59 INFO  Annotations:54 - Test has finished
+2018-07-05 15:25:02 INFO  Annotations:36 - The test started
+2018-07-05 15:25:07 INFO  FiltersTest:67 - TC price field started
+2018-07-05 15:25:07 INFO  MainPage:105 - Data to price field was inputted
+2018-07-05 15:25:07 INFO  MainPage:107 - Data to price field was inputted
+2018-07-05 15:25:07 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:25:07 INFO  MainPage:98 - Click on search button was perfomed
+2018-07-05 15:25:15 INFO  Utils:20 - Scroll to element
+2018-07-05 15:25:15 INFO  FiltersTest:75 - Assertation passed
+2018-07-05 15:25:17 INFO  Annotations:54 - Test has finished
+2018-07-05 15:25:21 INFO  Annotations:36 - The test started
+2018-07-05 15:25:25 INFO  FiltersTest:34 - TC Used cars filters started
+2018-07-05 15:25:25 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:25:25 INFO  MainPage:45 - Click on car brand dropdown
+2018-07-05 15:25:25 INFO  MainPage:47 - input data to car brand dropdown
+2018-07-05 15:25:25 INFO  MainPage:49 - car brand was chosen
+2018-07-05 15:25:26 INFO  MainPage:57 - Car model was chosen
+2018-07-05 15:25:26 INFO  MainPage:65 - Region was chosen
+2018-07-05 15:25:26 INFO  MainPage:71 - Year from dropdown was found
+2018-07-05 15:25:26 INFO  MainPage:73 - Year to dropdown was found
+2018-07-05 15:25:26 INFO  MainPage:75 - Year from was selected
+2018-07-05 15:25:26 INFO  MainPage:77 - Year to was selected
+2018-07-05 15:25:26 INFO  MainPage:105 - Data to price field was inputted
+2018-07-05 15:25:26 INFO  MainPage:107 - Data to price field was inputted
+2018-07-05 15:25:26 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:25:26 INFO  MainPage:98 - Click on search button was perfomed
+2018-07-05 15:25:33 INFO  Annotations:54 - Test has finished
+2018-07-05 15:25:36 INFO  Annotations:36 - The test started
+2018-07-05 15:25:43 INFO  MainPage:112 - Click on login button was perfomed
+2018-07-05 15:26:04 INFO  LoginPage:26 - Data to e-mail field was inputted
+2018-07-05 15:26:04 INFO  LoginPage:28 - Data to password field was inputted
+2018-07-05 15:26:04 INFO  LoginPage:44 - Click on login button was perfomed
+2018-07-05 15:26:24 ERROR LoginTest:28 - Captcha appeared
+2018-07-05 15:26:24 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 15:26:27 INFO  Annotations:54 - Test has finished
+2018-07-05 15:26:30 INFO  Annotations:36 - The test started
+2018-07-05 15:26:36 INFO  MainPage:112 - Click on login button was perfomed
+2018-07-05 15:26:57 INFO  LoginPage:39 - Switched to login frame
+2018-07-05 15:26:57 INFO  LoginPage:33 - Click on facebook login button was perfomed
+2018-07-05 15:26:58 INFO  LoginPage:60 - Data to e-mail field was inputted
+2018-07-05 15:26:58 INFO  LoginPage:62 - Data to password field was inputted
+2018-07-05 15:26:58 INFO  LoginPage:64 - Click on Facebook login button was perfomed
+2018-07-05 15:27:18 INFO  LoginPage:39 - Switched to login frame
+2018-07-05 15:27:21 INFO  Annotations:54 - Test has finished
+2018-07-05 15:47:15 INFO  Annotations:36 - The test started
+2018-07-05 15:47:19 INFO  FiltersTest:95 - TC check links started
+2018-07-05 15:47:24 INFO  MainPage:124 - Click on New Cars Link was perfomed
+2018-07-05 15:47:26 INFO  Utils:20 - Scroll to element
+2018-07-05 15:47:28 INFO  NewCarsPage:27 - Click on car link was perfomed
+2018-07-05 15:47:28 INFO  NewCarsPage:35 - Click on golf link on Volkswagen page was perfomed
+2018-07-05 15:47:29 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 15:47:31 INFO  Annotations:54 - Test has finished
+2018-07-05 15:47:34 INFO  Annotations:36 - The test started
+2018-07-05 15:47:38 INFO  FiltersTest:21 - TC check of new Cars Filters started
+2018-07-05 15:47:38 INFO  MainPage:87 - New cars radio button was clicked
+2018-07-05 15:47:59 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 15:48:01 INFO  Annotations:54 - Test has finished
+2018-07-05 15:48:04 INFO  Annotations:36 - The test started
+2018-07-05 15:48:08 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-05 15:48:10 INFO  Utils:20 - Scroll to element
+2018-07-05 15:48:19 INFO  ExtendedSearchPage:32 - Click on Sedan checkbox was perfomed
+2018-07-05 15:48:19 INFO  ExtendedSearchPage:34 - Click on England checkbox was perfomed
+2018-07-05 15:48:23 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:48:23 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:48:26 INFO  Annotations:54 - Test has finished
+2018-07-05 15:48:29 INFO  Annotations:36 - The test started
+2018-07-05 15:48:33 INFO  FiltersTest:83 - TC Invalid data for price field started
+2018-07-05 15:48:34 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 15:48:34 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 15:48:34 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:48:34 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 15:48:38 INFO  Utils:20 - Scroll to element
+2018-07-05 15:48:38 INFO  FiltersTest:89 - Assertation passed
+2018-07-05 15:48:40 INFO  Annotations:54 - Test has finished
+2018-07-05 15:48:43 INFO  Annotations:36 - The test started
+2018-07-05 15:48:48 INFO  FiltersTest:67 - TC price field started
+2018-07-05 15:48:48 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 15:48:48 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 15:48:48 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:48:48 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 15:48:53 INFO  Utils:20 - Scroll to element
+2018-07-05 15:48:53 INFO  FiltersTest:75 - Assertation passed
+2018-07-05 15:48:55 INFO  Annotations:54 - Test has finished
+2018-07-05 15:48:58 INFO  Annotations:36 - The test started
+2018-07-05 15:49:01 INFO  FiltersTest:34 - TC Used cars filters started
+2018-07-05 15:49:01 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:49:01 INFO  MainPage:48 - Click on car brand dropdown
+2018-07-05 15:49:02 INFO  MainPage:50 - input data to car brand dropdown
+2018-07-05 15:49:02 INFO  MainPage:52 - car brand was chosen
+2018-07-05 15:49:02 INFO  MainPage:60 - Car model was chosen
+2018-07-05 15:49:03 INFO  MainPage:68 - Region was chosen
+2018-07-05 15:49:03 INFO  MainPage:74 - Year from dropdown was found
+2018-07-05 15:49:03 INFO  MainPage:76 - Year to dropdown was found
+2018-07-05 15:49:03 INFO  MainPage:78 - Year from was selected
+2018-07-05 15:49:03 INFO  MainPage:80 - Year to was selected
+2018-07-05 15:49:03 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 15:49:03 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 15:49:03 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 15:49:03 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 15:49:08 INFO  Annotations:54 - Test has finished
+2018-07-05 15:49:12 INFO  Annotations:36 - The test started
+2018-07-05 15:49:18 INFO  MainPage:118 - Click on login button was perfomed
+2018-07-05 15:49:38 INFO  LoginPage:28 - Data to e-mail field was inputted
+2018-07-05 15:49:38 INFO  LoginPage:30 - Data to password field was inputted
+2018-07-05 15:49:39 INFO  LoginPage:49 - Click on login button was perfomed
+2018-07-05 15:49:59 ERROR LoginTest:28 - Captcha appeared
+2018-07-05 15:49:59 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 15:50:01 INFO  Annotations:54 - Test has finished
+2018-07-05 15:50:04 INFO  Annotations:36 - The test started
+2018-07-05 15:50:14 INFO  MainPage:118 - Click on login button was perfomed
+2018-07-05 15:50:34 INFO  LoginPage:43 - Switched to login frame
+2018-07-05 15:50:34 INFO  LoginPage:36 - Click on facebook login button was perfomed
+2018-07-05 15:50:36 INFO  LoginPage:67 - Data to e-mail field was inputted
+2018-07-05 15:50:36 INFO  LoginPage:69 - Data to password field was inputted
+2018-07-05 15:50:38 INFO  LoginPage:71 - Click on Facebook login button was perfomed
+2018-07-05 15:50:58 INFO  LoginPage:43 - Switched to login frame
+2018-07-05 15:51:01 INFO  Annotations:54 - Test has finished
+2018-07-05 16:01:16 INFO  Annotations:36 - The test started
+2018-07-05 16:01:22 INFO  FiltersTest:95 - TC check links started
+2018-07-05 16:01:28 INFO  MainPage:124 - Click on New Cars Link was perfomed
+2018-07-05 16:01:30 INFO  Utils:20 - Scroll to element
+2018-07-05 16:01:31 INFO  NewCarsPage:27 - Click on car link was perfomed
+2018-07-05 16:01:32 INFO  NewCarsPage:35 - Click on golf link on Volkswagen page was perfomed
+2018-07-05 16:01:34 INFO  NewCarsPage:42 - Click on first image on Golf page was perfomed
+2018-07-05 16:01:34 INFO  Annotations:54 - Test has finished
+2018-07-05 16:01:37 INFO  Annotations:36 - The test started
+2018-07-05 16:01:40 INFO  FiltersTest:21 - TC check of new Cars Filters started
+2018-07-05 16:01:40 INFO  MainPage:87 - New cars radio button was clicked
+2018-07-05 16:02:01 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 16:02:03 INFO  Annotations:54 - Test has finished
+2018-07-05 16:02:07 INFO  Annotations:36 - The test started
+2018-07-05 16:02:10 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-05 16:02:12 INFO  Utils:20 - Scroll to element
+2018-07-05 16:02:13 INFO  ExtendedSearchPage:32 - Click on Sedan checkbox was perfomed
+2018-07-05 16:02:13 INFO  ExtendedSearchPage:34 - Click on England checkbox was perfomed
+2018-07-05 16:02:16 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:02:18 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:02:20 INFO  Annotations:54 - Test has finished
+2018-07-05 16:02:23 INFO  Annotations:36 - The test started
+2018-07-05 16:02:29 INFO  FiltersTest:83 - TC Invalid data for price field started
+2018-07-05 16:02:29 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 16:02:29 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 16:02:29 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:02:29 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 16:02:35 INFO  Utils:20 - Scroll to element
+2018-07-05 16:02:36 INFO  FiltersTest:89 - Assertation passed
+2018-07-05 16:02:38 INFO  Annotations:54 - Test has finished
+2018-07-05 16:02:41 INFO  Annotations:36 - The test started
+2018-07-05 16:02:44 INFO  FiltersTest:67 - TC price field started
+2018-07-05 16:02:44 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 16:02:45 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 16:02:45 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:02:45 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 16:02:49 INFO  Utils:20 - Scroll to element
+2018-07-05 16:02:49 INFO  FiltersTest:75 - Assertation passed
+2018-07-05 16:02:51 INFO  Annotations:54 - Test has finished
+2018-07-05 16:02:55 INFO  Annotations:36 - The test started
+2018-07-05 16:02:58 INFO  FiltersTest:34 - TC Used cars filters started
+2018-07-05 16:02:58 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:02:58 INFO  MainPage:48 - Click on car brand dropdown
+2018-07-05 16:02:58 INFO  MainPage:50 - input data to car brand dropdown
+2018-07-05 16:02:58 INFO  MainPage:52 - car brand was chosen
+2018-07-05 16:02:59 INFO  MainPage:60 - Car model was chosen
+2018-07-05 16:02:59 INFO  MainPage:68 - Region was chosen
+2018-07-05 16:02:59 INFO  MainPage:74 - Year from dropdown was found
+2018-07-05 16:02:59 INFO  MainPage:76 - Year to dropdown was found
+2018-07-05 16:02:59 INFO  MainPage:78 - Year from was selected
+2018-07-05 16:02:59 INFO  MainPage:80 - Year to was selected
+2018-07-05 16:02:59 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 16:03:00 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 16:03:00 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:03:00 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 16:03:08 INFO  Annotations:54 - Test has finished
+2018-07-05 16:03:12 INFO  Annotations:36 - The test started
+2018-07-05 16:03:18 INFO  MainPage:118 - Click on login button was perfomed
+2018-07-05 16:03:39 INFO  LoginPage:28 - Data to e-mail field was inputted
+2018-07-05 16:03:39 INFO  LoginPage:30 - Data to password field was inputted
+2018-07-05 16:03:39 INFO  LoginPage:49 - Click on login button was perfomed
+2018-07-05 16:03:59 ERROR LoginTest:28 - Captcha appeared
+2018-07-05 16:03:59 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 16:03:59 INFO  Annotations:54 - Test has finished
+2018-07-05 16:04:03 INFO  Annotations:36 - The test started
+2018-07-05 16:04:10 INFO  MainPage:118 - Click on login button was perfomed
+2018-07-05 16:04:30 INFO  LoginPage:43 - Switched to login frame
+2018-07-05 16:04:30 INFO  LoginPage:36 - Click on facebook login button was perfomed
+2018-07-05 16:04:34 INFO  LoginPage:67 - Data to e-mail field was inputted
+2018-07-05 16:04:34 INFO  LoginPage:69 - Data to password field was inputted
+2018-07-05 16:04:37 INFO  LoginPage:71 - Click on Facebook login button was perfomed
+2018-07-05 16:04:57 INFO  LoginPage:43 - Switched to login frame
+2018-07-05 16:04:59 INFO  Annotations:54 - Test has finished
+2018-07-05 16:08:31 INFO  Annotations:36 - The test started
+2018-07-05 16:08:38 INFO  FiltersTest:95 - TC check links started
+2018-07-05 16:08:50 INFO  MainPage:124 - Click on New Cars Link was perfomed
+2018-07-05 16:08:51 INFO  Utils:20 - Scroll to element
+2018-07-05 16:08:53 INFO  NewCarsPage:27 - Click on car link was perfomed
+2018-07-05 16:08:55 INFO  NewCarsPage:35 - Click on golf link on Volkswagen page was perfomed
+2018-07-05 16:09:02 INFO  NewCarsPage:42 - Click on first image on Golf page was perfomed
+2018-07-05 16:09:04 INFO  Annotations:54 - Test has finished
+2018-07-05 16:09:07 INFO  Annotations:36 - The test started
+2018-07-05 16:09:12 INFO  FiltersTest:21 - TC check of new Cars Filters started
+2018-07-05 16:09:12 INFO  MainPage:87 - New cars radio button was clicked
+2018-07-05 16:09:33 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 16:09:35 INFO  Annotations:54 - Test has finished
+2018-07-05 16:09:39 INFO  Annotations:36 - The test started
+2018-07-05 16:09:44 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-05 16:09:46 INFO  Utils:20 - Scroll to element
+2018-07-05 16:09:46 INFO  ExtendedSearchPage:32 - Click on Sedan checkbox was perfomed
+2018-07-05 16:09:46 INFO  ExtendedSearchPage:34 - Click on England checkbox was perfomed
+2018-07-05 16:09:52 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:09:52 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:09:55 INFO  Annotations:54 - Test has finished
+2018-07-05 16:09:58 INFO  Annotations:36 - The test started
+2018-07-05 16:10:04 INFO  FiltersTest:83 - TC Invalid data for price field started
+2018-07-05 16:10:04 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 16:10:04 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 16:10:04 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:10:04 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 16:10:10 INFO  Utils:20 - Scroll to element
+2018-07-05 16:10:10 INFO  FiltersTest:89 - Assertation passed
+2018-07-05 16:10:12 INFO  Annotations:54 - Test has finished
+2018-07-05 16:10:16 INFO  Annotations:36 - The test started
+2018-07-05 16:10:22 INFO  FiltersTest:67 - TC price field started
+2018-07-05 16:10:22 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 16:10:22 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 16:10:22 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:10:22 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 16:10:27 INFO  Utils:20 - Scroll to element
+2018-07-05 16:10:27 INFO  FiltersTest:75 - Assertation passed
+2018-07-05 16:10:29 INFO  Annotations:54 - Test has finished
+2018-07-05 16:10:33 INFO  Annotations:36 - The test started
+2018-07-05 16:10:38 INFO  FiltersTest:34 - TC Used cars filters started
+2018-07-05 16:10:38 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:10:38 INFO  MainPage:48 - Click on car brand dropdown
+2018-07-05 16:10:38 INFO  MainPage:50 - input data to car brand dropdown
+2018-07-05 16:10:38 INFO  MainPage:52 - car brand was chosen
+2018-07-05 16:10:39 INFO  MainPage:60 - Car model was chosen
+2018-07-05 16:10:39 INFO  MainPage:68 - Region was chosen
+2018-07-05 16:10:39 INFO  MainPage:74 - Year from dropdown was found
+2018-07-05 16:10:39 INFO  MainPage:76 - Year to dropdown was found
+2018-07-05 16:10:39 INFO  MainPage:78 - Year from was selected
+2018-07-05 16:10:39 INFO  MainPage:80 - Year to was selected
+2018-07-05 16:10:39 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 16:10:40 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 16:10:40 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:10:40 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 16:10:48 INFO  Annotations:54 - Test has finished
+2018-07-05 16:10:52 INFO  Annotations:36 - The test started
+2018-07-05 16:11:05 INFO  MainPage:118 - Click on login button was perfomed
+2018-07-05 16:11:26 INFO  LoginPage:28 - Data to e-mail field was inputted
+2018-07-05 16:11:26 INFO  LoginPage:30 - Data to password field was inputted
+2018-07-05 16:11:26 INFO  LoginPage:49 - Click on login button was perfomed
+2018-07-05 16:11:46 ERROR LoginTest:28 - Captcha appeared
+2018-07-05 16:11:47 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 16:11:49 INFO  Annotations:54 - Test has finished
+2018-07-05 16:11:52 INFO  Annotations:36 - The test started
+2018-07-05 16:12:02 INFO  MainPage:118 - Click on login button was perfomed
+2018-07-05 16:12:22 INFO  LoginPage:43 - Switched to login frame
+2018-07-05 16:12:22 INFO  LoginPage:36 - Click on facebook login button was perfomed
+2018-07-05 16:12:23 INFO  LoginPage:67 - Data to e-mail field was inputted
+2018-07-05 16:12:23 INFO  LoginPage:69 - Data to password field was inputted
+2018-07-05 16:12:25 INFO  LoginPage:71 - Click on Facebook login button was perfomed
+2018-07-05 16:12:46 INFO  LoginPage:43 - Switched to login frame
+2018-07-05 16:12:48 INFO  Annotations:54 - Test has finished
+2018-07-05 16:21:31 INFO  Annotations:36 - The test started
+2018-07-05 16:21:45 INFO  FiltersTest:95 - TC check links started
+2018-07-05 16:21:48 INFO  MainPage:124 - Click on New Cars Link was perfomed
+2018-07-05 16:21:50 INFO  Utils:20 - Scroll to element
+2018-07-05 16:21:51 INFO  NewCarsPage:27 - Click on car link was perfomed
+2018-07-05 16:21:52 INFO  NewCarsPage:35 - Click on golf link on Volkswagen page was perfomed
+2018-07-05 16:21:56 INFO  NewCarsPage:42 - Click on first image on Golf page was perfomed
+2018-07-05 16:21:58 INFO  Annotations:54 - Test has finished
+2018-07-05 16:22:02 INFO  Annotations:36 - The test started
+2018-07-05 16:22:05 INFO  FiltersTest:21 - TC check of new Cars Filters started
+2018-07-05 16:22:05 INFO  MainPage:87 - New cars radio button was clicked
+2018-07-05 16:22:26 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 16:22:28 INFO  Annotations:54 - Test has finished
+2018-07-05 16:22:31 INFO  Annotations:36 - The test started
+2018-07-05 16:22:35 INFO  FiltersTest:53 - TC checkboxes in extended search started
+2018-07-05 16:22:37 INFO  Utils:20 - Scroll to element
+2018-07-05 16:22:37 INFO  ExtendedSearchPage:32 - Click on Sedan checkbox was perfomed
+2018-07-05 16:22:37 INFO  ExtendedSearchPage:34 - Click on England checkbox was perfomed
+2018-07-05 16:22:42 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:22:42 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:22:45 INFO  Annotations:54 - Test has finished
+2018-07-05 16:22:48 INFO  Annotations:36 - The test started
+2018-07-05 16:22:52 INFO  FiltersTest:83 - TC Invalid data for price field started
+2018-07-05 16:22:52 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 16:22:52 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 16:22:52 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:22:52 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 16:22:58 INFO  Utils:20 - Scroll to element
+2018-07-05 16:22:59 INFO  FiltersTest:89 - Assertation passed
+2018-07-05 16:23:01 INFO  Annotations:54 - Test has finished
+2018-07-05 16:23:04 INFO  Annotations:36 - The test started
+2018-07-05 16:23:09 INFO  FiltersTest:67 - TC price field started
+2018-07-05 16:23:09 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 16:23:10 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 16:23:10 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:23:10 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 16:23:13 INFO  Utils:20 - Scroll to element
+2018-07-05 16:23:13 INFO  FiltersTest:75 - Assertation passed
+2018-07-05 16:23:16 INFO  Annotations:54 - Test has finished
+2018-07-05 16:23:19 INFO  Annotations:36 - The test started
+2018-07-05 16:23:23 INFO  FiltersTest:34 - TC Used cars filters started
+2018-07-05 16:23:23 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:23:23 INFO  MainPage:48 - Click on car brand dropdown
+2018-07-05 16:23:23 INFO  MainPage:50 - input data to car brand dropdown
+2018-07-05 16:23:23 INFO  MainPage:52 - car brand was chosen
+2018-07-05 16:23:24 INFO  MainPage:60 - Car model was chosen
+2018-07-05 16:23:24 INFO  MainPage:68 - Region was chosen
+2018-07-05 16:23:24 INFO  MainPage:74 - Year from dropdown was found
+2018-07-05 16:23:24 INFO  MainPage:76 - Year to dropdown was found
+2018-07-05 16:23:24 INFO  MainPage:78 - Year from was selected
+2018-07-05 16:23:25 INFO  MainPage:80 - Year to was selected
+2018-07-05 16:23:25 INFO  MainPage:110 - Data to price field was inputted
+2018-07-05 16:23:25 INFO  MainPage:112 - Data to price field was inputted
+2018-07-05 16:23:25 INFO  Utils:26 - Wait for element to be visible
+2018-07-05 16:23:25 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-05 16:23:32 INFO  Annotations:54 - Test has finished
+2018-07-05 16:23:36 INFO  Annotations:36 - The test started
+2018-07-05 16:23:48 INFO  MainPage:118 - Click on login button was perfomed
+2018-07-05 16:24:09 INFO  LoginPage:28 - Data to e-mail field was inputted
+2018-07-05 16:24:09 INFO  LoginPage:30 - Data to password field was inputted
+2018-07-05 16:24:09 INFO  LoginPage:49 - Click on login button was perfomed
+2018-07-05 16:24:29 ERROR LoginTest:28 - Captcha appeared
+2018-07-05 16:24:29 ERROR Annotations:50 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2018-07-05 16:24:29 INFO  Annotations:54 - Test has finished
+2018-07-05 16:24:33 INFO  Annotations:36 - The test started
+2018-07-05 16:24:38 INFO  MainPage:118 - Click on login button was perfomed
+2018-07-05 16:24:58 INFO  LoginPage:43 - Switched to login frame
+2018-07-05 16:24:59 INFO  LoginPage:36 - Click on facebook login button was perfomed
+2018-07-05 16:25:01 INFO  LoginPage:67 - Data to e-mail field was inputted
+2018-07-05 16:25:01 INFO  LoginPage:69 - Data to password field was inputted
+2018-07-05 16:25:04 INFO  LoginPage:71 - Click on Facebook login button was perfomed
+2018-07-05 16:25:24 INFO  LoginPage:43 - Switched to login frame
+2018-07-05 16:25:27 INFO  Annotations:54 - Test has finished
