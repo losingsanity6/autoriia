@@ -7,6 +7,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -26,14 +27,8 @@ public class Annotations {
 
     @BeforeMethod
     public void setUp() {
-
         ConfigFileReader configFileReader = new ConfigFileReader();
-        System.setProperty("webdriver.chrome.driver", "browsers/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        //  String baseUrl = "https://auto.ria.com:443";
-        //log.info("The test has started");
-        log.info("The test started");
+        driver = DriverProvider.getDriver();
         driver.get(configFileReader.getApplicationUrl());
         driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
 
