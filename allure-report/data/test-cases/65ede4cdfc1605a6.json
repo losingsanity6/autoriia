@@ -1,0 +1,146 @@
+{
+  "uid" : "65ede4cdfc1605a6",
+  "name" : "Check work of price fields",
+  "fullName" : "tests.FiltersTest.priceFieldTestFromLowestToHighest",
+  "historyId" : "d6292f604f80e480068fe9101ecab7ff",
+  "time" : {
+    "start" : 1530796989858,
+    "stop" : 1530796993930,
+    "duration" : 4072
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1530796981160,
+      "stop" : 1530796989853,
+      "duration" : 8693
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "enterPriceToPriceField",
+      "time" : {
+        "start" : 1530796989859,
+        "stop" : 1530796990073,
+        "duration" : 214
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "priceFrom",
+        "value" : "1"
+      }, {
+        "name" : "priceTo",
+        "value" : "100000000000"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "clickSearchButton",
+      "time" : {
+        "start" : 1530796990073,
+        "stop" : 1530796990219,
+        "duration" : 146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "getTextFromPriceInputFrom",
+      "time" : {
+        "start" : 1530796990219,
+        "stop" : 1530796993930,
+        "duration" : 3711
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "close",
+    "time" : {
+      "start" : 1530796993934,
+      "stop" : 1530796996247,
+      "duration" : 2313
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "priceFieldTestFromLowestToHighest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "host",
+    "value" : "EPUAVINW0261"
+  }, {
+    "name" : "thread",
+    "value" : "21648@EPUAVINW0261.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "65ede4cdfc1605a6.json",
+  "parameterValues" : [ ]
+}

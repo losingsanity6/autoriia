@@ -1,0 +1,146 @@
+{
+  "uid" : "8c483debfb2e68ec",
+  "name" : "Invalid price to price input",
+  "fullName" : "tests.FiltersTest.invalidDataForPriceField",
+  "historyId" : "2d3ae9c4a817533f5f57b1b998698e5f",
+  "time" : {
+    "start" : 1530796972506,
+    "stop" : 1530796979053,
+    "duration" : 6547
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1530796965332,
+      "stop" : 1530796972502,
+      "duration" : 7170
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "enterPriceToPriceField",
+      "time" : {
+        "start" : 1530796972507,
+        "stop" : 1530796972670,
+        "duration" : 163
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "priceFrom",
+        "value" : "gggggggg"
+      }, {
+        "name" : "priceTo",
+        "value" : "wqwqwqw"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "clickSearchButton",
+      "time" : {
+        "start" : 1530796972671,
+        "stop" : 1530796972831,
+        "duration" : 160
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "getTextFromPriceInputFrom",
+      "time" : {
+        "start" : 1530796972831,
+        "stop" : 1530796979052,
+        "duration" : 6221
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "close",
+    "time" : {
+      "start" : 1530796979061,
+      "stop" : 1530796981156,
+      "duration" : 2095
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "invalidDataForPriceField"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "host",
+    "value" : "EPUAVINW0261"
+  }, {
+    "name" : "thread",
+    "value" : "21648@EPUAVINW0261.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8c483debfb2e68ec.json",
+  "parameterValues" : [ ]
+}

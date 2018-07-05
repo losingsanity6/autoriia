@@ -1,0 +1,101 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Check opening links",
+    "uid" : "ca3eb290d95001df",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1530796905222,
+      "stop" : 1530796916495,
+      "duration" : 11273
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Check work of new cars filter",
+    "uid" : "f164a982c9388cd8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1530796925352,
+      "stop" : 1530796945577,
+      "duration" : 20225
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Check extended search",
+    "uid" : "1fe8ece876e159bf",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1530796955127,
+      "stop" : 1530796963013,
+      "duration" : 7886
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Invalid price to price input",
+    "uid" : "8c483debfb2e68ec",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1530796972506,
+      "stop" : 1530796979053,
+      "duration" : 6547
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Check work of price fields",
+    "uid" : "65ede4cdfc1605a6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1530796989858,
+      "stop" : 1530796993930,
+      "duration" : 4072
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Check work of used cars filter",
+    "uid" : "60dba504e3506110",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1530797003381,
+      "stop" : 1530797010522,
+      "duration" : 7141
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "invalidLoginTest",
+    "uid" : "9e42e1714177c0b2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1530797023651,
+      "stop" : 1530797069340,
+      "duration" : 45689
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "loginViaFacebook",
+    "uid" : "ee04422f09cc3c6b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1530797075757,
+      "stop" : 1530797124871,
+      "duration" : 49114
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}

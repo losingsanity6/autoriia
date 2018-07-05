@@ -1,0 +1,200 @@
+{
+  "uid" : "60dba504e3506110",
+  "name" : "Check work of used cars filter",
+  "fullName" : "tests.FiltersTest.usedCarsFilterTest",
+  "historyId" : "c9643dff68946f21ab0fe28315164263",
+  "time" : {
+    "start" : 1530797003381,
+    "stop" : 1530797010522,
+    "duration" : 7141
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1530796996254,
+      "stop" : 1530797003377,
+      "duration" : 7123
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "chooseCarBrand",
+      "time" : {
+        "start" : 1530797003382,
+        "stop" : 1530797003865,
+        "duration" : 483
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "carBrand",
+        "value" : "Daewoo"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "clickModel",
+      "time" : {
+        "start" : 1530797003866,
+        "stop" : 1530797004351,
+        "duration" : 485
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "modelInp",
+        "value" : "Korando"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "clickRegion",
+      "time" : {
+        "start" : 1530797004351,
+        "stop" : 1530797004760,
+        "duration" : 409
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "regionName",
+        "value" : "Киев"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "enterPriceToPriceField",
+      "time" : {
+        "start" : 1530797005140,
+        "stop" : 1530797005318,
+        "duration" : 178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "priceFrom",
+        "value" : ""
+      }, {
+        "name" : "priceTo",
+        "value" : "19000"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "clickSearchButton",
+      "time" : {
+        "start" : 1530797005319,
+        "stop" : 1530797005437,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "getTextFromNoResultsMessage",
+      "time" : {
+        "start" : 1530797005437,
+        "stop" : 1530797010522,
+        "duration" : 5085
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "close",
+    "time" : {
+      "start" : 1530797010529,
+      "stop" : 1530797012864,
+      "duration" : 2335
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "usedCarsFilterTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "host",
+    "value" : "EPUAVINW0261"
+  }, {
+    "name" : "thread",
+    "value" : "21648@EPUAVINW0261.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "60dba504e3506110.json",
+  "parameterValues" : [ ]
+}

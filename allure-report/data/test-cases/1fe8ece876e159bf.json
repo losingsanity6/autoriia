@@ -1,0 +1,155 @@
+{
+  "uid" : "1fe8ece876e159bf",
+  "name" : "Check extended search",
+  "fullName" : "tests.FiltersTest.extendedSearchCheckBoxes",
+  "historyId" : "14ea2281c6f9e59cd24359b0128b2435",
+  "time" : {
+    "start" : 1530796955127,
+    "stop" : 1530796963013,
+    "duration" : 7886
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1530796948617,
+      "stop" : 1530796955121,
+      "duration" : 6504
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "clickCheckBoxes",
+      "time" : {
+        "start" : 1530796957138,
+        "stop" : 1530796957445,
+        "duration" : 307
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "clickShowButton",
+      "time" : {
+        "start" : 1530796957446,
+        "stop" : 1530796962877,
+        "duration" : 5431
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "getH1Text",
+      "time" : {
+        "start" : 1530796962892,
+        "stop" : 1530796962965,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "getH1Text",
+      "time" : {
+        "start" : 1530796962966,
+        "stop" : 1530796963013,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "close",
+    "time" : {
+      "start" : 1530796963016,
+      "stop" : 1530796965327,
+      "duration" : 2311
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "extendedSearchCheckBoxes"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "host",
+    "value" : "EPUAVINW0261"
+  }, {
+    "name" : "thread",
+    "value" : "21648@EPUAVINW0261.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1fe8ece876e159bf.json",
+  "parameterValues" : [ ]
+}

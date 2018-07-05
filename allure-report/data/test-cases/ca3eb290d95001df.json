@@ -1,0 +1,155 @@
+{
+  "uid" : "ca3eb290d95001df",
+  "name" : "Check opening links",
+  "fullName" : "tests.FiltersTest.checkPages",
+  "historyId" : "102440ce15fb0cdea9766b9b4eeff10f",
+  "time" : {
+    "start" : 1530796905222,
+    "stop" : 1530796916495,
+    "duration" : 11273
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1530796886714,
+      "stop" : 1530796904833,
+      "duration" : 18119
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "clickNewCars",
+      "time" : {
+        "start" : 1530796905482,
+        "stop" : 1530796908181,
+        "duration" : 2699
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "clickCar",
+      "time" : {
+        "start" : 1530796909917,
+        "stop" : 1530796911522,
+        "duration" : 1605
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "clickGolf",
+      "time" : {
+        "start" : 1530796911523,
+        "stop" : 1530796912099,
+        "duration" : 576
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "clickFirstImage",
+      "time" : {
+        "start" : 1530796912100,
+        "stop" : 1530796916487,
+        "duration" : 4387
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "close",
+    "time" : {
+      "start" : 1530796916527,
+      "stop" : 1530796918843,
+      "duration" : 2316
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkPages"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.FiltersTest"
+  }, {
+    "name" : "host",
+    "value" : "EPUAVINW0261"
+  }, {
+    "name" : "thread",
+    "value" : "21648@EPUAVINW0261.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ca3eb290d95001df.json",
+  "parameterValues" : [ ]
+}
