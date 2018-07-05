@@ -16,7 +16,7 @@ public class FiltersTest extends Annotations {
 
 private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
 
-    @Test
+   @Test
     public void checkWorkOfNewCarsFilter() {
         log.info("TC check of new Cars Filters started");
         MainPage mainPage = new MainPage(driver);
@@ -24,7 +24,6 @@ private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
         mainPage.clickSearchButton();
         ResultPage resultPage = new ResultPage(driver);
         String carName = resultPage.findCarDropdown();
-        System.out.println(carName);
         Assert.assertEquals("BMW", carName, "The car dropdown was not found");
         log.info("Assertation passed");
 
@@ -72,7 +71,6 @@ private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
         mainPage.enterPriceToPriceField(priceFrom, priceTo);
         mainPage.clickSearchButton();
         ResultPage resultPage = new ResultPage(driver);
-        System.out.println("" + resultPage.getTextFromPriceInputFrom() + resultPage.getInputFromPriceFieldTo());
         Assert.assertEquals("1", resultPage.getTextFromPriceInputFrom(), "The price field does not contain parameter");
         log.info("Assertation passed");
 
@@ -90,7 +88,7 @@ private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
         Assert.assertEquals("", resultPage.getTextFromPriceInputFrom(), "The price field does not contain the parameter");
         log.info("Assertation passed");
 
-    }
+  }
 
     @Test
     public void checkPages() {
@@ -116,7 +114,7 @@ private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
         allForAutoPage.selectCarModel();
         allForAutoPage.clickSearchButton();
 
-    }
-*/
+    }*/
+
 }
 

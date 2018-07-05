@@ -22,6 +22,8 @@ public class ResultPage {
     }
 
     public String getH1Text() {
+        Utils utils = new Utils(driver);
+        utils.waitTimeout(h1);
         return driver.findElement(h1).getAttribute("innerHTML");
 
 

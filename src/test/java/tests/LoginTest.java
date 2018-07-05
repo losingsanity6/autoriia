@@ -1,5 +1,6 @@
 package tests;
 
+import org.apache.log4j.Logger;
 import pages.LoggedInPage;
 import pages.LoginPage;
 import pages.MainPage;
@@ -10,27 +11,8 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 
 public class LoginTest extends Annotations {
+    private final Logger log = Logger.getLogger(LoginTest.class);
 
-    @Test
-    public void validLoginTest() {
-        MainPage mainPage = new MainPage(driver);
-        mainPage.clickLoginButton();
-        driver.switchTo().frame("login_frame");
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.LoginInput("iamonria", "380637017113");
-        loginPage.clickLoginButton();
-        try {
-            LoggedInPage loggedInPage = new LoggedInPage(driver);
-            // System.out.println(loggedInPage.getCurrentUrl());
-            System.out.println("!!" + loggedInPage.getTextFromLoggedUser());
-            Assert.assertTrue(loggedInPage.getTextFromLoggedUser().contains("Личный кабинет"), "The link does not contain text");
-        } catch (Exception e) {
-
-            System.out.println("Whoops! Captcha has appeared");
-        }
-
-
-    }
 
     @Test
     public void invalidLoginTest() {
@@ -43,7 +25,8 @@ public class LoginTest extends Annotations {
         try {
             Assert.assertTrue(loginPage.invalidPhoneMessage().contains("неверный мобильный номер телефона"), "The message does not contain that text");
         } catch (Exception e) {
-            System.out.println("Whoops! Captcha has appeared");
+           log.error("Captcha appeared");
+           throw  e;
         }
 
     }
@@ -56,12 +39,10 @@ public class LoginTest extends Annotations {
         loginPage.switchBetweenFrame();
         loginPage.loginViaFacebook();
         ArrayList<String> windowHandles = new ArrayList<String>(driver.getWindowHandles());
-        System.out.println(windowHandles);
         driver.switchTo().window(windowHandles.get(1));
         loginPage.LoginFacebook("tanyalondon1@mail.ru", "donotusethispassword");
         driver.switchTo().window(windowHandles.get(0));
         loginPage.switchBetweenFrame();
-        System.out.println("!!" + loginPage.Message());
         Assert.assertTrue(loginPage.Message().contains("Не удалось"), " The message does not contain text");
 
     }

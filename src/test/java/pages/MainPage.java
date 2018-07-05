@@ -5,13 +5,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class MainPage {
-   private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainPage.class);
+public class MainPage{
+  private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainPage.class);
     private WebDriver driver;
     private final By usedCarDropdown = By.id("brandTooltipBrandAutocomplete-brand");//TODO:private final
     private final By usedCarInput = By.id("brandTooltipBrandAutocompleteInput-brand");
     private final By newCarDropdown = By.name("marka_id");
-    private final By searchButton = By.xpath("//*[@id='mainSearchForm']/div[3]/button");//TODO: change div[3]
+    private final By searchButton = By.xpath("//*[@id=\"mainSearchForm\"]/div[3]/button");//TODO: change div[3]
     private final By priceFieldFrom = By.id("priceFrom");
     private final By priceFieldTo = By.id("priceTo");
     private final By extendedSeachButton = By.xpath("//*[@id=\"mainSearchForm\"]/div[3]/a");
@@ -30,8 +30,7 @@ public class MainPage {
 
 
     public MainPage(WebDriver driver) {
-        this.driver = driver;
-    }
+      this.driver = driver; }
 
 
     public ExtendedSearchPage clickExtendedSearchButton() {
@@ -40,6 +39,8 @@ public class MainPage {
     }
 
     public void chooseCarBrand(String carBrand) {
+        Utils utils = new Utils(driver);
+        utils.waitTimeout(usedCarDropdown);
         driver.findElement(usedCarDropdown).click();
         log.info("Click on car brand dropdown");
         driver.findElement(usedCarInput).sendKeys(carBrand);
@@ -91,6 +92,8 @@ public class MainPage {
     }
 
     public void clickSearchButton() {
+        Utils utils = new Utils(driver);
+        utils.waitTimeout(searchButton);
         driver.findElement(searchButton).click();
         log.info("Click on search button was perfomed");
     }
