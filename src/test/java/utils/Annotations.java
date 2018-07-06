@@ -9,10 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,11 +23,14 @@ public class Annotations {
     protected static WebDriver driver;
 
     @BeforeMethod
-    public void setUp() {
+    @Parameters({"pageWaitTimeout", "url"})
+    public void setUp(long pageWaitTimeout, String url) {
         ConfigFileReader configFileReader = new ConfigFileReader();
-        driver = DriverProvider.getDriver();
-        driver.get(configFileReader.getApplicationUrl());
-        driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
+        System.setProperty("webdriver.chrome.driver", "browsers/chromedriver.exe");
+        driver = new ChromeDriver();
+       // driver = DriverProvider.getDriver();
+        driver.get(url);
+        driver.manage().timeouts().implicitlyWait(pageWaitTimeout, TimeUnit.SECONDS);
 
 
     }

@@ -1,0 +1,33 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Filters Test">
+    <parameter name="pageWaitTimeout" value="10"/>
+    <parameter name="url" value="https://auto.ria.com"/>
+    <test name="Invalid price">
+        <parameter name="text" value="asadasdsadsadasd"/>
+        <parameter name="text" value="0,1"/>
+        <parameter name="text" value="*=*?"/>
+        <parameter name="text" value=")"/>
+        <parameter name="text" value="ln(x)=logex."/>
+
+    </test>
+    <test name="Used cars filters">
+        <parameter name="carbrand" value="Bmw"/>
+        <parameter name="carBrand" value="Audi"/>
+        <parameter name="priceTo" value="1000000"/>
+        <parameter name="priceFrom" value="1"/>
+        <parameter name="carModel" value="Korando"/>
+        <parameter name="region" value="Киев"/>
+        <parameter name="yearFrom" value="2000"/>
+        <parameter name="yearTo" value="2018"/>
+        <classes>
+            <class name="tests.FiltersTest"/>
+        </classes>
+    </test>
+    <test name="Login">
+            <parameter name="phoneNubmer" value="0989878667"/>
+    <parameter name="password" value="iamonria"/>
+    <classes>
+            <class name="tests.LoginTest"/>
+    </classes>
+    </test>
+</suite>

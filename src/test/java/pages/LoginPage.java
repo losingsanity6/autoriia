@@ -10,13 +10,13 @@ public class LoginPage {
     private final WebDriver driver;
     private final By numberInput = By.id("emailloginform-email");
     private final By passwordInput = By.id("emailloginform-password");
-    private final By LoginBtn = By.xpath("//*[@id=\"login-form\"]/div[4]/button");
+    private final By LoginBtn = By.xpath("//*[@id=\"login-form\"]/div[@class='login-link']/button");
     private final By FacebookLocator = By.linkText("Войти через Facebook");
-    private final By noProfileMessage = By.xpath("/html/body/div/div[1]");
+    private final By noProfileMessage = By.xpath("/html/body/div/div[@class-'change-password']");
     private final By facebookEmail = By.id("email");
     private final By facebookPassword = By.id("pass");
     private final By facebookLoginButton = By.id("loginbutton");
-    private final By errorLogin = By.xpath("//*[@id=\"login-form\"]/div[1]/p");
+    private final By errorLogin = By.xpath("//*[@id=\"login-form\"]/div[@class='login-rows']/p");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;

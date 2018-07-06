@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 public class NewCarsPage {
 
-    private WebDriver driver;
+    private final WebDriver driver;
     private final By carLink = By.xpath("//*[@id=\"marks-block\"]/a[1]");
     private final By golfLink = By.linkText("Golf");
     private final By firstImage = By.xpath("//*[@class = 'photo-294x190']");

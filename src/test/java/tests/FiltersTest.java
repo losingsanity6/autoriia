@@ -3,6 +3,8 @@ package tests;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.ExtendedSearchPage;
@@ -14,9 +16,10 @@ import utils.Annotations;
 
 public class FiltersTest extends Annotations {
 
+
     private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
 
-    @Test(description = "Check work of new cars filter")
+  @Test(description = "Check work of new cars filter")
     public void checkWorkOfNewCarsFilter() {
         log.info("TC check of new Cars Filters started");
         MainPage mainPage = new MainPage(driver);
@@ -29,18 +32,16 @@ public class FiltersTest extends Annotations {
 
     }
 
-    @Test(description = "Check work of used cars filter") //TODO: add params
-    public void usedCarsFilterTest() {
+    @Test(description = "Check work of used cars filter")
+    @Parameters({"carBrand", "yearFrom", "yearTo", "priceTO", "carModel","region", "priceFrom"})//TODO: add params
+    public void usedCarsFilterTest(String carBrand,  String yearFrom, String yearTo, String carModel, String region, String priceFrom,String priceTo ) {
         log.info("TC Used cars filters started");
-        String yearFrom = "2000"; //TODO: move to annotation Test
-        String yearTo = "2018";
-        String priceTo = "19000";
         MainPage mainPage = new MainPage(driver);
-        mainPage.chooseCarBrand("Daewoo");
-        mainPage.clickModel("Korando");
-        mainPage.clickRegion("Киев");
+        mainPage.chooseCarBrand(carBrand);
+        mainPage.clickModel(carModel);
+        mainPage.clickRegion(region);
         mainPage.selectYearFrom(yearFrom, yearTo);
-        mainPage.enterPriceToPriceField("", priceTo);
+        mainPage.enterPriceToPriceField(priceFrom);
         mainPage.clickSearchButton();
         ResultPage resultPage = new ResultPage(driver);
         Assert.assertTrue(resultPage.getTextFromNoResultsMessage().contains("Объявлений не найдено"));//TODO:add errors
@@ -68,7 +69,7 @@ public class FiltersTest extends Annotations {
         String priceFrom = "1";
         String priceTo = "100000000000";
         MainPage mainPage = new MainPage(driver);
-        mainPage.enterPriceToPriceField(priceFrom, priceTo);
+        mainPage.enterPriceToPriceField("1");
         mainPage.clickSearchButton();
         ResultPage resultPage = new ResultPage(driver);
         Assert.assertEquals("1", resultPage.getTextFromPriceInputFrom(), "The price field does not contain parameter");
@@ -79,10 +80,11 @@ public class FiltersTest extends Annotations {
 
 
     @Test(description = "Invalid price to price input")
-    public void invalidDataForPriceField() {
+    @Parameters({"text"})
+    public void invalidDataForPriceField(@Optional("wqewe")String text){
         log.info("TC Invalid data for price field started");
         MainPage mainPage = new MainPage(driver);
-        mainPage.enterPriceToPriceField("gggggggg", "wqwqwqw");
+        mainPage.enterPriceToPriceField(text);
         mainPage.clickSearchButton();
         ResultPage resultPage = new ResultPage(driver);
         Assert.assertEquals("", resultPage.getTextFromPriceInputFrom(), "The price field does not contain the parameter");
@@ -90,7 +92,7 @@ public class FiltersTest extends Annotations {
 
     }
 
-    @Test(description = "Check opening links")
+   @Test(description = "Check opening links")
     public void checkPages() {
         log.info("TC check links started");
         MainPage mainPage = new MainPage(driver);

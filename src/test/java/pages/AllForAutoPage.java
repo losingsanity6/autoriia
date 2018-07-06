@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class AllForAutoPage {
-    private WebDriver driver;
+    private final WebDriver driver;
     private final By detailsForCar = By.linkText("Каталог авторазборок");
     private final By carBrand = By.id("select_category");
     private final By carModer = By.id("select_model");

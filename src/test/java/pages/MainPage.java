@@ -8,15 +8,15 @@ import org.openqa.selenium.support.ui.Select;
 
 public class MainPage {
     private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainPage.class);
-    private WebDriver driver;
+    private final WebDriver driver;
     private final By usedCarDropdown = By.id("brandTooltipBrandAutocomplete-brand");//TODO:private final
     private final By usedCarInput = By.id("brandTooltipBrandAutocompleteInput-brand");
     private final By newCarDropdown = By.name("marka_id");
-    private final By searchButton = By.xpath("//*[@id=\"mainSearchForm\"]/div[3]/button");//TODO: change div[3]
+    private final By searchButton = By.xpath("//*[@id='mainSearchForm']/div[@class='footer-form']/button");//TODO: change div[3]
     private final By priceFieldFrom = By.id("priceFrom");
     private final By priceFieldTo = By.id("priceTo");
-    private final By extendedSeachButton = By.xpath("//*[@id=\"mainSearchForm\"]/div[3]/a");
-    private final By newCarsRadioBtn = By.xpath("//*[@id=\"mainSearchForm\"]/div[1]/label[3]");
+    private final By extendedSeachButton = By.xpath("//*[@id='mainSearchForm']/div[@class='footer-form']/a");
+    private final By newCarsRadioBtn = By.xpath("//*[@id=\"mainSearchForm\"]/div[@class='nav']/label[@for='naRadioType']");
     private final By autocompletedMarkField = By.xpath("//*[@id=\"brandTooltipBrandAutocomplete-brand\"]/ul/li/a");
     private final By model = By.id("brandTooltipBrandAutocomplete-model");
     private final By modelInput = By.id("brandTooltipBrandAutocompleteInput-model");
@@ -104,12 +104,17 @@ public class MainPage {
     }
 
     @Step
-    public void enterPriceToPriceField(String priceFrom, String priceTo) {
+    public void enterPriceToPriceField(String param) {
 
-        driver.findElement(priceFieldFrom).sendKeys(priceFrom);
+
+        driver.findElement(priceFieldTo).sendKeys(param);
         log.info("Data to price field was inputted");
-        driver.findElement(priceFieldTo).sendKeys(priceTo);
+    }
+    @Step
+    public void enterPriceToPriceFieldFrom(){
+        driver.findElement(priceFieldFrom).sendKeys();
         log.info("Data to price field was inputted");
+
     }
 
     @Step

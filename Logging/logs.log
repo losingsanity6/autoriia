@@ -1821,3 +1821,794 @@ org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' alr
 2018-07-05 17:14:42 INFO  LoginPage:43 - Switched to login frame
 2018-07-05 17:14:45 INFO  Annotations:49 - Test has finished
 2018-07-05 17:31:56 INFO  FiltersTest:95 - TC check links started
+2018-07-06 12:14:15 INFO  FiltersTest:36 - TC Used cars filters started
+2018-07-06 12:14:15 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 12:14:16 INFO  MainPage:48 - Click on car brand dropdown
+2018-07-06 12:14:16 INFO  MainPage:50 - input data to car brand dropdown
+2018-07-06 12:14:16 INFO  MainPage:52 - car brand was chosen
+2018-07-06 12:14:16 INFO  MainPage:60 - Car model was chosen
+2018-07-06 12:14:16 INFO  MainPage:68 - Region was chosen
+2018-07-06 12:14:16 INFO  MainPage:74 - Year from dropdown was found
+2018-07-06 12:14:17 INFO  MainPage:76 - Year to dropdown was found
+2018-07-06 12:14:17 INFO  MainPage:78 - Year from was selected
+2018-07-06 12:14:17 INFO  MainPage:80 - Year to was selected
+2018-07-06 12:14:17 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 12:16:15 INFO  FiltersTest:36 - TC Used cars filters started
+2018-07-06 12:16:16 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 12:16:16 INFO  MainPage:48 - Click on car brand dropdown
+2018-07-06 12:16:16 INFO  MainPage:50 - input data to car brand dropdown
+2018-07-06 12:16:16 INFO  MainPage:52 - car brand was chosen
+2018-07-06 12:16:16 INFO  MainPage:60 - Car model was chosen
+2018-07-06 12:16:17 INFO  MainPage:68 - Region was chosen
+2018-07-06 12:16:17 INFO  MainPage:74 - Year from dropdown was found
+2018-07-06 12:16:17 INFO  MainPage:76 - Year to dropdown was found
+2018-07-06 12:16:17 INFO  MainPage:78 - Year from was selected
+2018-07-06 12:16:17 INFO  MainPage:80 - Year to was selected
+2018-07-06 12:16:17 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 12:18:10 INFO  FiltersTest:36 - TC Used cars filters started
+2018-07-06 12:18:11 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 12:18:11 INFO  MainPage:48 - Click on car brand dropdown
+2018-07-06 12:18:11 INFO  MainPage:50 - input data to car brand dropdown
+2018-07-06 12:18:11 INFO  MainPage:52 - car brand was chosen
+2018-07-06 12:18:12 INFO  MainPage:60 - Car model was chosen
+2018-07-06 12:18:12 INFO  MainPage:68 - Region was chosen
+2018-07-06 12:18:12 INFO  MainPage:74 - Year from dropdown was found
+2018-07-06 12:18:12 INFO  MainPage:76 - Year to dropdown was found
+2018-07-06 12:18:12 INFO  MainPage:78 - Year from was selected
+2018-07-06 12:18:12 INFO  MainPage:80 - Year to was selected
+2018-07-06 12:18:12 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 12:18:13 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 12:18:15 INFO  Annotations:51 - Test has finished
+2018-07-06 12:25:08 INFO  FiltersTest:36 - TC Used cars filters started
+2018-07-06 12:25:08 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 12:25:09 INFO  MainPage:48 - Click on car brand dropdown
+2018-07-06 12:25:09 INFO  MainPage:50 - input data to car brand dropdown
+2018-07-06 12:25:09 INFO  MainPage:52 - car brand was chosen
+2018-07-06 12:25:09 INFO  MainPage:60 - Car model was chosen
+2018-07-06 12:25:10 INFO  MainPage:68 - Region was chosen
+2018-07-06 12:25:10 INFO  MainPage:74 - Year from dropdown was found
+2018-07-06 12:25:10 INFO  MainPage:76 - Year to dropdown was found
+2018-07-06 12:25:10 INFO  MainPage:78 - Year from was selected
+2018-07-06 12:25:10 INFO  MainPage:80 - Year to was selected
+2018-07-06 12:25:10 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 12:25:10 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 12:25:10 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 12:32:29 INFO  FiltersTest:23 - TC check of new Cars Filters started
+2018-07-06 12:35:13 INFO  MainPage:123 - Click on login button was perfomed
+2018-07-06 12:35:34 INFO  LoginPage:28 - Data to e-mail field was inputted
+2018-07-06 12:35:34 INFO  LoginPage:30 - Data to password field was inputted
+2018-07-06 12:35:35 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 12:35:37 INFO  Annotations:51 - Test has finished
+2018-07-06 12:36:27 INFO  MainPage:123 - Click on login button was perfomed
+2018-07-06 12:36:48 INFO  LoginPage:28 - Data to e-mail field was inputted
+2018-07-06 12:36:48 INFO  LoginPage:30 - Data to password field was inputted
+2018-07-06 12:36:48 INFO  LoginPage:49 - Click on login button was perfomed
+2018-07-06 12:36:52 ERROR LoginTest:28 - Captcha appeared
+2018-07-06 12:39:22 INFO  FiltersTest:23 - TC check of new Cars Filters started
+2018-07-06 12:45:39 INFO  FiltersTest:23 - TC check of new Cars Filters started
+2018-07-06 12:46:00 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 12:46:03 INFO  Annotations:51 - Test has finished
+2018-07-06 12:55:28 INFO  FiltersTest:23 - TC check of new Cars Filters started
+2018-07-06 12:55:49 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 12:55:52 INFO  Annotations:51 - Test has finished
+2018-07-06 13:00:01 INFO  FiltersTest:23 - TC check of new Cars Filters started
+2018-07-06 13:00:22 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 13:00:24 INFO  Annotations:51 - Test has finished
+2018-07-06 13:03:14 INFO  FiltersTest:23 - TC check of new Cars Filters started
+2018-07-06 13:03:14 INFO  MainPage:87 - New cars radio button was clicked
+2018-07-06 14:02:55 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 14:02:57 INFO  Annotations:51 - Test has finished
+2018-07-06 14:04:36 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 14:04:38 INFO  Annotations:51 - Test has finished
+2018-07-06 14:07:20 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 14:07:23 INFO  Annotations:51 - Test has finished
+2018-07-06 14:32:31 INFO  FiltersTest:55 - TC checkboxes in extended search started
+2018-07-06 14:32:33 INFO  Utils:20 - Scroll to element
+2018-07-06 14:32:33 INFO  ExtendedSearchPage:32 - Click on Sedan checkbox was perfomed
+2018-07-06 14:32:54 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 14:32:56 INFO  Annotations:51 - Test has finished
+2018-07-06 14:34:56 INFO  FiltersTest:55 - TC checkboxes in extended search started
+2018-07-06 14:34:58 INFO  Utils:20 - Scroll to element
+2018-07-06 14:34:58 INFO  ExtendedSearchPage:32 - Click on Sedan checkbox was perfomed
+2018-07-06 15:11:32 INFO  FiltersTest:98 - TC check links started
+2018-07-06 15:11:35 INFO  MainPage:129 - Click on New Cars Link was perfomed
+2018-07-06 15:11:36 INFO  Utils:20 - Scroll to element
+2018-07-06 15:11:38 INFO  NewCarsPage:27 - Click on car link was perfomed
+2018-07-06 15:11:42 INFO  NewCarsPage:35 - Click on golf link on Volkswagen page was perfomed
+2018-07-06 15:11:46 INFO  NewCarsPage:42 - Click on first image on Golf page was perfomed
+2018-07-06 15:11:48 INFO  Annotations:51 - Test has finished
+2018-07-06 15:11:53 INFO  FiltersTest:23 - TC check of new Cars Filters started
+2018-07-06 15:11:53 INFO  MainPage:87 - New cars radio button was clicked
+2018-07-06 15:12:14 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 15:12:16 INFO  Annotations:51 - Test has finished
+2018-07-06 15:12:22 INFO  FiltersTest:55 - TC checkboxes in extended search started
+2018-07-06 15:12:24 INFO  Utils:20 - Scroll to element
+2018-07-06 15:12:24 INFO  ExtendedSearchPage:32 - Click on Sedan checkbox was perfomed
+2018-07-06 15:12:44 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 15:12:46 INFO  Annotations:51 - Test has finished
+2018-07-06 15:12:52 INFO  FiltersTest:86 - TC Invalid data for price field started
+2018-07-06 15:12:52 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 15:12:52 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 15:12:52 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 15:12:55 INFO  Utils:20 - Scroll to element
+2018-07-06 15:12:55 INFO  FiltersTest:92 - Assertation passed
+2018-07-06 15:12:58 INFO  Annotations:51 - Test has finished
+2018-07-06 15:13:03 INFO  FiltersTest:69 - TC price field started
+2018-07-06 15:13:03 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 15:13:03 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 15:13:03 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 15:13:07 INFO  Utils:20 - Scroll to element
+2018-07-06 15:13:07 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 15:13:09 INFO  Annotations:51 - Test has finished
+2018-07-06 15:13:15 INFO  FiltersTest:36 - TC Used cars filters started
+2018-07-06 15:13:15 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 15:13:15 INFO  MainPage:48 - Click on car brand dropdown
+2018-07-06 15:13:15 INFO  MainPage:50 - input data to car brand dropdown
+2018-07-06 15:13:15 INFO  MainPage:52 - car brand was chosen
+2018-07-06 15:13:15 INFO  MainPage:60 - Car model was chosen
+2018-07-06 15:13:16 INFO  MainPage:68 - Region was chosen
+2018-07-06 15:13:16 INFO  MainPage:74 - Year from dropdown was found
+2018-07-06 15:13:16 INFO  MainPage:76 - Year to dropdown was found
+2018-07-06 15:13:16 INFO  MainPage:78 - Year from was selected
+2018-07-06 15:13:16 INFO  MainPage:80 - Year to was selected
+2018-07-06 15:13:16 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 15:13:16 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 15:13:16 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 15:13:21 INFO  Annotations:51 - Test has finished
+2018-07-06 15:14:15 INFO  FiltersTest:98 - TC check links started
+2018-07-06 15:14:18 INFO  MainPage:129 - Click on New Cars Link was perfomed
+2018-07-06 15:14:18 INFO  Utils:20 - Scroll to element
+2018-07-06 15:14:20 INFO  NewCarsPage:27 - Click on car link was perfomed
+2018-07-06 15:14:20 INFO  NewCarsPage:35 - Click on golf link on Volkswagen page was perfomed
+2018-07-06 15:14:25 INFO  NewCarsPage:42 - Click on first image on Golf page was perfomed
+2018-07-06 15:14:27 INFO  Annotations:51 - Test has finished
+2018-07-06 15:14:33 INFO  FiltersTest:86 - TC Invalid data for price field started
+2018-07-06 15:14:33 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 15:14:33 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 15:14:33 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 15:14:37 INFO  Utils:20 - Scroll to element
+2018-07-06 15:14:37 INFO  FiltersTest:92 - Assertation passed
+2018-07-06 15:14:40 INFO  Annotations:51 - Test has finished
+2018-07-06 15:15:26 INFO  FiltersTest:98 - TC check links started
+2018-07-06 15:15:31 INFO  MainPage:129 - Click on New Cars Link was perfomed
+2018-07-06 15:15:32 INFO  Utils:20 - Scroll to element
+2018-07-06 15:15:36 INFO  NewCarsPage:27 - Click on car link was perfomed
+2018-07-06 15:15:37 INFO  NewCarsPage:35 - Click on golf link on Volkswagen page was perfomed
+2018-07-06 15:15:38 INFO  NewCarsPage:42 - Click on first image on Golf page was perfomed
+2018-07-06 15:15:38 INFO  Annotations:51 - Test has finished
+2018-07-06 15:15:44 INFO  FiltersTest:86 - TC Invalid data for price field started
+2018-07-06 15:15:44 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 15:15:44 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 15:15:44 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 15:15:47 INFO  Utils:20 - Scroll to element
+2018-07-06 15:15:47 INFO  FiltersTest:92 - Assertation passed
+2018-07-06 15:15:49 INFO  Annotations:51 - Test has finished
+2018-07-06 15:21:28 INFO  FiltersTest:98 - TC check links started
+2018-07-06 15:21:30 INFO  MainPage:129 - Click on New Cars Link was perfomed
+2018-07-06 15:21:31 INFO  Utils:20 - Scroll to element
+2018-07-06 15:21:33 INFO  NewCarsPage:27 - Click on car link was perfomed
+2018-07-06 15:21:34 INFO  NewCarsPage:35 - Click on golf link on Volkswagen page was perfomed
+2018-07-06 15:21:43 INFO  NewCarsPage:42 - Click on first image on Golf page was perfomed
+2018-07-06 15:21:44 INFO  Annotations:51 - Test has finished
+2018-07-06 15:21:54 INFO  FiltersTest:23 - TC check of new Cars Filters started
+2018-07-06 15:21:54 INFO  MainPage:87 - New cars radio button was clicked
+2018-07-06 15:22:15 ERROR Annotations:47 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 15:22:17 INFO  Annotations:51 - Test has finished
+2018-07-06 15:22:22 INFO  FiltersTest:55 - TC checkboxes in extended search started
+2018-07-06 15:22:24 INFO  Utils:20 - Scroll to element
+2018-07-06 15:22:24 INFO  ExtendedSearchPage:32 - Click on Sedan checkbox was perfomed
+2018-07-06 15:22:40 INFO  FiltersTest:23 - TC check of new Cars Filters started
+2018-07-06 15:24:09 INFO  FiltersTest:86 - TC Invalid data for price field started
+2018-07-06 15:24:10 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 15:24:10 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 15:24:10 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 15:24:14 INFO  Utils:20 - Scroll to element
+2018-07-06 15:24:14 INFO  FiltersTest:92 - Assertation passed
+2018-07-06 15:24:17 INFO  Annotations:51 - Test has finished
+2018-07-06 15:24:46 INFO  FiltersTest:86 - TC Invalid data for price field started
+2018-07-06 15:24:46 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 15:24:46 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 15:24:46 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 15:24:50 INFO  Utils:20 - Scroll to element
+2018-07-06 15:24:50 INFO  FiltersTest:92 - Assertation passed
+2018-07-06 15:24:52 INFO  Annotations:51 - Test has finished
+2018-07-06 15:36:46 INFO  FiltersTest:86 - TC Invalid data for price field started
+2018-07-06 15:36:46 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 15:36:47 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 15:36:47 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 15:36:51 INFO  Utils:20 - Scroll to element
+2018-07-06 15:36:51 INFO  FiltersTest:92 - Assertation passed
+2018-07-06 15:36:53 INFO  Annotations:51 - Test has finished
+2018-07-06 16:07:56 INFO  FiltersTest:87 - TC Invalid data for price field started
+2018-07-06 16:07:56 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 16:07:56 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 16:07:56 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 16:08:01 INFO  Utils:20 - Scroll to element
+2018-07-06 16:08:01 INFO  FiltersTest:93 - Assertation passed
+2018-07-06 16:08:03 INFO  Annotations:51 - Test has finished
+2018-07-06 16:33:09 INFO  FiltersTest:97 - TC check links started
+2018-07-06 16:33:16 INFO  MainPage:129 - Click on New Cars Link was perfomed
+2018-07-06 16:33:17 INFO  Utils:20 - Scroll to element
+2018-07-06 16:33:25 INFO  NewCarsPage:27 - Click on car link was perfomed
+2018-07-06 16:33:27 INFO  NewCarsPage:35 - Click on golf link on Volkswagen page was perfomed
+2018-07-06 16:33:32 INFO  NewCarsPage:42 - Click on first image on Golf page was perfomed
+2018-07-06 16:33:34 INFO  Annotations:49 - Test has finished
+2018-07-06 16:33:42 INFO  FiltersTest:24 - TC check of new Cars Filters started
+2018-07-06 16:33:42 INFO  MainPage:87 - New cars radio button was clicked
+2018-07-06 16:33:52 ERROR Annotations:45 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 16:33:54 INFO  Annotations:49 - Test has finished
+2018-07-06 16:34:00 INFO  FiltersTest:54 - TC checkboxes in extended search started
+2018-07-06 16:34:03 INFO  Utils:20 - Scroll to element
+2018-07-06 16:34:03 INFO  ExtendedSearchPage:32 - Click on Sedan checkbox was perfomed
+2018-07-06 16:34:13 ERROR Annotations:45 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 16:34:16 INFO  Annotations:49 - Test has finished
+2018-07-06 16:34:22 INFO  FiltersTest:85 - TC Invalid data for price field started
+2018-07-06 16:34:22 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 16:34:22 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 16:34:22 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 16:34:26 INFO  Utils:20 - Scroll to element
+2018-07-06 16:34:26 INFO  FiltersTest:91 - Assertation passed
+2018-07-06 16:34:28 INFO  Annotations:49 - Test has finished
+2018-07-06 16:34:33 INFO  FiltersTest:68 - TC price field started
+2018-07-06 16:34:33 INFO  MainPage:111 - Data to price field was inputted
+2018-07-06 16:34:33 INFO  Utils:26 - Wait for element to be visible
+2018-07-06 16:34:33 INFO  MainPage:103 - Click on search button was perfomed
+2018-07-06 16:34:37 INFO  Utils:20 - Scroll to element
+2018-07-06 16:34:37 ERROR Annotations:45 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 16:34:40 INFO  Annotations:49 - Test has finished
+2018-07-06 16:34:48 INFO  MainPage:123 - Click on login button was perfomed
+2018-07-06 16:34:58 INFO  LoginPage:28 - Data to e-mail field was inputted
+2018-07-06 16:34:58 INFO  LoginPage:30 - Data to password field was inputted
+2018-07-06 16:34:58 INFO  LoginPage:49 - Click on login button was perfomed
+2018-07-06 16:35:08 ERROR LoginTest:28 - Captcha appeared
+2018-07-06 16:35:09 ERROR Annotations:45 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 16:35:11 INFO  Annotations:49 - Test has finished
+2018-07-06 16:35:19 INFO  MainPage:123 - Click on login button was perfomed
+2018-07-06 16:35:29 INFO  LoginPage:43 - Switched to login frame
+2018-07-06 16:35:29 INFO  LoginPage:36 - Click on facebook login button was perfomed
+2018-07-06 16:35:32 INFO  LoginPage:67 - Data to e-mail field was inputted
+2018-07-06 16:35:32 INFO  LoginPage:69 - Data to password field was inputted
+2018-07-06 16:35:34 INFO  LoginPage:71 - Click on Facebook login button was perfomed
+2018-07-06 16:35:45 INFO  LoginPage:43 - Switched to login frame
+2018-07-06 16:35:45 ERROR Annotations:45 - Screenshot can not ber created
+org.apache.commons.io.FileExistsException: Destination 'screenshot\file.png' already exists
+	at org.apache.commons.io.FileUtils.moveFile(FileUtils.java:2986)
+	at utils.Annotations.close(Annotations.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2018-07-06 16:35:47 INFO  Annotations:49 - Test has finished
