@@ -16,17 +16,15 @@ public class MainPage {
     private final By priceFieldFrom = By.id("priceFrom");
     private final By priceFieldTo = By.id("priceTo");
     private final By extendedSeachButton = By.xpath("//*[@id='mainSearchForm']/div[@class='footer-form']/a");
-    private final By newCarsRadioBtn = By.xpath("//*[@id=\"mainSearchForm\"]/div[@class='nav']/label[@for='naRadioType']");
-    private final By autocompletedMarkField = By.xpath("//*[@id=\"brandTooltipBrandAutocomplete-brand\"]/ul/li/a");
+    private final By newCarsRadioBtn = By.xpath("//*[@id='mainSearchForm']/div[@class='nav']/label[@for='naRadioType']");
+    private final By autocompletedMarkField = By.xpath("//*[@id='brandTooltipBrandAutocomplete-brand']/ul/li/a");
     private final By model = By.id("brandTooltipBrandAutocomplete-model");
     private final By modelInput = By.id("brandTooltipBrandAutocompleteInput-model");
-    private final By modelAutocompleted = By.xpath("//*[@id=\"brandTooltipBrandAutocomplete-model\"]/ul/li/a");
+    private final By modelAutocompleted = By.xpath("//*[@id='brandTooltipBrandAutocomplete-model']/ul/li/a");
     private final By region = By.id("regionAutocompleteAutocomplete-1");
     private final By regionInput = By.id("regionAutocompleteAutocompleteInput-1");
-    private final By regionAutocomplete = By.xpath("//*[@id=\"regionAutocompleteAutocomplete-1\"]/ul/li/a");
+    private final By regionAutocomplete = By.xpath("//*[@id='regionAutocompleteAutocomplete-1']/ul/li/a");
     private final By loginLocator = By.linkText("Вход в кабинет");
-    private final By NewCarsLink = By.linkText("Новые авто");
-    private final By detailsForCar = By.linkText("Все для авто");
     // ExtendedSearchPage ExtendedSearchPage;
 
 
@@ -39,8 +37,10 @@ public class MainPage {
         driver.findElement(extendedSeachButton).click();
         return new ExtendedSearchPage(driver);
     }
+    public void clickOnElementByLinkText(String linktext){
+        driver.findElement(By.linkText(linktext)).click();
+    }
 
-    @Step
     public void chooseCarBrand(String carBrand) {
         Utils utils = new Utils(driver);
         utils.waitTimeout(usedCarDropdown);
@@ -52,15 +52,17 @@ public class MainPage {
         log.info("car brand was chosen");
     }
 
-    @Step
+
     public void clickModel(String modelInp) {
+        Utils utils = new Utils(driver);
         driver.findElement(model).click();
         driver.findElement(modelInput).sendKeys(modelInp);
+        utils.waitTimeout(modelAutocompleted);
         driver.findElement(modelAutocompleted).click();
         log.info("Car model was chosen");
     }
 
-    @Step
+
     public void clickRegion(String regionName) {
         driver.findElement(region).click();
         driver.findElement(regionInput).sendKeys(regionName);
@@ -80,22 +82,7 @@ public class MainPage {
         log.info("Year to was selected");
     }
 
-    @Step
-    public void selectCarNew() {
-        Utils utils = new Utils(driver);
-        driver.findElement(newCarsRadioBtn).click();
-        log.info("New cars radio button was clicked");
-        utils.waitTimeout(newCarDropdown);
-        log.info("Wait until element be visible");
-        driver.findElement(newCarDropdown).click();
-        log.info("Click on car brand dropdown was perfomed");
-        Select selectMarkCar = new Select(driver.findElement(newCarDropdown));
-        selectMarkCar.selectByIndex(6);
-        log.error("The car was not chosen");
 
-    }
-
-    @Step
     public void clickSearchButton() {
         Utils utils = new Utils(driver);
         utils.waitTimeout(searchButton);
@@ -103,37 +90,23 @@ public class MainPage {
         log.info("Click on search button was perfomed");
     }
 
-    @Step
-    public void enterPriceToPriceField(String param) {
 
-
-        driver.findElement(priceFieldTo).sendKeys(param);
+    public void enterPriceToPriceField(String priceTo, String priceFrom) {
+        driver.findElement(priceFieldFrom).sendKeys(priceTo);
+        log.info("Data to price field was inputted");
+        driver.findElement(priceFieldTo).sendKeys(priceFrom);
         log.info("Data to price field was inputted");
     }
-    @Step
-    public void enterPriceToPriceFieldFrom(){
-        driver.findElement(priceFieldFrom).sendKeys();
-        log.info("Data to price field was inputted");
 
-    }
 
-    @Step
+
+
     public void clickLoginButton() {
         driver.findElement(loginLocator).click();
         log.info("Click on login button was perfomed");
     }
 
-    @Step
-    public void clickNewCars() {
-        driver.findElement(NewCarsLink).click();
-        log.info("Click on New Cars Link was perfomed");
-
-    }
-
-    @Step
-    public void allForCarsDropDown() {
-        driver.findElement(detailsForCar).click();
 
 
-    }
+
 }

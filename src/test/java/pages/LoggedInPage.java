@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LoggedInPage {
     private final WebDriver driver;
-    private final By loggedInUserLocator = By.xpath("//*[@id=\"headerLinkToMyMenu\"]");
+    private final By loggedInUserLocator = By.xpath("//*[@id='headerLinkToMyMenu']");
 
     public LoggedInPage(WebDriver driver) {
         this.driver = driver;

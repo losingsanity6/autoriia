@@ -24,30 +24,34 @@ public class Annotations {
 
     @BeforeMethod
     @Parameters({"pageWaitTimeout", "url"})
-    public void setUp(long pageWaitTimeout, String url) {
-        ConfigFileReader configFileReader = new ConfigFileReader();
-        System.setProperty("webdriver.chrome.driver", "browsers/chromedriver.exe");
+    public void setUp() {
+        //ConfigFileReader configFileReader = new ConfigFileReader();
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/browsers/chromedriver.exe");
         driver = new ChromeDriver();
-       // driver = DriverProvider.getDriver();
-        driver.get(url);
-        driver.manage().timeouts().implicitlyWait(pageWaitTimeout, TimeUnit.SECONDS);
+        // driver = DriverProvider.getDriver();
+        driver.get("https://auto.ria.com");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
     }
 
     @AfterMethod
     public void close(Method method, ITestResult testResult) {
-        if (testResult.getStatus()==ITestResult.FAILURE){
-            File screenshot  = ( (TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            try {
-                FileUtils.moveFile(screenshot, new File("screenshot/file.png"));
-            } catch (IOException e) {
-                log.error("Screenshot can not ber created",e );
-            }
+        if (testResult.getStatus() == ITestResult.FAILURE) {
+            takeScreenshot(testResult);
         }
         driver.close();
         log.info("Test has finished");
     }
 
-
+    private void takeScreenshot(ITestResult testResult) {
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String pathname = "target/screenshots/" + testResult.getInstanceName() + "-" + testResult.getName() + ".png";
+        try {
+            FileUtils.moveFile(screenshot, new File(pathname));
+        } catch (IOException e) {
+            log.error("Screenshot cannot be created", e);
+        }
+    }
 }
+

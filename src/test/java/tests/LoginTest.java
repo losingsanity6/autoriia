@@ -14,16 +14,16 @@ public class LoginTest extends Annotations {
     private final Logger log = Logger.getLogger(LoginTest.class);
 
 
-    @Test
-    public void invalidLoginTest() {
+    @Test(dataProvider = "Login", dataProviderClass = data_provider.Data_Provider.class)
+    public void invalidLoginTest(String login, String password, String message) {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickLoginButton();
         driver.switchTo().frame("login_frame");
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.LoginInput("invalidPassword", "948594835-03-04930459430589458");
+        loginPage.LoginInput(password, login);
         loginPage.clickLoginButton();
         try {
-            Assert.assertTrue(loginPage.invalidPhoneMessage().contains("неверный мобильный номер телефона"), "The message does not contain that text");
+            Assert.assertTrue(loginPage.invalidPhoneMessage().contains(message), "The message does not contain that text");
         } catch (Exception e) {
            log.error("Captcha appeared");
            throw  e;
@@ -32,7 +32,7 @@ public class LoginTest extends Annotations {
     }
 
     @Test
-    public void loginViaFacebook() {
+    public void loginViaFacebook(String login, String password, String message) {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickLoginButton();
         LoginPage loginPage = new LoginPage(driver);
@@ -40,10 +40,10 @@ public class LoginTest extends Annotations {
         loginPage.loginViaFacebook();
         ArrayList<String> windowHandles = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(windowHandles.get(1));
-        loginPage.LoginFacebook("tanyalondon1@mail.ru", "donotusethispassword");
+        loginPage.LoginFacebook(login,password);
         driver.switchTo().window(windowHandles.get(0));
         loginPage.switchBetweenFrame();
-        Assert.assertTrue(loginPage.Message().contains("Не удалось"), " The message does not contain text");
+        Assert.assertTrue(loginPage.Message().contains(message), " The message does not contain text");
 
     }
 

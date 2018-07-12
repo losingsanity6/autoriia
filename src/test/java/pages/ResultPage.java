@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 
 public class ResultPage {
     private final WebDriver driver;
-    private final By h1 = By.xpath("//*[@id=\"headerPage\"]/h1/span[5]");
-    private final By dropdownCar = By.xpath("//*[@id=\"autoCmplt\"]/label");
+    private final By h1 = By.xpath("//*[@id='headerPage']/h1/span[5]");
+    private final By dropdownCar = By.xpath("//*[@id='autoCmplt']/label");
     private final By priceInputFrom = By.name("price.USD.gte");
     private final By priceInputTo = By.name("price.USD.lte");
     private final By noAdsMessage = By.id("emptyResultsNotFoundBlock");
