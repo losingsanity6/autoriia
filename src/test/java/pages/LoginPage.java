@@ -4,6 +4,9 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.log4testng.Logger;
+import utils.Utils;
+
+import java.util.ArrayList;
 
 public class LoginPage {
     private final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LoginPage.class);
@@ -18,29 +21,33 @@ public class LoginPage {
     private final By facebookLoginButton = By.id("loginbutton");
     private final By errorLogin = By.xpath("//form[@id='login-form']/div/p[@class=error login-link]");
 
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 
 
-    public void LoginInput(String password, String number) {
+    public LoginPage LoginInput(String password, String number) {
         driver.findElement(numberInput).sendKeys(number);
         log.info("Data to e-mail field was inputted");
         driver.findElement(passwordInput).sendKeys(password);
         log.info("Data to password field was inputted");
+        return this;
     }
 
 
-    public void loginViaFacebook() {
+    public LoginPage loginViaFacebook() {
         driver.findElement(FacebookLocator).click();
         log.info("Click on facebook login button was perfomed");
+        return this;
 
     }
 
 
-    public void switchBetweenFrame() {
+    public LoginPage switchBetweenFrame() {
         driver.switchTo().frame("login_frame");
         log.info("Switched to login frame");
+        return this;
     }
 
 
@@ -63,11 +70,16 @@ public class LoginPage {
 
 
     public void LoginFacebook(String email, String pass) {
+        Utils utils = new Utils(driver);
+        utils.switchBetweenWindows(1);
         driver.findElement(facebookEmail).sendKeys(email);
         log.info("Data to e-mail field was inputted");
         driver.findElement(facebookPassword).sendKeys(pass);
         log.info("Data to password field was inputted");
         driver.findElement(facebookLoginButton).click();
         log.info("Click on Facebook login button was perfomed");
+       utils.switchBetweenWindows(0);
+
     }
+
 }

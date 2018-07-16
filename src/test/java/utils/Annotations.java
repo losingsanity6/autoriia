@@ -29,22 +29,23 @@ public class Annotations {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/browsers/chromedriver.exe");
         driver = new ChromeDriver();
         // driver = DriverProvider.getDriver();
+        driver.manage().window().maximize();
         driver.get("https://auto.ria.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
     }
-//TODO:Method method, ITestResult testResult
-  //TODO   if (testResult.getStatus() == ITestResult.FAILURE) {
-     //TODO   takeScreenshot(testResult);
 
+    //TODO:Method method, ITestResult testResult
+    //TODO   if (testResult.getStatus() == ITestResult.FAILURE) {
+    //TODO   takeScreenshot(testResult);
     @AfterMethod
     public void close() {
         driver.close();
         log.info("Test has finished");
     }
 
-  /*  private void takeScreenshot(ITestResult testResult) {
+    private void takeScreenshot(ITestResult testResult) {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String pathname = "target/screenshots/" + testResult.getInstanceName() + "-" + testResult.getName() + ".png";
         try {
@@ -52,6 +53,6 @@ public class Annotations {
         } catch (IOException e) {
             log.error("Screenshot cannot be created", e);
         }
-    }*/
+    }
 }
 

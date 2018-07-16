@@ -2,6 +2,8 @@ package tests;
 
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ExtendedSearchPage;
@@ -30,58 +32,48 @@ public class FiltersTest extends Annotations {
     @Test(description = "Check work of used cars filter", dataProvider = "TesForUsedFilters", dataProviderClass = data_provider.Data_Provider.class)
     public void usedCarsFilterTest(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
         log.info("TC Used cars filters started");
-        MainPage mainPage = openMainPage();
-        mainPage.chooseCarBrand(carBrand);
-        mainPage.clickModel(carModel);
-        mainPage.clickRegion(region);
-        mainPage.selectYearFrom(yearFrom, yearTo);
-        mainPage.enterPriceToPriceField(priceFrom, priceTo);
-        mainPage.clickSearchButton();
+        MainPage mainPage = new MainPage(driver);
+        mainPage.chooseCarBrand(carBrand)
+                .clickModel(carModel)
+                .clickRegion(region)
+                .selectYearFrom(yearFrom, yearTo)
+                .enterPriceToPriceField(priceFrom, priceTo);
         ResultPage resultPage = mainPage.clickSearchButton();
         Assert.assertTrue(resultPage.getTextFromNoResultsMessage().contains(message), "The message does not contain defined text");
 
 
     }
 
-    @Test(description = "Check extended search", dataProvider = "checkboxes", dataProviderClass = data_provider.Data_Provider.class )
+    @Test(description = "Check extended search", dataProvider = "checkboxes", dataProviderClass = data_provider.Data_Provider.class)
     public void extendedSearchCheckBoxes(String carType, String country) {
         log.info("TC checkboxes in extended search started");
         MainPage mainPage = new MainPage(driver);
-        ExtendedSearchPage extendedSearchPage = mainPage.clickExtendedSearchButton();
-        extendedSearchPage.clickCheckboxes(carType);
-        extendedSearchPage.ckickOrigin(country);
-        extendedSearchPage.clickShowButton();
-        ResultPage resultPage = new ResultPage(driver);
+        ExtendedSearchPage extendedSearchPage = mainPage.clickExtendedSearchButton()
+                .clickCheckboxes(carType)
+                .ckickOrigin(country);
+        ResultPage resultPage = extendedSearchPage.clickShowButton();
         Assert.assertTrue(resultPage.getH1Text().contains(carType), "The header contains other text");
     }
 
+//TODO rewrite test for price field
 
     @Test(description = "Check work of price fields", dataProvider = "boundariesForPriceField", dataProviderClass = data_provider.Data_Provider.class)
-    public void priceFieldTestFromLowestToHighest(String priceFrom, String priceTo) {
+    public void priceFieldTest(String priceFrom, String priceTo, String resultTestForAssert) {
         log.info("TC price field started");
         MainPage mainPage = new MainPage(driver);
-        mainPage
-                .enterPriceToPriceField(priceFrom, priceTo);
-        mainPage.clickSearchButton();
-        ResultPage resultPage = new ResultPage(driver);
-        Assert.assertEquals(priceFrom, resultPage.getTextFromPriceInputFrom(), "The price field does not contain parameter");
-        log.info("Assertation passed");
-
-
-    }
-
-
-    @Test(description = "Invalid price to price input", dataProvider = "invalidDataForPriceField", dataProviderClass = data_provider.Data_Provider.class)
-    public void invalidDataForPriceField(String priceFrom, String priceTo) {
-        log.info("TC Invalid data for price field started");
-        MainPage mainPage = new MainPage(driver);
         mainPage.enterPriceToPriceField(priceFrom, priceTo);
-        mainPage.clickSearchButton();
-        ResultPage resultPage = new ResultPage(driver);
-        Assert.assertEquals("", resultPage.getTextFromPriceInputFrom(), "The price field does not contain the parameter");
+        ResultPage resultPage = mainPage.clickSearchButton();
+        Assert.assertEquals(resultTestForAssert, resultPage.getTextFromPriceInputFrom(), "The price field does not contain parameter");
         log.info("Assertation passed");
 
+
     }
+
+    @Test(description = "invalidPriceFieldTest", dataProvider = "invalidDataForPriceField", dataProviderClass = data_provider.Data_Provider.class)
+    public void invalidPriceFieldTest(String priceFrom, String priceTo, String resultTestForAssert) {
+        priceFieldTest(priceFrom, priceTo, resultTestForAssert);
+    }
+
 
     @Test(description = "Check opening links", dataProvider = "linkNames", dataProviderClass = data_provider.Data_Provider.class)
     public void checkPages(String firstPageLink, String linkOnSecondPage, String linkOnThirdPage) {

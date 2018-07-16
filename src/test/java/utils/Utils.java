@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+
 public class Utils {
     private WebDriver driver;
 private final Logger log = Logger.getLogger(Utils.class);
@@ -24,5 +26,9 @@ private final Logger log = Logger.getLogger(Utils.class);
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(element)));
         log.info("Wait for element to be visible");
+    }
+    public void switchBetweenWindows(int window){
+        ArrayList<String> windowHandles = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(windowHandles.get(window));
     }
 }

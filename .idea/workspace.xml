@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7ca8f84-0f7f-47dc-aac0-358e3b9ad8c7" name="Default" comment="DataProvider">
+    <list default="true" id="d7ca8f84-0f7f-47dc-aac0-358e3b9ad8c7" name="Default" comment="chain of invocation, working parameters for extened search, simplyfied test for price fields">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/allure.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResultPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/FiltersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FiltersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/Annotations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Annotations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +25,8 @@
       <file leaf-file-name="FiltersTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/FiltersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+            <state relative-caret-position="629">
+              <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,43 +34,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AllForAutoPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/AllForAutoPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Annotations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utils/Annotations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logs.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autoria/target/logs.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1751">
-              <caret line="103" column="30" selection-end-line="126" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Data_Provider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -87,11 +61,52 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1142#1143#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="31" column="60" lean-forward="true" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+            <state relative-caret-position="102">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data_Provider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -99,21 +114,12 @@
       <file leaf-file-name="ExtendedSearchPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+            <state relative-caret-position="179">
+              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
               <folding>
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -169,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/ResultPageObject.java" />
         <option value="$PROJECT_DIR$/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/pages/MainPageObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/aop.xml.fxml" />
         <option value="$PROJECT_DIR$/configs/configuration.properties" />
         <option value="$PROJECT_DIR$/src/test/java/utils/PageObject.java" />
@@ -184,15 +189,16 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/LoggedInPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/allure.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/ResultPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Annotations.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/FiltersTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
       </list>
     </option>
   </component>
@@ -305,8 +311,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.FiltersTest.extendedSearchCheckBoxes">
+  <component name="RunManager" selected="TestNG.LoginTest.loginViaFacebook">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -356,7 +362,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FiltersTest.checkPages" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FiltersTest.extendedSearchCheckBoxes" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -369,7 +375,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.FiltersTest" />
-      <option name="METHOD_NAME" value="checkPages" />
+      <option name="METHOD_NAME" value="extendedSearchCheckBoxes" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -385,7 +391,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="FiltersTest.extendedSearchCheckBoxes" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FiltersTest.invalidPriceFieldTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -398,7 +404,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.FiltersTest" />
-      <option name="METHOD_NAME" value="extendedSearchCheckBoxes" />
+      <option name="METHOD_NAME" value="invalidPriceFieldTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -525,18 +531,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.FiltersTest.usedCarsFilterTest" />
-      <item itemvalue="TestNG.FiltersTest.checkPages" />
       <item itemvalue="TestNG.FiltersTest.priceFieldTestFromLowestToHighest" />
-      <item itemvalue="TestNG.LoginTest.loginViaFacebook" />
       <item itemvalue="TestNG.FiltersTest.extendedSearchCheckBoxes" />
+      <item itemvalue="TestNG.FiltersTest.invalidPriceFieldTest" />
+      <item itemvalue="TestNG.LoginTest.loginViaFacebook" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FiltersTest.extendedSearchCheckBoxes" />
-        <item itemvalue="TestNG.FiltersTest.usedCarsFilterTest" />
         <item itemvalue="TestNG.LoginTest.loginViaFacebook" />
+        <item itemvalue="TestNG.FiltersTest.invalidPriceFieldTest" />
+        <item itemvalue="TestNG.FiltersTest.usedCarsFilterTest" />
+        <item itemvalue="TestNG.FiltersTest.extendedSearchCheckBoxes" />
         <item itemvalue="TestNG.FiltersTest.priceFieldTestFromLowestToHighest" />
-        <item itemvalue="TestNG.FiltersTest.checkPages" />
       </list>
     </recent_temporary>
   </component>
@@ -656,39 +662,46 @@
       <option name="project" value="LOCAL" />
       <updated>1531401449752</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="DataProvider">
+      <created>1531732051835</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1531732051835</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 15h 54m 55s.xml">
+    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.16 at 16h 02m 20s.xml">
       <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 16h 01m 38s.xml">
+    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.16 at 16h 05m 06s.xml">
       <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 16h 02m 15s.xml">
+    <history-entry file="FiltersTest_priceFieldTestFromLowestToHighest - 2018.07.16 at 16h 41m 30s.xml">
+      <configuration name="FiltersTest.priceFieldTestFromLowestToHighest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="FiltersTest_priceFieldTestFromLowestToHighest - 2018.07.16 at 16h 43m 14s.xml">
+      <configuration name="FiltersTest.priceFieldTestFromLowestToHighest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.16 at 16h 45m 45s.xml">
       <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 16h 03m 44s.xml">
-      <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
+    <history-entry file="FiltersTest_usedCarsFilterTest - 2018.07.16 at 16h 54m 00s.xml">
+      <configuration name="FiltersTest.usedCarsFilterTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 16h 05m 12s.xml">
-      <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
+    <history-entry file="FiltersTest_invalidPriceFieldTest - 2018.07.16 at 17h 02m 11s.xml">
+      <configuration name="FiltersTest.invalidPriceFieldTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 16h 06m 07s.xml">
-      <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
+    <history-entry file="LoginTest_loginViaFacebook - 2018.07.16 at 17h 21m 33s.xml">
+      <configuration name="LoginTest.loginViaFacebook" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 16h 08m 46s.xml">
-      <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
+    <history-entry file="LoginTest_loginViaFacebook - 2018.07.16 at 17h 23m 34s.xml">
+      <configuration name="LoginTest.loginViaFacebook" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 16h 20m 47s.xml">
-      <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 16h 37m 25s.xml">
-      <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.13 at 16h 43m 37s.xml">
-      <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
+    <history-entry file="LoginTest_loginViaFacebook - 2018.07.16 at 17h 25m 33s.xml">
+      <configuration name="LoginTest.loginViaFacebook" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -712,18 +725,18 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5122108" side_tool="true" weight="0.32384825" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.90938306" weight="0.25609756" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" weight="0.32933104" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.90938306" weight="0.25609756" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49848714" weight="0.22764228" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14652957" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1503856" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398374" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.8143631" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -746,11 +759,12 @@
     <MESSAGE value="Modified Annotation(DriverProvider)" />
     <MESSAGE value="testng.xml" />
     <MESSAGE value="DataProvider" />
-    <option name="LAST_COMMIT_MESSAGE" value="DataProvider" />
+    <MESSAGE value="chain of invocation, working parameters for extened search, simplyfied test for price fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="chain of invocation, working parameters for extened search, simplyfied test for price fields" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="75" />
+      <option name="time" value="96" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -763,9 +777,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/PageObject.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties" />
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/bullet_point.png" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/collapseall.gif" />
     <entry file="file://$PROJECT_DIR$/target/allure-results/43554080-4e5e-4c1b-b5d6-b6ecea09f207-container.json" />
     <entry file="file://$PROJECT_DIR$/target/allure-results/33987377-f729-4275-9790-5d9957ee62a5-container.json" />
@@ -799,24 +810,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/allure-report/app.js" />
     <entry file="file://$PROJECT_DIR$/screenshots/tests.FiltersTest-checkWorkOfNewCarsFilter.png" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/DriverProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="89" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screenshots/tests.LoginTest-invalidLoginTest.png" />
     <entry file="file://$PROJECT_DIR$/screenshots/tests.LoginTest-loginViaFacebook.png" />
     <entry file="file://$PROJECT_DIR$/screenshots/tests.FiltersTest-usedCarsFilterTest.png" />
     <entry file="file://$PROJECT_DIR$/screenshots/tests.FiltersTest-priceFieldTestFromLowestToHighest.png" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/AllForAutoPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logging/logs.log" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -863,13 +860,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="1751">
+          <caret line="103" column="30" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/DriverProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="89" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoria/target/logs.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Annotations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/AllForAutoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/FiltersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -880,69 +943,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/autoria/target/logs.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="103" column="30" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+        <state relative-caret-position="102">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Annotations.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/FiltersTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+        <state relative-caret-position="133">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        <state relative-caret-position="179">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
           <folding>
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        <state relative-caret-position="298">
+          <caret line="31" column="60" lean-forward="true" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
         </state>
       </provider>
     </entry>
