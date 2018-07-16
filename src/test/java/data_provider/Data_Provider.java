@@ -46,16 +46,25 @@ public class Data_Provider {
 
         };
     }
+
     @DataProvider(name = "FacebookLogin")
-    public static  Object[][] facebookLogin(){
+    public static Object[][] facebookLogin() {
         return new Object[][]{
                 {"tanyalondon1@mail.ru", "donotusethispassword", "Не удалось"},
         };
     }
+
     @DataProvider(name = "linkNames")
-    public static Object[][] linkNames(){
+    public static Object[][] linkNames() {
         return new Object[][]{
                 {"Новые авто", "Volkswagen", "Golf"}
+        };
+    }
+
+    @DataProvider(name = "checkboxes")
+    public static Object[][] checkBox() {
+        return new Object[][]{
+                {"Седан", "Англия"},
         };
     }
 }

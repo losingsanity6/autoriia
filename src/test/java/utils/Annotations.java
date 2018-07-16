@@ -34,17 +34,17 @@ public class Annotations {
 
 
     }
+//TODO:Method method, ITestResult testResult
+  //TODO   if (testResult.getStatus() == ITestResult.FAILURE) {
+     //TODO   takeScreenshot(testResult);
 
     @AfterMethod
-    public void close(Method method, ITestResult testResult) {
-        if (testResult.getStatus() == ITestResult.FAILURE) {
-            takeScreenshot(testResult);
-        }
+    public void close() {
         driver.close();
         log.info("Test has finished");
     }
 
-    private void takeScreenshot(ITestResult testResult) {
+  /*  private void takeScreenshot(ITestResult testResult) {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String pathname = "target/screenshots/" + testResult.getInstanceName() + "-" + testResult.getName() + ".png";
         try {
@@ -52,6 +52,6 @@ public class Annotations {
         } catch (IOException e) {
             log.error("Screenshot cannot be created", e);
         }
-    }
+    }*/
 }
 

@@ -31,7 +31,7 @@ public class LoginTest extends Annotations {
 
     }
 
-    @Test
+    @Test(dataProvider = "FacebookLogin", dataProviderClass = data_provider.Data_Provider.class )
     public void loginViaFacebook(String login, String password, String message) {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickLoginButton();

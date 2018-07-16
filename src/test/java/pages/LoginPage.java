@@ -16,7 +16,7 @@ public class LoginPage {
     private final By facebookEmail = By.id("email");
     private final By facebookPassword = By.id("pass");
     private final By facebookLoginButton = By.id("loginbutton");
-    private final By errorLogin = By.xpath("//*[@id='login-form']/div[1]/p");
+    private final By errorLogin = By.xpath("//form[@id='login-form']/div/p[@class=error login-link]");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
