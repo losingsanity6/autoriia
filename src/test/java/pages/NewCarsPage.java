@@ -9,20 +9,23 @@ import org.openqa.selenium.WebDriver;
 public class NewCarsPage {
 
     private final WebDriver driver;
-    private final By carLink = By.xpath("//*[@id='marks-block']/a[1]");
-    private final By golfLink = By.linkText("Golf");
-    private final By firstImage = By.xpath("//*[@class = 'photo-294x190']");
-
+    private final By firstImage = By.xpath("//*[@class='gallery-ticket-item']/a[contains(@href, 'vii-pokolenie-restajling-khetchbek')]");
+    private final By newCarLink = By.xpath("//*[@id='marks-block']/a[@title='Volkswagen']");
     private final Logger log = Logger.getLogger(NewCarsPage.class);
 
     public NewCarsPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void clickOnCarfindElementByLink(String linkText){
+    public void clickOnCarfindElementByLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
-
+    public void clickOnCar(){
+        driver.findElement(newCarLink).click();
+    }
+public void findElementByPartialLinkText(String carBrand){
+        driver.findElement(By.partialLinkText(carBrand)).click();
+}
 
     public String clickFirstImage() {
         driver.findElement(firstImage).click();

@@ -3,8 +3,17 @@ package data_provider;
 import org.testng.annotations.DataProvider;
 
 public class Data_Provider {
-    @DataProvider(name = "TesForUsedFilters")
+    @DataProvider(name = "NewCarsFilters")
     public static Object[][] usedFiters() {
+        return new Object[][]{
+                {"Volkswagen", "Beetle", "Винница", "2010", "2018", "1", "10 0000", "К сожалению мы не смогли найти предложений подходящих Вашему запросу"},
+                {"Audi", "A2", "Винница", "2010", "2018", "", "9999999999", "К сожалению мы не смогли найти предложений подходящих Вашему запросу"},
+
+        };
+    }
+
+    @DataProvider(name = "TesForUsedFilters")
+    public static Object[][] newCars() {
         return new Object[][]{
                 {"Daewoo", "Musso", "Киев", "2000", "2007", "1", "10 0000", "Объявлений не найдено"},
                 {"Audi", "A2", "Винница", "1985", "2005", "", "9999999999", "Объявлений не найдено"},
@@ -17,13 +26,13 @@ public class Data_Provider {
         return new Object[][]{
                 {"awerrtre", "text", ""},
                 {"******", "********", ""},
-                {"@!`", "@!`)",""},
-                {"log2(8) = 3", "ln 1.3",""},
-                {"e0.262364", "e0.262364",""},
-                {" 100.8704", "100.9878677",""},
-                {"&?&?", "&?&?",""},
-                {"----", "------",""},
-                {"%100", "$100",""},
+                {"@!`", "@!`)", ""},
+                {"log2(8) = 3", "ln 1.3", ""},
+                {"e0.262364", "e0.262364", ""},
+                {" 100.8704", "100.9878677", ""},
+                {"&?&?", "&?&?", ""},
+                {"----", "------", ""},
+                {"%100", "$100", ""},
         };
     }
 
@@ -32,7 +41,7 @@ public class Data_Provider {
         return new Object[][]{
                 {"1", "1", "1"},
                 {"1000000000000000", "100000000000000", "1000000000000000"},
-                {"5555555555", "55555555555","5555555555"},
+                {"5555555555", "55555555555", "5555555555"},
                 {"0,01", "0,01", "1"},
                 {"1000000000000000000001", "10000000000000000001", "1000000000000000000001"},
 
@@ -64,8 +73,15 @@ public class Data_Provider {
     @DataProvider(name = "checkboxes")
     public static Object[][] checkBox() {
         return new Object[][]{
-                {"Седан","Англия"},
+                {"Седан", "Англия"},
                 {"Универсал", "Англия"}
+        };
+    }
+
+    @DataProvider(name = "Detailsforautopage")
+    public static Object[][] detailsForAuto() {
+        return new Object[][]{
+                {"Каталог авторазборок"}
         };
     }
 }

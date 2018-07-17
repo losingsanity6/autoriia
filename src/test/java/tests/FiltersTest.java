@@ -2,18 +2,11 @@ package tests;
 
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.ExtendedSearchPage;
-import pages.MainPage;
-import pages.NewCarsPage;
-import pages.ResultPage;
+import pages.*;
 import utils.Annotations;
 import utils.Utils;
-
-import java.util.concurrent.TimeUnit;
 
 
 public class FiltersTest extends Annotations {
@@ -26,8 +19,19 @@ public class FiltersTest extends Annotations {
         return new MainPage(driver);
     }
 
-    //TODO: rewrite test for new cars filter
 
+    @Test(dataProvider = "NewCarsFilters", dataProviderClass = data_provider.Data_Provider.class)
+    public void newCarsFilerTest(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
+        MainPage mainPage = new MainPage(driver);
+        mainPage.clickOnradioButton()
+                .chooseCarBrand(carBrand)
+                .clickModel(carModel)
+                .selectRegion(region)
+                .selectYearFrom(yearFrom, yearTo)
+                .enterPriceToPriceField(priceFrom, priceTo);
+        ResultPage resultPage = mainPage.clickSearchButton();
+        Assert.assertTrue(resultPage.getTextFromNewCarsMessge().contains(message), "The message does not contain defined text");
+    }
 
     @Test(description = "Check work of used cars filter", dataProvider = "TesForUsedFilters", dataProviderClass = data_provider.Data_Provider.class)
     public void usedCarsFilterTest(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
@@ -55,7 +59,6 @@ public class FiltersTest extends Annotations {
         Assert.assertTrue(resultPage.getH1Text().contains(carType), "The header contains other text");
     }
 
-//TODO rewrite test for price field
 
     @Test(description = "Check work of price fields", dataProvider = "boundariesForPriceField", dataProviderClass = data_provider.Data_Provider.class)
     public void priceFieldTest(String priceFrom, String priceTo, String resultTestForAssert) {
@@ -80,29 +83,28 @@ public class FiltersTest extends Annotations {
         Utils utils = new Utils(driver);
         log.info("TC check links started");
         MainPage mainPage = new MainPage(driver);
-        mainPage.clickOnElementByLinkText(firstPageLink);
-        NewCarsPage newCarsPage = new NewCarsPage(driver);
-        newCarsPage.clickOnCarfindElementByLink(linkOnSecondPage);
+        NewCarsPage newCarsPage = mainPage.clickOnElementByLinkText(firstPageLink);
+        newCarsPage.findElementByPartialLinkText(linkOnSecondPage);
         String secondPageUrl = driver.getCurrentUrl();
         newCarsPage.clickOnCarfindElementByLink(linkOnThirdPage);
         String thirdPage = driver.getCurrentUrl();
         newCarsPage.clickFirstImage();
-        Assert.assertTrue(secondPageUrl.contains(linkOnSecondPage) && thirdPage.contains(linkOnThirdPage));
+        Assert.assertTrue(secondPageUrl.contains(linkOnSecondPage.toLowerCase()) && thirdPage.contains(linkOnThirdPage.toLowerCase()));
 
 
     }
 
-   /* @Test
-    public void detailsAuto() {
+   @Test(dataProvider = "Detailsforautopage", dataProviderClass = data_provider.Data_Provider.class)
+    public void detailsAuto(String linkText) {
         MainPage mainPageObject = new MainPage(driver);
-        mainPageObject.allForCarsDropDown();
+        mainPageObject.clickAllForAutoDropdown();
         AllForAutoPage allForAutoPage = new AllForAutoPage(driver);
-        allForAutoPage.clickDetailsForCars();
+        allForAutoPage.clickOnLinkText(linkText);
         allForAutoPage.selectCarBrand();
         allForAutoPage.selectCarModel();
         allForAutoPage.clickSearchButton();
 
-    }*/
+    }
 
 }
 

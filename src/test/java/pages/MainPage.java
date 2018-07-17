@@ -1,10 +1,14 @@
 package pages;
 
 import io.qameta.allure.Step;
+import org.openqa.selenium.WebElement;
+import org.testng.reporters.jq.Main;
 import utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class MainPage {
     private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainPage.class);
@@ -16,7 +20,7 @@ public class MainPage {
     private final By priceFieldFrom = By.id("priceFrom");
     private final By priceFieldTo = By.id("priceTo");
     private final By extendedSeachButton = By.xpath("//*[@id='mainSearchForm']/div[@class='footer-form']/a");
-    private final By newCarsRadioBtn = By.xpath("//*[@id='mainSearchForm']/div[@class='nav']/label[@for='naRadioType']");
+    private final By radioButton = By.xpath("//*[@id='mainSearchForm']/div[1]/label[3]");
     private final By autocompletedMarkField = By.xpath("//*[@id='brandTooltipBrandAutocomplete-brand']/ul/li/a");
     private final By model = By.id("brandTooltipBrandAutocomplete-model");
     private final By modelInput = By.id("brandTooltipBrandAutocompleteInput-model");
@@ -25,7 +29,8 @@ public class MainPage {
     private final By regionInput = By.id("regionAutocompleteAutocompleteInput-1");
     private final By regionAutocomplete = By.xpath("//*[@id='regionAutocompleteAutocomplete-1']/ul/li/a");
     private final By loginLocator = By.linkText("Вход в кабинет");
-    // ExtendedSearchPage ExtendedSearchPage;
+    private final By regionLocator = By.xpath("//*[@id='regionCenters']");
+    private final By allForAutoDropdown = By.id("AllForAuto");
 
 
     public MainPage(WebDriver driver) {
@@ -39,9 +44,10 @@ public class MainPage {
         return new ExtendedSearchPage(driver);
     }
 
-    public void clickOnElementByLinkText(String linktext) {
+    public NewCarsPage clickOnElementByLinkText(String linktext) {
         driver.findElement(By.linkText(linktext))
                 .click();
+        return new NewCarsPage(driver);
     }
 
     public MainPage chooseCarBrand(String carBrand) {
@@ -76,6 +82,11 @@ public class MainPage {
         driver.findElement(regionInput).sendKeys(regionName);
         driver.findElement(regionAutocomplete).click();
         log.info("Region was chosen");
+        return this;
+    }
+    public MainPage selectRegion(String regionName){
+        Select region = new Select(driver.findElement(regionLocator));
+        region.selectByVisibleText(regionName);
         return this;
     }
 
@@ -119,5 +130,14 @@ public class MainPage {
         return new LoginPage(driver);
     }
 
+    public MainPage clickOnradioButton() {
+        driver.findElement(radioButton).click();
+        return this;
+
+    }
+public MainPage clickAllForAutoDropdown(){
+        driver.findElement(allForAutoDropdown).click();
+        return this;
+}
 
 }

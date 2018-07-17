@@ -51,7 +51,7 @@ public class ExtendedSearchPage {
         return this;
     }
 
-    public void methodToChooseCheckboxes(By element, String textToCompare) {
+    public ExtendedSearchPage methodToChooseCheckboxes(By element, String textToCompare) {
 
 
         List<WebElement> Checkbox = driver.findElements(element);
@@ -61,8 +61,9 @@ public class ExtendedSearchPage {
             System.out.println(textFromElement);
             if (textFromElement.equals(textToCompare)) {
                 El.click();
-                return;
+                break;
             }
         }
+        return this;
     }
 }
