@@ -19,19 +19,18 @@ import java.util.concurrent.TimeUnit;
 public class Annotations {
     private Logger log = Logger.getLogger(Annotations.class);
 
-    //private final static org.slf4j.Logger log = LoggerFactory.getLogger(FiltersTest.class);
+
     protected static WebDriver driver;
 
     @BeforeMethod
-    @Parameters({"pageWaitTimeout", "url"})
-    public void setUp() {
-        //ConfigFileReader configFileReader = new ConfigFileReader();
+    public void setUp(String baseUrl, long pageWaitTimeout) {
+        ConfigFileReader configFileReader = new ConfigFileReader();
         System.setProperty("webdriver.chrome.driver", "src/main/resources/browsers/chromedriver.exe");
         driver = new ChromeDriver();
         // driver = DriverProvider.getDriver();
         driver.manage().window().maximize();
-        driver.get("https://auto.ria.com");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get(configFileReader.getApplicationUrl());
+        driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
 
 
     }

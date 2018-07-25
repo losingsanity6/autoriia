@@ -1,21 +1,18 @@
 package tests;
 
+import data_provider.DataProviderSpecific;
 import org.apache.log4j.Logger;
-import pages.LoggedInPage;
 import pages.LoginPage;
 import pages.MainPage;
-import sun.rmi.runtime.Log;
 import utils.Annotations;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
 
 public class LoginTest extends Annotations {
     private final Logger log = Logger.getLogger(LoginTest.class);
 
 
-    @Test(dataProvider = "Login", dataProviderClass = data_provider.Data_Provider.class)
+    @Test(dataProvider = "Login", dataProviderClass = DataProviderSpecific.class)
     public void invalidLoginTest(String login, String password, String message) {
         MainPage mainPage = new MainPage(driver);
         LoginPage loginPage = mainPage.clickLoginButton();
@@ -31,7 +28,7 @@ public class LoginTest extends Annotations {
 
     }
 
-    @Test(dataProvider = "FacebookLogin", dataProviderClass = data_provider.Data_Provider.class)
+    @Test(dataProvider = "FacebookLogin", dataProviderClass = DataProviderSpecific.class)
     public void loginViaFacebook(String login, String password, String message) {
         MainPage mainPage = new MainPage(driver);
         LoginPage loginPage = mainPage.clickLoginButton();

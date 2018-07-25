@@ -2,7 +2,7 @@ package data_provider;
 
 import org.testng.annotations.DataProvider;
 
-public class Data_Provider {
+public class DataProviderSpecific {
     @DataProvider(name = "NewCarsFilters")
     public static Object[][] usedFiters() {
         return new Object[][]{
@@ -12,7 +12,7 @@ public class Data_Provider {
         };
     }
 
-    @DataProvider(name = "TesForUsedFilters")
+    @org.testng.annotations.DataProvider(name = "TesForUsedFilters")
     public static Object[][] newCars() {
         return new Object[][]{
                 {"Daewoo", "Musso", "Киев", "2000", "2007", "1", "10 0000", "Объявлений не найдено"},
@@ -21,7 +21,7 @@ public class Data_Provider {
         };
     }
 
-    @DataProvider(name = "invalidDataForPriceField")
+    @org.testng.annotations.DataProvider(name = "invalidDataForPriceField")
     public static Object[][] invalidPrice() {
         return new Object[][]{
                 {"awerrtre", "text", ""},
@@ -36,7 +36,7 @@ public class Data_Provider {
         };
     }
 
-    @DataProvider(name = "boundariesForPriceField")
+    @org.testng.annotations.DataProvider(name = "boundariesForPriceField")
     public static Object[][] boundarieForPriceField() {
         return new Object[][]{
                 {"1", "1", "1"},
@@ -48,7 +48,7 @@ public class Data_Provider {
         };
     }
 
-    @DataProvider(name = "Login")
+    @org.testng.annotations.DataProvider(name = "Login")
     public static Object[][] loginInvalidUser() {
         return new Object[][]{{"invalidLogin", "invalidPassword", "неверный мобильный номер телефона"},
                 {"09320930293091-3901-", "ksjfkjdskf", "неверный мобильный номер телефона"},
@@ -78,7 +78,7 @@ public class Data_Provider {
         };
     }
 
-    @DataProvider(name = "Detailsforautopage")
+    @org.testng.annotations.DataProvider(name = "Detailsforautopage")
     public static Object[][] detailsForAuto() {
         return new Object[][]{
                 {"Каталог авторазборок"}

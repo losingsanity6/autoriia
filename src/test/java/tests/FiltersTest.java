@@ -1,6 +1,7 @@
 package tests;
 
 
+import data_provider.DataProviderSpecific;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,16 +15,13 @@ public class FiltersTest extends Annotations {
 
     private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
 
-    protected MainPage openMainPage() {
-        driver.get("https://auto.ria.com");
-        return new MainPage(driver);
-    }
 
 
-    @Test(dataProvider = "NewCarsFilters", dataProviderClass = data_provider.Data_Provider.class)
+    @Test(dataProvider = "NewCarsFilters", dataProviderClass = DataProviderSpecific.class)
     public void newCarsFilerTest(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
         MainPage mainPage = new MainPage(driver);
-        mainPage.clickOnradioButton()
+        mainPage
+                .clickOnradioButton()
                 .chooseCarBrand(carBrand)
                 .clickModel(carModel)
                 .selectRegion(region)
@@ -33,11 +31,12 @@ public class FiltersTest extends Annotations {
         Assert.assertTrue(resultPage.getTextFromNewCarsMessge().contains(message), "The message does not contain defined text");
     }
 
-    @Test(description = "Check work of used cars filter", dataProvider = "TesForUsedFilters", dataProviderClass = data_provider.Data_Provider.class)
+    @Test(description = "Check work of used cars filter", dataProvider = "TesForUsedFilters", dataProviderClass = DataProviderSpecific.class)
     public void usedCarsFilterTest(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
         log.info("TC Used cars filters started");
         MainPage mainPage = new MainPage(driver);
-        mainPage.chooseCarBrand(carBrand)
+        mainPage
+                .chooseCarBrand(carBrand)
                 .clickModel(carModel)
                 .clickRegion(region)
                 .selectYearFrom(yearFrom, yearTo)
@@ -48,10 +47,11 @@ public class FiltersTest extends Annotations {
 
     }
 
-    @Test(description = "Check extended search", dataProvider = "checkboxes", dataProviderClass = data_provider.Data_Provider.class)
+    @Test(description = "Check extended search", dataProvider = "checkboxes", dataProviderClass = DataProviderSpecific.class)
     public void extendedSearchCheckBoxes(String carType, String country) {
-        log.info("TC checkboxes in extended search started");
         MainPage mainPage = new MainPage(driver);
+        log.info("TC checkboxes in extended search started");
+        //   MainPage mainPage = new MainPage(driver);
         ExtendedSearchPage extendedSearchPage = mainPage.clickExtendedSearchButton()
                 .clickCheckboxes(carType)
                 .ckickOrigin(country);
@@ -60,11 +60,12 @@ public class FiltersTest extends Annotations {
     }
 
 
-    @Test(description = "Check work of price fields", dataProvider = "boundariesForPriceField", dataProviderClass = data_provider.Data_Provider.class)
+    @Test(description = "Check work of price fields", dataProvider = "boundariesForPriceField", dataProviderClass = DataProviderSpecific.class)
     public void priceFieldTest(String priceFrom, String priceTo, String resultTestForAssert) {
         log.info("TC price field started");
         MainPage mainPage = new MainPage(driver);
-        mainPage.enterPriceToPriceField(priceFrom, priceTo);
+        mainPage
+                .enterPriceToPriceField(priceFrom, priceTo);
         ResultPage resultPage = mainPage.clickSearchButton();
         Assert.assertEquals(resultTestForAssert, resultPage.getTextFromPriceInputFrom(), "The price field does not contain parameter");
         log.info("Assertation passed");
@@ -72,37 +73,41 @@ public class FiltersTest extends Annotations {
 
     }
 
-    @Test(description = "invalidPriceFieldTest", dataProvider = "invalidDataForPriceField", dataProviderClass = data_provider.Data_Provider.class)
+    @Test(description = "invalidPriceFieldTest", dataProvider = "invalidDataForPriceField", dataProviderClass = DataProviderSpecific.class)
     public void invalidPriceFieldTest(String priceFrom, String priceTo, String resultTestForAssert) {
         priceFieldTest(priceFrom, priceTo, resultTestForAssert);
     }
 
 
-    @Test(description = "Check opening links", dataProvider = "linkNames", dataProviderClass = data_provider.Data_Provider.class)
+    @Test(description = "Check opening links", dataProvider = "linkNames", dataProviderClass = DataProviderSpecific.class)
     public void checkPages(String firstPageLink, String linkOnSecondPage, String linkOnThirdPage) {
         Utils utils = new Utils(driver);
         log.info("TC check links started");
         MainPage mainPage = new MainPage(driver);
         NewCarsPage newCarsPage = mainPage.clickOnElementByLinkText(firstPageLink);
-        newCarsPage.findElementByPartialLinkText(linkOnSecondPage);
+        newCarsPage
+                .clickElementByPartialLinkText(linkOnSecondPage);
         String secondPageUrl = driver.getCurrentUrl();
-        newCarsPage.clickOnCarfindElementByLink(linkOnThirdPage);
+        newCarsPage
+                .clickOnCarfindElementByLink(linkOnThirdPage);
         String thirdPage = driver.getCurrentUrl();
-        newCarsPage.clickFirstImage();
+        newCarsPage
+                .clickFirstImage();
         Assert.assertTrue(secondPageUrl.contains(linkOnSecondPage.toLowerCase()) && thirdPage.contains(linkOnThirdPage.toLowerCase()));
 
 
     }
 
-   @Test(dataProvider = "Detailsforautopage", dataProviderClass = data_provider.Data_Provider.class)
+    @Test(dataProvider = "Detailsforautopage", dataProviderClass = DataProviderSpecific.class)
     public void detailsAuto(String linkText) {
-        MainPage mainPageObject = new MainPage(driver);
-        mainPageObject.clickAllForAutoDropdown();
+        MainPage mainPage = new MainPage(driver);
+        mainPage.clickAllForAutoDropdown();
         AllForAutoPage allForAutoPage = new AllForAutoPage(driver);
-        allForAutoPage.clickOnLinkText(linkText);
-        allForAutoPage.selectCarBrand();
-        allForAutoPage.selectCarModel();
-        allForAutoPage.clickSearchButton();
+        allForAutoPage
+                .clickOnLinkText(linkText)
+                .selectCarBrand(linkText);
+                //.selectCarModel(linkText)
+              //  .clickSearchButton();
 
     }
 

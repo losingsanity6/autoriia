@@ -17,8 +17,7 @@ public class ExtendedSearchPage {
 
     private final By carCheckbox = By.xpath("//*[@id='bodies']/ul/li[@class='item-checkbox']/label/span[@class='name']");
     private final By originCheckbox = By.xpath("//*[@class='result-section mhide']//ul/li[@class='rubric']/label");
-    private final By originContainer = By.xpath("//*[@id='originContainer']");
-    private final By showButton = By.xpath("//*[@id='results']/div/a[1]");
+    private final By showButton = By.xpath("//*[@id='results']/div/a[@class='button large indent_fes']");
 
     private final Logger log = Logger.getLogger(ExtendedSearchPage.class);
     Utils utils = new Utils(driver);

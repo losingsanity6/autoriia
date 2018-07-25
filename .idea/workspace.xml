@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7ca8f84-0f7f-47dc-aac0-358e3b9ad8c7" name="Default" comment="">
+    <list default="true" id="d7ca8f84-0f7f-47dc-aac0-358e3b9ad8c7" name="Default" comment="primitive API test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data_provider/DataProviderSpecific.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/AllForAutoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AllForAutoPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/NewCarsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/NewCarsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResultPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/FiltersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FiltersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Annotations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Annotations.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +27,8 @@
       <file leaf-file-name="FiltersTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/FiltersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-765">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="114">
+              <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,59 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllForAutoPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/AllForAutoPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggedInPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoggedInPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/ResultPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Data_Provider.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+            <state relative-caret-position="527">
+              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -93,26 +48,70 @@
       <file leaf-file-name="NewCarsPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/NewCarsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
+            <state relative-caret-position="187">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#881#882#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExtendedSearchPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java">
+      <file leaf-file-name="configuration.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Annotations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Annotations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DriverProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/DriverProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestAPI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/TestAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +120,8 @@
       <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2193">
-              <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+            <state relative-caret-position="850">
+              <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -151,8 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/ResultPageObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ExtendedSearchPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoginPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestSuit.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoginTest.java" />
@@ -183,25 +180,27 @@
         <option value="$PROJECT_DIR$/src/test/java/utils/PageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/DriverProvider.java" />
         <option value="$PROJECT_DIR$/testng.xml.fxml" />
-        <option value="$PROJECT_DIR$/src/test/java/data_provider/DataProvider.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/data_provider/ConfigFileReader.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LoggedInPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/allure.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/utils/Annotations.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/NewCarsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/ResultPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/ResultPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/FiltersTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/AllForAutoPage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/utils/Annotations.java" />
+        <option value="$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java" />
+        <option value="$PROJECT_DIR$/src/test/java/data_provider/DataProvider.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/NewCarsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/data_provider/DataProviderSpecific.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/TestAPI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/FiltersTest.java" />
       </list>
     </option>
   </component>
@@ -223,6 +222,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,24 +299,13 @@
             </path>
             <path>
               <item name="auto.ria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autoria" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="auto.ria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autoria" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,7 +335,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.FiltersTest.detailsAuto">
+  <component name="RunManager" selected="TestNG.TestAPI.bodyTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -365,7 +355,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FiltersTest.checkPages" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAPI" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -377,8 +367,37 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FiltersTest" />
-      <option name="METHOD_NAME" value="checkPages" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="TestAPI.ResponseCode" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="auto.ria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
+      <option name="METHOD_NAME" value="ResponseCode" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -394,7 +413,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="FiltersTest.detailsAuto" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAPI.bodyTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -406,8 +425,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FiltersTest" />
-      <option name="METHOD_NAME" value="detailsAuto" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
+      <option name="METHOD_NAME" value="bodyTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -423,7 +442,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="FiltersTest.extendedSearchCheckBoxes" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAPI.responseCode" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -435,8 +454,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FiltersTest" />
-      <option name="METHOD_NAME" value="extendedSearchCheckBoxes" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
+      <option name="METHOD_NAME" value="responseCode" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -452,7 +471,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="FiltersTest.newCarsFilerTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAPI.responseCode1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -464,37 +483,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FiltersTest" />
-      <option name="METHOD_NAME" value="newCarsFilerTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="FiltersTest.usedCarsFilterTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="auto.ria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FiltersTest" />
-      <option name="METHOD_NAME" value="usedCarsFilterTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
+      <option name="METHOD_NAME" value="responseCode1" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -533,19 +523,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.FiltersTest.usedCarsFilterTest" />
-      <item itemvalue="TestNG.FiltersTest.checkPages" />
-      <item itemvalue="TestNG.FiltersTest.newCarsFilerTest" />
-      <item itemvalue="TestNG.FiltersTest.extendedSearchCheckBoxes" />
-      <item itemvalue="TestNG.FiltersTest.detailsAuto" />
+      <item itemvalue="TestNG.TestAPI.ResponseCode" />
+      <item itemvalue="TestNG.TestAPI.responseCode" />
+      <item itemvalue="TestNG.TestAPI.responseCode1" />
+      <item itemvalue="TestNG.TestAPI.bodyTest" />
+      <item itemvalue="TestNG.TestAPI" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FiltersTest.detailsAuto" />
-        <item itemvalue="TestNG.FiltersTest.newCarsFilerTest" />
-        <item itemvalue="TestNG.FiltersTest.extendedSearchCheckBoxes" />
-        <item itemvalue="TestNG.FiltersTest.usedCarsFilterTest" />
-        <item itemvalue="TestNG.FiltersTest.checkPages" />
+        <item itemvalue="TestNG.TestAPI.bodyTest" />
+        <item itemvalue="TestNG.TestAPI" />
+        <item itemvalue="TestNG.TestAPI.responseCode1" />
+        <item itemvalue="TestNG.TestAPI.responseCode" />
+        <item itemvalue="TestNG.TestAPI.ResponseCode" />
       </list>
     </recent_temporary>
   </component>
@@ -679,39 +669,46 @@
       <option name="project" value="LOCAL" />
       <updated>1531752104246</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="new cars filters test">
+      <created>1531830060867</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1531830060867</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FiltersTest_newCarsFilerTest - 2018.07.17 at 13h 42m 09s.xml">
-      <configuration name="FiltersTest.newCarsFilerTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 17m 53s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_usedCarsFilterTest - 2018.07.17 at 13h 44m 23s.xml">
-      <configuration name="FiltersTest.usedCarsFilterTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 40m 37s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_newCarsFilerTest - 2018.07.17 at 13h 48m 18s.xml">
-      <configuration name="FiltersTest.newCarsFilerTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 41m 16s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_extendedSearchCheckBoxes - 2018.07.17 at 13h 50m 40s.xml">
-      <configuration name="FiltersTest.extendedSearchCheckBoxes" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 41m 53s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_newCarsFilerTest - 2018.07.17 at 13h 55m 01s.xml">
-      <configuration name="FiltersTest.newCarsFilerTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 42m 13s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_detailsAuto - 2018.07.17 at 14h 55m 07s.xml">
-      <configuration name="FiltersTest.detailsAuto" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 45m 16s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_detailsAuto - 2018.07.17 at 15h 01m 49s.xml">
-      <configuration name="FiltersTest.detailsAuto" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 45m 32s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_detailsAuto - 2018.07.17 at 15h 02m 34s.xml">
-      <configuration name="FiltersTest.detailsAuto" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 49m 00s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_detailsAuto - 2018.07.17 at 15h 04m 02s.xml">
-      <configuration name="FiltersTest.detailsAuto" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 50m 18s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersTest_detailsAuto - 2018.07.17 at 15h 06m 30s.xml">
-      <configuration name="FiltersTest.detailsAuto" configurationId="TestNG" />
+    <history-entry file="TestAPI_bodyTest - 2018.07.25 at 17h 51m 13s.xml">
+      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -725,10 +722,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292683" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4877892" weight="0.32384825" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4877892" visible="true" weight="0.32384825" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -739,7 +737,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49848714" weight="0.22764228" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27956298" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2911311" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -769,11 +767,13 @@
     <MESSAGE value="testng.xml" />
     <MESSAGE value="DataProvider" />
     <MESSAGE value="chain of invocation, working parameters for extened search, simplyfied test for price fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="chain of invocation, working parameters for extened search, simplyfied test for price fields" />
+    <MESSAGE value="new cars filters test" />
+    <MESSAGE value="primitive API test" />
+    <option name="LAST_COMMIT_MESSAGE" value="primitive API test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="98" />
+      <option name="time" value="107" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -786,7 +786,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/collapseall.gif" />
     <entry file="file://$PROJECT_DIR$/target/allure-results/43554080-4e5e-4c1b-b5d6-b6ecea09f207-container.json" />
     <entry file="file://$PROJECT_DIR$/target/allure-results/33987377-f729-4275-9790-5d9957ee62a5-container.json" />
     <entry file="file://$PROJECT_DIR$/target/allure-results/92468c7d-a3ae-4458-9998-c8ec12c655c6-container.json" />
@@ -824,15 +823,7 @@
     <entry file="file://$PROJECT_DIR$/screenshots/tests.FiltersTest-usedCarsFilterTest.png" />
     <entry file="file://$PROJECT_DIR$/screenshots/tests.FiltersTest-priceFieldTestFromLowestToHighest.png" />
     <entry file="file://$PROJECT_DIR$/Logging/logs.log" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/DataProvider.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/DataProviderSpecific.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/ConfigFileReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -852,13 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="103" column="30" selection-end-line="126" />
         </state>
       </provider>
     </entry>
@@ -883,8 +867,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoggedInPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/AllForAutoPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="121" selection-start-line="10" selection-start-column="121" selection-end-line="10" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/autoria/target/logs.log">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ResultPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/DataProviderSpecific.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -895,101 +932,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/DriverProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="89" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="89" />
+        <state relative-caret-position="119">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/configuration.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/Annotations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
+        <state relative-caret-position="238">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ResultPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TestAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="281">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/NewCarsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
+        <state relative-caret-position="187">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoggedInPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ExtendedSearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-          <folding>
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/AllForAutoPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/FiltersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="114">
+          <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/data_provider/Data_Provider.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="83" column="38" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+        <state relative-caret-position="527">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
         </state>
       </provider>
     </entry>

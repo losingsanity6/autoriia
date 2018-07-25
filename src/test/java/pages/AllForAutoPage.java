@@ -8,7 +8,7 @@ public class AllForAutoPage {
     private final WebDriver driver;
     private final By carBrandLocator = By.id("select_category");
     private final By carModer = By.id("select_model");
-    private final By searchButton = By.xpath("//*[@id='search_form']/div/div/div[3]/button");
+    private final By searchButton = By.xpath("//*[@id='search_form']/div/div/div[@class='footbar-search__main']/button");
 
     public AllForAutoPage(WebDriver driver) {
         this.driver = driver;
