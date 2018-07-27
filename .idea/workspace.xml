@@ -16,20 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            <state relative-caret-position="270">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -37,10 +28,12 @@
       <file leaf-file-name="TestAPI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/TestAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="334">
+              <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,7 +42,7 @@
       <file leaf-file-name="NativeMethodAccessorImpl.class" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="323">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
@@ -58,7 +51,7 @@
       <file leaf-file-name="Method.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/reflect/Method.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="7429">
               <caret line="497" selection-start-line="497" selection-end-line="497" />
             </state>
           </provider>
@@ -67,7 +60,7 @@
       <file leaf-file-name="DelegatingMethodAccessorImpl.class" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="204">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
@@ -76,7 +69,7 @@
       <file leaf-file-name="Invoker.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="17">
               <caret line="803" selection-start-line="803" selection-end-line="803" />
             </state>
           </provider>
@@ -85,7 +78,7 @@
       <file leaf-file-name="TestMethodWorker.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestMethodWorker.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="1122">
               <caret line="83" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
@@ -94,7 +87,7 @@
       <file leaf-file-name="TestRunner.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/TestRunner.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="4743">
               <caret line="357" selection-start-line="357" selection-end-line="357" />
             </state>
           </provider>
@@ -103,7 +96,7 @@
       <file leaf-file-name="SuiteRunner.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunner.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="4981">
               <caret line="343" selection-start-line="343" selection-end-line="343" />
             </state>
           </provider>
@@ -125,6 +118,7 @@
       <find>test</find>
       <find>log</find>
       <find>err</find>
+      <find>http</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,8 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/LoginPageObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestSuit.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/NewCarsPAge.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/MainPageLinks.java" />
@@ -182,7 +174,9 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/NewCarsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/data_provider/DataProviderSpecific.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/FiltersTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/HtttpClientTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/HttpClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/TestAPI.java" />
       </list>
     </option>
@@ -206,8 +200,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,6 +281,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestAPI.headerTest">
+  <component name="RunManager" selected="TestNG.TestAPI.httpClientBody">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -338,7 +332,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestAPI" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HttpClient.statusCode" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -350,37 +344,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="TestAPI.bodyTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="auto.ria" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
-      <option name="METHOD_NAME" value="bodyTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.HttpClient" />
+      <option name="METHOD_NAME" value="statusCode" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -396,7 +361,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestAPI.headerTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAPI.doGetRequest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -409,7 +374,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
-      <option name="METHOD_NAME" value="headerTest" />
+      <option name="METHOD_NAME" value="doGetRequest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -425,7 +390,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestAPI.responseCode" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAPI.hasItemsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -438,7 +403,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
-      <option name="METHOD_NAME" value="responseCode" />
+      <option name="METHOD_NAME" value="hasItemsTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -454,7 +419,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestAPI.responseCode1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAPI.httpClien" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="auto.ria" />
       <extension name="coverage">
         <pattern>
@@ -467,7 +432,36 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
-      <option name="METHOD_NAME" value="responseCode1" />
+      <option name="METHOD_NAME" value="httpClien" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="TestAPI.httpClientBody" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="auto.ria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestAPI" />
+      <option name="METHOD_NAME" value="httpClientBody" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -506,19 +500,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.TestAPI.responseCode" />
-      <item itemvalue="TestNG.TestAPI.responseCode1" />
-      <item itemvalue="TestNG.TestAPI.bodyTest" />
-      <item itemvalue="TestNG.TestAPI" />
-      <item itemvalue="TestNG.TestAPI.headerTest" />
+      <item itemvalue="TestNG.HttpClient.statusCode" />
+      <item itemvalue="TestNG.TestAPI.hasItemsTest" />
+      <item itemvalue="TestNG.TestAPI.doGetRequest" />
+      <item itemvalue="TestNG.TestAPI.httpClien" />
+      <item itemvalue="TestNG.TestAPI.httpClientBody" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestAPI.headerTest" />
-        <item itemvalue="TestNG.TestAPI.bodyTest" />
-        <item itemvalue="TestNG.TestAPI" />
-        <item itemvalue="TestNG.TestAPI.responseCode1" />
-        <item itemvalue="TestNG.TestAPI.responseCode" />
+        <item itemvalue="TestNG.TestAPI.httpClientBody" />
+        <item itemvalue="TestNG.TestAPI.httpClien" />
+        <item itemvalue="TestNG.TestAPI.doGetRequest" />
+        <item itemvalue="TestNG.TestAPI.hasItemsTest" />
+        <item itemvalue="TestNG.HttpClient.statusCode" />
       </list>
     </recent_temporary>
   </component>
@@ -666,39 +660,46 @@
       <option name="project" value="LOCAL" />
       <updated>1532530435696</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Api tests">
+      <created>1532615087681</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1532615087681</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 16h 46m 16s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_hasItemsTest - 2018.07.27 at 15h 52m 50s.xml">
+      <configuration name="TestAPI.hasItemsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 16h 47m 15s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_hasItemsTest - 2018.07.27 at 15h 55m 18s.xml">
+      <configuration name="TestAPI.hasItemsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 17h 00m 28s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_hasItemsTest - 2018.07.27 at 15h 56m 52s.xml">
+      <configuration name="TestAPI.hasItemsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 17h 07m 34s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_doGetRequest - 2018.07.27 at 16h 05m 03s.xml">
+      <configuration name="TestAPI.doGetRequest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 17h 08m 25s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_doGetRequest - 2018.07.27 at 16h 16m 39s.xml">
+      <configuration name="TestAPI.doGetRequest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 17h 11m 02s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_doGetRequest - 2018.07.27 at 16h 25m 19s.xml">
+      <configuration name="TestAPI.doGetRequest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 17h 11m 15s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_doGetRequest - 2018.07.27 at 16h 26m 54s.xml">
+      <configuration name="TestAPI.doGetRequest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 17h 15m 04s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_httpClien - 2018.07.27 at 16h 44m 28s.xml">
+      <configuration name="TestAPI.httpClien" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 17h 15m 29s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_httpClientBody - 2018.07.27 at 16h 48m 19s.xml">
+      <configuration name="TestAPI.httpClientBody" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAPI_bodyTest - 2018.07.26 at 17h 16m 59s.xml">
-      <configuration name="TestAPI.bodyTest" configurationId="TestNG" />
+    <history-entry file="TestAPI_httpClientBody - 2018.07.27 at 16h 48m 51s.xml">
+      <configuration name="TestAPI.httpClientBody" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -723,11 +724,11 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5122108" side_tool="true" weight="0.32384825" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" weight="0.3292683" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.90938306" visible="true" weight="0.25609756" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.90938306" visible="true" weight="0.25609756" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49848714" weight="0.22764228" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29498714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29884318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -759,11 +760,12 @@
     <MESSAGE value="chain of invocation, working parameters for extened search, simplyfied test for price fields" />
     <MESSAGE value="new cars filters test" />
     <MESSAGE value="primitive API test" />
-    <option name="LAST_COMMIT_MESSAGE" value="primitive API test" />
+    <MESSAGE value="Api tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="116" />
+      <option name="time" value="119" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -776,10 +778,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/autoria.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/passed.png" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/index.html" />
@@ -952,66 +950,90 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
+        <state relative-caret-position="323">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="7429">
           <caret line="497" selection-start-line="497" selection-end-line="497" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
+        <state relative-caret-position="204">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="803" selection-start-line="803" selection-end-line="803" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestMethodWorker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="1122">
           <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/TestRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
+        <state relative-caret-position="4743">
           <caret line="357" selection-start-line="357" selection-end-line="357" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
+        <state relative-caret-position="4981">
           <caret line="343" selection-start-line="343" selection-end-line="343" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/HtttpClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="270">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="803" selection-start-line="803" selection-end-line="803" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/HttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/TestAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="334">
+          <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
           </folding>
         </state>
       </provider>
