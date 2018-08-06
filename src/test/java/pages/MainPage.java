@@ -4,10 +4,10 @@ import utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import static utils.DriverProvider.driver;
 
 public class MainPage {
     private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainPage.class);
-    private final WebDriver driver;
     private final By usedCarDropdown = By.id("brandTooltipBrandAutocomplete-brand");
     private final By usedCarInput = By.id("brandTooltipBrandAutocompleteInput-brand");
     private final By newCarDropdown = By.name("marka_id");
@@ -28,9 +28,8 @@ public class MainPage {
     private final By allForAutoDropdown = By.id("AllForAuto");
 
 
-    public MainPage(WebDriver driver) {
-        this.driver = driver;
-    }
+
+
 
 
     public ExtendedSearchPage clickExtendedSearchButton() {
@@ -46,7 +45,7 @@ public class MainPage {
     }
 
     public MainPage chooseCarBrand(String carBrand) {
-        Utils utils = new Utils(driver);
+        Utils utils = new Utils();
         utils.waitTimeout(usedCarDropdown);
         driver.findElement(usedCarDropdown).click();
         log.info("Click on car brand dropdown");
@@ -59,7 +58,7 @@ public class MainPage {
 
 
     public MainPage clickModel(String modelInp) {
-        Utils utils = new Utils(driver);
+        Utils utils = new Utils();
         driver.findElement(model)
                 .click();
         driver.findElement(modelInput)
@@ -101,7 +100,7 @@ public class MainPage {
 
 
     public ResultPage clickSearchButton() {
-        Utils utils = new Utils(driver);
+        Utils utils = new Utils();
         utils.waitTimeout(searchButton);
         driver.findElement(searchButton)
                 .click();
@@ -122,7 +121,7 @@ public class MainPage {
     public LoginPage clickLoginButton() {
         driver.findElement(loginLocator).click();
         log.info("Click on login button was perfomed");
-        return new LoginPage(driver);
+        return new LoginPage();
     }
 
     public MainPage clickOnradioButton() {

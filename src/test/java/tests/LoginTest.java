@@ -14,7 +14,7 @@ public class LoginTest extends Annotations {
 
     @Test(dataProvider = "Login", dataProviderClass = DataProviderSpecific.class)
     public void invalidLoginTest(String login, String password, String message) {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         LoginPage loginPage = mainPage.clickLoginButton();
         loginPage.switchBetweenFrame()
                 .LoginInput(password, login)
@@ -30,7 +30,7 @@ public class LoginTest extends Annotations {
 
     @Test(dataProvider = "FacebookLogin", dataProviderClass = DataProviderSpecific.class)
     public void loginViaFacebook(String login, String password, String message) {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         LoginPage loginPage = mainPage.clickLoginButton();
         loginPage.switchBetweenFrame()
                 .loginViaFacebook();

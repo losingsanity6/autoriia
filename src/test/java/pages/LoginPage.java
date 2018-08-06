@@ -5,12 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.log4testng.Logger;
 import utils.Utils;
+import static utils.DriverProvider.driver;
 
 import java.util.ArrayList;
 
 public class LoginPage {
     private final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LoginPage.class);
-    private final WebDriver driver;
     private final By numberInput = By.id("emailloginform-email");
     private final By passwordInput = By.id("emailloginform-password");
     private final By LoginBtn = By.xpath("//*[@id='login-form']/div[@class='login-link']/button");
@@ -22,9 +22,7 @@ public class LoginPage {
     private final By errorLogin = By.xpath("//form[@id='login-form']/div/p[@class=error login-link]");
 
 
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-    }
+
 
 
     public LoginPage LoginInput(String password, String number) {
@@ -70,7 +68,7 @@ public class LoginPage {
 
 
     public void LoginFacebook(String email, String pass) {
-        Utils utils = new Utils(driver);
+        Utils utils = new Utils();
         utils.switchBetweenWindows(1);
         driver.findElement(facebookEmail).sendKeys(email);
         log.info("Data to e-mail field was inputted");

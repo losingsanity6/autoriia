@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import pages.*;
 import utils.Annotations;
 import utils.Utils;
+import static utils.DriverProvider.driver;
 
 
 public class FiltersTest extends Annotations {
@@ -19,7 +20,7 @@ public class FiltersTest extends Annotations {
 
     @Test(dataProvider = "NewCarsFilters", dataProviderClass = DataProviderSpecific.class)
     public void newCarsFilerTest(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         mainPage
                 .clickOnradioButton()
                 .chooseCarBrand(carBrand)
@@ -34,7 +35,7 @@ public class FiltersTest extends Annotations {
     @Test(description = "Check work of used cars filter", dataProvider = "TesForUsedFilters", dataProviderClass = DataProviderSpecific.class)
     public void usedCarsFilterTest(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
         log.info("TC Used cars filters started");
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         mainPage
                 .chooseCarBrand(carBrand)
                 .clickModel(carModel)
@@ -49,7 +50,7 @@ public class FiltersTest extends Annotations {
 
     @Test(description = "Check extended search", dataProvider = "checkboxes", dataProviderClass = DataProviderSpecific.class)
     public void extendedSearchCheckBoxes(String carType, String country) {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         log.info("TC checkboxes in extended search started");
         //   MainPage mainPage = new MainPage(driver);
         ExtendedSearchPage extendedSearchPage = mainPage.clickExtendedSearchButton()
@@ -63,7 +64,7 @@ public class FiltersTest extends Annotations {
     @Test(description = "Check work of price fields", dataProvider = "boundariesForPriceField", dataProviderClass = DataProviderSpecific.class)
     public void priceFieldTest(String priceFrom, String priceTo, String resultTestForAssert) {
         log.info("TC price field started");
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         mainPage
                 .enterPriceToPriceField(priceFrom, priceTo);
         ResultPage resultPage = mainPage.clickSearchButton();
@@ -81,9 +82,9 @@ public class FiltersTest extends Annotations {
 
     @Test(description = "Check opening links", dataProvider = "linkNames", dataProviderClass = DataProviderSpecific.class)
     public void checkPages(String firstPageLink, String linkOnSecondPage, String linkOnThirdPage) {
-        Utils utils = new Utils(driver);
+        Utils utils = new Utils();
         log.info("TC check links started");
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         NewCarsPage newCarsPage = mainPage.clickOnElementByLinkText(firstPageLink);
         newCarsPage
                 .clickElementByPartialLinkText(linkOnSecondPage);
@@ -100,9 +101,9 @@ public class FiltersTest extends Annotations {
 
     @Test(dataProvider = "Detailsforautopage", dataProviderClass = DataProviderSpecific.class)
     public void detailsAuto(String linkText) {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         mainPage.clickAllForAutoDropdown();
-        AllForAutoPage allForAutoPage = new AllForAutoPage(driver);
+        AllForAutoPage allForAutoPage = new AllForAutoPage();
         allForAutoPage
                 .clickOnLinkText(linkText)
                 .selectCarBrand(linkText);

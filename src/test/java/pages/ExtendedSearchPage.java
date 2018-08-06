@@ -20,7 +20,7 @@ public class ExtendedSearchPage {
     private final By showButton = By.xpath("//*[@id='results']/div/a[@class='button large indent_fes']");
 
     private final Logger log = Logger.getLogger(ExtendedSearchPage.class);
-    Utils utils = new Utils(driver);
+    Utils utils = new Utils();
 
     public ExtendedSearchPage(WebDriver driver) {
         this.driver = driver;

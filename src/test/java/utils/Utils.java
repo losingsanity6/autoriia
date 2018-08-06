@@ -3,18 +3,16 @@ package utils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 
+import static utils.DriverProvider.driver;
+
 public class Utils {
-    private WebDriver driver;
+
 private final Logger log = Logger.getLogger(Utils.class);
-    public Utils(WebDriver driver) {
-        this.driver = driver;
-    }
 
     public void ScrollWindow(By element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
