@@ -25,7 +25,7 @@ public class ResultPage {
 
 
     public String getH1Text() {
-        Utils utils = new Utils(driver);
+        Utils utils = new Utils();
         utils.waitTimeout(h1);
         return driver.findElement(h1).getAttribute("innerHTML");
 
@@ -40,14 +40,14 @@ public class ResultPage {
 
 
     public String getTextFromPriceInputFrom() {
-        Utils utils = new Utils(driver);
+        Utils utils = new Utils();
         utils.ScrollWindow(priceInputFrom);
         return driver.findElement(priceInputFrom).getAttribute("value");
     }
 
 
     public String getInputFromPriceFieldTo() {
-        Utils utils = new Utils(driver);
+        Utils utils = new Utils();
         utils.ScrollWindow(priceInputTo);
         return driver.findElement(priceInputTo).getAttribute("value");
     }

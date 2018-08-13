@@ -72,7 +72,7 @@ public class TestAPI {
     public void checkClientErrorMessage(String wrongApiKey, String message) {
         given().
                 queryParam("api_key", wrongApiKey).
-                get("info").
+                post("info").
                 then().statusCode(403).and().body("error.code", containsString(message));
     }
 
