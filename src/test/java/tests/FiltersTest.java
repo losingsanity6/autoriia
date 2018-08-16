@@ -3,11 +3,17 @@ package tests;
 
 import data_provider.DataProviderSpecific;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.*;
 import utils.Annotations;
 import utils.Utils;
+
+import java.util.List;
+
 import static utils.DriverProvider.driver;
 
 
@@ -17,9 +23,8 @@ public class FiltersTest extends Annotations {
     private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
 
 
-
     @Test(dataProvider = "NewCarsFilters", dataProviderClass = DataProviderSpecific.class)
-    public void newCarsFilerTest(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
+    public void newCarsFilerTestNoResultMessege(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
         MainPage mainPage = new MainPage();
         mainPage
                 .clickOnradioButton()
@@ -31,6 +36,7 @@ public class FiltersTest extends Annotations {
         ResultPage resultPage = mainPage.clickSearchButton();
         Assert.assertTrue(resultPage.getTextFromNewCarsMessge().contains(message), "The message does not contain defined text");
     }
+
 
     @Test(description = "Check work of used cars filter", dataProvider = "TesForUsedFilters", dataProviderClass = DataProviderSpecific.class)
     public void usedCarsFilterTest(String carBrand, String carModel, String region, String yearFrom, String yearTo, String priceFrom, String priceTo, String message) {
@@ -45,14 +51,23 @@ public class FiltersTest extends Annotations {
         ResultPage resultPage = mainPage.clickSearchButton();
         Assert.assertTrue(resultPage.getTextFromNoResultsMessage().contains(message), "The message does not contain defined text");
 
-
     }
+
+    @Test(dataProvider = "Data for used car filters for carbrand", dataProviderClass = DataProviderSpecific.class)
+    public void usedCarBrandFilterTest(String carBrand) {
+        MainPage mainPage = new MainPage();
+        mainPage.chooseCarBrand(carBrand);
+        mainPage.clickSearchButton();
+        ResultPage resultPage = new ResultPage(driver);
+        resultPage.listOfElemets();
+        Assert.assertTrue(resultPage.listOfElemets().contains(carBrand) && resultPage.textFromHeader().contains(carBrand));
+    }
+
 
     @Test(description = "Check extended search", dataProvider = "checkboxes", dataProviderClass = DataProviderSpecific.class)
     public void extendedSearchCheckBoxes(String carType, String country) {
         MainPage mainPage = new MainPage();
         log.info("TC checkboxes in extended search started");
-        //   MainPage mainPage = new MainPage(driver);
         ExtendedSearchPage extendedSearchPage = mainPage.clickExtendedSearchButton()
                 .clickCheckboxes(carType)
                 .ckickOrigin(country);
@@ -107,10 +122,18 @@ public class FiltersTest extends Annotations {
         allForAutoPage
                 .clickOnLinkText(linkText)
                 .selectCarBrand(linkText);
-                //.selectCarModel(linkText)
-              //  .clickSearchButton();
+        //.selectCarModel(linkText)
+        //  .clickSearchButton();
 
     }
 
+    @Test(dataProvider = "Data to check languages", dataProviderClass = DataProviderSpecific.class)
+    public void checkLanguages(String lang, String title, String url) {
+        MainPage mainPage = new MainPage();
+        mainPage.clickOnElementByLinkText(lang);
+        Utils utils = new Utils();
+        System.out.println(utils.getTitle());
+        Assert.assertTrue(utils.getTitle().contains(title) && utils.getUrl().contains(url));
+    }
 }
 

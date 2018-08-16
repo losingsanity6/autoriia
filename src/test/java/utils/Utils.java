@@ -29,4 +29,11 @@ private final Logger log = Logger.getLogger(Utils.class);
         ArrayList<String> windowHandles = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(windowHandles.get(window));
     }
+    public String getUrl(){
+        return  driver.getCurrentUrl();
+    }
+    public String getTitle(){
+        return driver.getTitle();
+    }
+
 }

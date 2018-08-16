@@ -84,5 +84,22 @@ public class DataProviderSpecific {
                 {"Каталог авторазборок"}
         };
     }
+    @DataProvider(name="Data for used car filters for carbrand")
+    public static Object[][] carBrandFilter(){
+        return new Object[][]{
+                {"Ford"},
+                {"BMW"},
+                {"Honda"},
+                {"Audi"}
+        };
+    }
+    @DataProvider(name="Data to check languages")
+    public static Object[][] checkLanguages(){
+        return new Object [][]{
+                {"Укр", "AUTO.RIA™ — Автобазар №1. Купити і продати авто легко як ніколи","https://auto.ria.com/uk/"},
+                {"Рус", "AUTO.RIA™ — Автобазар №1. Купить и продать авто легко как никогда", "https://auto.ria.com/"}
+
+        };
+    }
 }
 

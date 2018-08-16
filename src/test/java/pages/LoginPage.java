@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.log4testng.Logger;
 import utils.Utils;
+
 import static utils.DriverProvider.driver;
 
 import java.util.ArrayList;
@@ -20,9 +21,7 @@ public class LoginPage {
     private final By facebookPassword = By.id("pass");
     private final By facebookLoginButton = By.id("loginbutton");
     private final By errorLogin = By.xpath("//form[@id='login-form']/div/p[@class=error login-link]");
-
-
-
+    private final String loginFrame = "login_frame";
 
 
     public LoginPage LoginInput(String password, String number) {
@@ -43,7 +42,7 @@ public class LoginPage {
 
 
     public LoginPage switchBetweenFrame() {
-        driver.switchTo().frame("login_frame");
+        driver.switchTo().frame(loginFrame);
         log.info("Switched to login frame");
         return this;
     }
@@ -76,7 +75,7 @@ public class LoginPage {
         log.info("Data to password field was inputted");
         driver.findElement(facebookLoginButton).click();
         log.info("Click on Facebook login button was perfomed");
-       utils.switchBetweenWindows(0);
+        utils.switchBetweenWindows(0);
 
     }
 
