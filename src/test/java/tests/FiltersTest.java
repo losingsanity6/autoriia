@@ -3,16 +3,11 @@ package tests;
 
 import data_provider.DataProviderSpecific;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.*;
 import utils.Annotations;
 import utils.Utils;
-
-import java.util.List;
 
 import static utils.DriverProvider.driver;
 
@@ -56,11 +51,11 @@ public class FiltersTest extends Annotations {
     @Test(dataProvider = "Data for used car filters for carbrand", dataProviderClass = DataProviderSpecific.class)
     public void usedCarBrandFilterTest(String carBrand) {
         MainPage mainPage = new MainPage();
-        mainPage.chooseCarBrand(carBrand);
-        mainPage.clickSearchButton();
-        ResultPage resultPage = new ResultPage(driver);
-        resultPage.listOfElemets();
-        Assert.assertTrue(resultPage.listOfElemets().contains(carBrand) && resultPage.textFromHeader().contains(carBrand));
+        mainPage
+                .chooseCarBrand(carBrand);
+        ResultPage resultPage = mainPage.clickSearchButton();
+                resultPage.methodToObtainListOfElements();
+        Assert.assertTrue(resultPage.methodToObtainListOfElements().contains(carBrand) && resultPage.textFromHeader().contains(carBrand));
     }
 
 
@@ -83,7 +78,7 @@ public class FiltersTest extends Annotations {
         mainPage
                 .enterPriceToPriceField(priceFrom, priceTo);
         ResultPage resultPage = mainPage.clickSearchButton();
-        Assert.assertEquals(resultTestForAssert, resultPage.getTextFromPriceInputFrom(), "The price field does not contain parameter");
+        Assert.assertEquals(resultTestForAssert, resultPage.getTextFromPriceInputFrom(),"The price field does not contain parameter");
         log.info("Assertation passed");
 
 
@@ -114,25 +109,11 @@ public class FiltersTest extends Annotations {
 
     }
 
-    @Test(dataProvider = "Detailsforautopage", dataProviderClass = DataProviderSpecific.class)
-    public void detailsAuto(String linkText) {
-        MainPage mainPage = new MainPage();
-        mainPage.clickAllForAutoDropdown();
-        AllForAutoPage allForAutoPage = new AllForAutoPage();
-        allForAutoPage
-                .clickOnLinkText(linkText)
-                .selectCarBrand(linkText);
-        //.selectCarModel(linkText)
-        //  .clickSearchButton();
-
-    }
-
     @Test(dataProvider = "Data to check languages", dataProviderClass = DataProviderSpecific.class)
     public void checkLanguages(String lang, String title, String url) {
         MainPage mainPage = new MainPage();
-        mainPage.clickOnElementByLinkText(lang);
         Utils utils = new Utils();
-        System.out.println(utils.getTitle());
+        mainPage.clickOnElementByLinkText(lang);
         Assert.assertTrue(utils.getTitle().contains(title) && utils.getUrl().contains(url));
     }
 }

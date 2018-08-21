@@ -27,12 +27,11 @@ public class DataProviderSpecific {
                 {"awerrtre", "text", ""},
                 {"******", "********", ""},
                 {"@!`", "@!`)", ""},
-                {"log2(8) = 3", "ln 1.3", ""},
                 {"e0.262364", "e0.262364", ""},
-                {" 100.8704", "100.9878677", ""},
+                {"100.8704", "100.9878677", "100"},
                 {"&?&?", "&?&?", ""},
                 {"----", "------", ""},
-                {"%100", "$100", ""},
+                {"%100", "$100", "100"},
         };
     }
 
@@ -43,7 +42,7 @@ public class DataProviderSpecific {
                 {"1000000000000000", "100000000000000", "1000000000000000"},
                 {"5555555555", "55555555555", "5555555555"},
                 {"0,01", "0,01", "1"},
-                {"1000000000000000000001", "10000000000000000001", "1000000000000000000001"},
+                {"1000000000000000000001", "10000000000000000001", "1000000000000000000001"}
 
         };
     }
@@ -84,8 +83,9 @@ public class DataProviderSpecific {
                 {"Каталог авторазборок"}
         };
     }
-    @DataProvider(name="Data for used car filters for carbrand")
-    public static Object[][] carBrandFilter(){
+
+    @DataProvider(name = "Data for used car filters for carbrand")
+    public static Object[][] carBrandFilter() {
         return new Object[][]{
                 {"Ford"},
                 {"BMW"},
@@ -93,12 +93,11 @@ public class DataProviderSpecific {
                 {"Audi"}
         };
     }
-    @DataProvider(name="Data to check languages")
-    public static Object[][] checkLanguages(){
-        return new Object [][]{
-                {"Укр", "AUTO.RIA™ — Автобазар №1. Купити і продати авто легко як ніколи","https://auto.ria.com/uk/"},
-                {"Рус", "AUTO.RIA™ — Автобазар №1. Купить и продать авто легко как никогда", "https://auto.ria.com/"}
 
+    @DataProvider(name = "Data to check languages")
+    public static Object[][] checkLanguages() {
+        return new Object[][]{
+                {"Укр", "AUTO.RIA™ — Автобазар №1. Купити і продати авто легко як ніко", "https://auto.ria.com/uk/"}
         };
     }
 }

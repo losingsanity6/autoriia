@@ -3,10 +3,13 @@ package utils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.ExtendedSearchPage;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static utils.DriverProvider.driver;
 
@@ -35,5 +38,19 @@ private final Logger log = Logger.getLogger(Utils.class);
     public String getTitle(){
         return driver.getTitle();
     }
+    public void methodToChooseCheckboxes(By element, String textToCompare) {
+        List<WebElement> Checkbox = driver.findElements(element);
+        log.info("Getting list of checkboxes"+element);
+        for (int i = 0; i < Checkbox.size(); i++) {
+            WebElement El = Checkbox.get(i);
+            String textFromElement = El.getAttribute("innerHTML");
+            System.out.println(textFromElement);
+            if (textFromElement.equals(textToCompare)) {
+                El.click();
+                log.info("Click on checkbox was perfomed");
+                break;
+            }
+        }
 
+    }
 }

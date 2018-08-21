@@ -1,13 +1,14 @@
 package pages;
 
 import org.openqa.selenium.WebElement;
+import utils.DriverProvider;
 import utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import java.util.List;
 
-public class ResultPage {
+public class ResultPage extends DriverProvider {
     private final WebDriver driver;
     private final By h1ForExtendedSearch = By.xpath("//*[@id='headerPage']/h1/span[@data-name]");
     private final By dropdownCar = By.xpath("//*[@id='autoCmplt']/label");
@@ -69,7 +70,7 @@ public class ResultPage {
         return driver.findElement(carCard);
     }
 
-    public String listOfElemets() {
+    public String methodToObtainListOfElements() {
         List<WebElement> Checkbox = driver.findElements(searchresults);
         for (int i = 0; i < Checkbox.size(); i++) {
             WebElement El = Checkbox.get(i);

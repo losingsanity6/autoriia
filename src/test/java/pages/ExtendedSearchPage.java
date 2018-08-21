@@ -37,7 +37,7 @@ public class ExtendedSearchPage {
     }
 
     public ExtendedSearchPage clickCheckboxes(String carType) {
-        methodToChooseCheckboxes(carCheckbox, carType);
+        utils.methodToChooseCheckboxes(carCheckbox, carType);
         log.info("click on car type checkbox was perfomed");
         return this;
 
@@ -45,24 +45,12 @@ public class ExtendedSearchPage {
     }
 
     public ExtendedSearchPage ckickOrigin(String country) {
-        methodToChooseCheckboxes(originCheckbox, country);
+        Utils utils = new Utils();
+        utils.ScrollWindow(originCheckbox);
+        utils.methodToChooseCheckboxes(originCheckbox, country);
         log.info("click on country check box was perfomed");
         return this;
     }
 
-    public ExtendedSearchPage methodToChooseCheckboxes(By element, String textToCompare) {
 
-
-        List<WebElement> Checkbox = driver.findElements(element);
-        for (int i = 0; i < Checkbox.size(); i++) {
-            WebElement El = Checkbox.get(i);
-            String textFromElement = El.getAttribute("innerHTML");
-            System.out.println(textFromElement);
-            if (textFromElement.equals(textToCompare)) {
-                El.click();
-                break;
-            }
-        }
-        return this;
-    }
 }

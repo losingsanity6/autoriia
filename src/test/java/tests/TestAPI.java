@@ -1,38 +1,34 @@
 package tests;
 
-import com.google.gson.Gson;
 import data_provider.ConfigFileReader;
 import data_provider.DataProviderApi;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import org.apache.http.HttpEntity;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import org.apache.http.impl.nio.client.CloseableHttpAsyncClient;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.core.StringContains.containsString;
 
 
 public class TestAPI {
-    //  public final String apiKey = "0SW6PYn2So4FiFdxIL5HWdKa0rdQiAdZzb6AwIZK";
+    Logger log = Logger.getLogger(TestAPI.class);
     ConfigFileReader configFileReader = new ConfigFileReader();
 
     @BeforeTest
     public void setUp() {
         RestAssured.baseURI = "https://developers.ria.com/auto/";
+        log.info("API url was opened");
     }
 
     @Test(dataProvider = "Status code", dataProviderClass = DataProviderApi.class)
@@ -42,6 +38,7 @@ public class TestAPI {
                 get("search").
                 then().
                 statusCode(statusCode);
+        log.error("The test did not passed, expected status code does not match");
 
 
     }
@@ -54,6 +51,7 @@ public class TestAPI {
                 when().
                 get("/info").
                 then().contentType(ContentType.JSON).and().body("userId", equalTo(userId));
+
 
     }
 

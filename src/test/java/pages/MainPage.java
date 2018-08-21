@@ -1,12 +1,13 @@
 package pages;
 
+import utils.DriverProvider;
 import utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import static utils.DriverProvider.driver;
 
-public class MainPage {
+public class MainPage extends DriverProvider {
     private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainPage.class);
     private final By usedCarDropdown = By.id("brandTooltipBrandAutocomplete-brand");
     private final By usedCarInput = By.id("brandTooltipBrandAutocompleteInput-brand");
