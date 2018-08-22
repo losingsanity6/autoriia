@@ -13,7 +13,7 @@ public class NewCarsPage {
     private final By newCarLink = By.xpath("//*[@id='marks-block']/a[@title='Volkswagen']");
     private final Logger log = Logger.getLogger(NewCarsPage.class);
 
-     public NewCarsPage(WebDriver driver) {
+    public NewCarsPage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -21,9 +21,9 @@ public class NewCarsPage {
         driver.findElement(By.linkText(linkText)).click();
     }
 
-public void clickElementByPartialLinkText(String carBrand){
+    public void clickElementByPartialLinkText(String carBrand) {
         driver.findElement(By.partialLinkText(carBrand)).click();
-}
+    }
 
     public String clickFirstImage() {
         driver.findElement(firstImage).click();

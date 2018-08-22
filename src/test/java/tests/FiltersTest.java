@@ -54,7 +54,7 @@ public class FiltersTest extends Annotations {
         mainPage
                 .chooseCarBrand(carBrand);
         ResultPage resultPage = mainPage.clickSearchButton();
-                resultPage.methodToObtainListOfElements();
+        resultPage.methodToObtainListOfElements();
         Assert.assertTrue(resultPage.methodToObtainListOfElements().contains(carBrand) && resultPage.textFromHeader().contains(carBrand));
     }
 
@@ -78,7 +78,7 @@ public class FiltersTest extends Annotations {
         mainPage
                 .enterPriceToPriceField(priceFrom, priceTo);
         ResultPage resultPage = mainPage.clickSearchButton();
-        Assert.assertEquals(resultTestForAssert, resultPage.getTextFromPriceInputFrom(),"The price field does not contain parameter");
+        Assert.assertEquals(resultTestForAssert, resultPage.getTextFromPriceInputFrom(), "The price field does not contain parameter");
         log.info("Assertation passed");
 
 

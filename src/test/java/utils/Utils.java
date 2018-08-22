@@ -15,7 +15,7 @@ import static utils.DriverProvider.driver;
 
 public class Utils {
 
-private final Logger log = Logger.getLogger(Utils.class);
+    private final Logger log = Logger.getLogger(Utils.class);
 
     public void ScrollWindow(By element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -28,19 +28,23 @@ private final Logger log = Logger.getLogger(Utils.class);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(element)));
         log.info("Wait for element to be visible");
     }
-    public void switchBetweenWindows(int window){
+
+    public void switchBetweenWindows(int window) {
         ArrayList<String> windowHandles = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(windowHandles.get(window));
     }
-    public String getUrl(){
-        return  driver.getCurrentUrl();
+
+    public String getUrl() {
+        return driver.getCurrentUrl();
     }
-    public String getTitle(){
+
+    public String getTitle() {
         return driver.getTitle();
     }
+
     public void methodToChooseCheckboxes(By element, String textToCompare) {
         List<WebElement> Checkbox = driver.findElements(element);
-        log.info("Getting list of checkboxes"+element);
+        log.info("Getting list of checkboxes" + element);
         for (int i = 0; i < Checkbox.size(); i++) {
             WebElement El = Checkbox.get(i);
             String textFromElement = El.getAttribute("innerHTML");

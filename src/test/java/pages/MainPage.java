@@ -5,6 +5,7 @@ import utils.Utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+
 import static utils.DriverProvider.driver;
 
 public class MainPage extends DriverProvider {
@@ -27,10 +28,6 @@ public class MainPage extends DriverProvider {
     private final By loginLocator = By.linkText("Вход в кабинет");
     private final By regionLocator = By.xpath("//*[@id='regionCenters']");
     private final By allForAutoDropdown = By.id("AllForAuto");
-
-
-
-
 
 
     public ExtendedSearchPage clickExtendedSearchButton() {
@@ -79,7 +76,8 @@ public class MainPage extends DriverProvider {
         log.info("Region was chosen");
         return this;
     }
-    public MainPage selectRegion(String regionName){
+
+    public MainPage selectRegion(String regionName) {
         Select region = new Select(driver.findElement(regionLocator));
         region.selectByVisibleText(regionName);
         return this;
@@ -130,9 +128,10 @@ public class MainPage extends DriverProvider {
         return this;
 
     }
-public MainPage clickAllForAutoDropdown(){
+
+    public MainPage clickAllForAutoDropdown() {
         driver.findElement(allForAutoDropdown).click();
         return this;
-}
+    }
 
 }

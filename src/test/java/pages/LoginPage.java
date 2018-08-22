@@ -34,6 +34,8 @@ public class LoginPage {
 
 
     public LoginPage loginViaFacebook() {
+        Utils utils = new Utils();
+        utils.ScrollWindow(FacebookLocator);
         driver.findElement(FacebookLocator).click();
         log.info("Click on facebook login button was perfomed");
         return this;

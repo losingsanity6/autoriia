@@ -1,31 +1,35 @@
 package utils;
 
 import data_provider.ConfigFileReader;
+import data_provider.DriverType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.BrowserType;
 
 import java.util.concurrent.TimeUnit;
 
 public class DriverProvider {
-    public static WebDriver driver = null;
+    public static WebDriver driver;
     public static ConfigFileReader configFileReader = new ConfigFileReader();
+    private static DriverType driverType = configFileReader.getBrowser();
 
     public DriverProvider() {
     }
 
-    public static WebDriver getDriver(String browser) {
-        if (driver == null) {
-            if (browser.equals("chrome")) {
-                System.setProperty("webdriver.chrome.driver",configFileReader.getChromePath()) ;
-                driver = new ChromeDriver();
-            } else if (browser.equals("firefox")) {
-                System.setProperty("webdriver.gecko.driver", configFileReader.getGeckoDriverPath());
-                driver = new FirefoxDriver();
+    public static WebDriver getDriver() { {
+            switch (driverType) {
+                case FIREFOX :
+                    System.setProperty("webdriver.gecko.driver", configFileReader.getGeckoDriverPath());
+                    driver = new FirefoxDriver();
+                    break;
+                case CHROME :
+                    System.setProperty("webdriver.chrome.driver",configFileReader.getChromePath()) ;
+                    driver = new ChromeDriver();
+                    break;
 
             }
-        }
+
+            }
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);

@@ -1,5 +1,7 @@
 package data_provider;
 
+import sun.plugin2.util.BrowserType;
+
 import java.io.*;
 import java.util.Properties;
 
@@ -63,5 +65,11 @@ public class ConfigFileReader {
             return geckoDriver;
         else
             throw  new RuntimeException("Chrome path was not found in Configuration properties file");
+    }
+    public DriverType getBrowser() {
+        String browserName = properties.getProperty("browser");
+        if(browserName == null || browserName.equals("chrome")) return DriverType.CHROME;
+        else if(browserName.equalsIgnoreCase("firefox")) return DriverType.FIREFOX;
+        else throw new RuntimeException("Browser Name Key value in Configuration.properties is not matched : " + browserName);
     }
 }

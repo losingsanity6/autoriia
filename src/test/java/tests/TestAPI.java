@@ -33,7 +33,7 @@ public class TestAPI {
 
     @Test(dataProvider = "Status code", dataProviderClass = DataProviderApi.class)
     public void checkStatusCode(String carId, int statusCode) {
-        given().queryParam("api_key",configFileReader.getApiKey() ).queryParam("marka_id[1]", carId).
+        given().queryParam("api_key", configFileReader.getApiKey()).queryParam("marka_id[1]", carId).
                 when().
                 get("search").
                 then().
@@ -87,20 +87,22 @@ public class TestAPI {
 
         System.out.println(response.asString());
     }
-   @Test(description = "implementation through httpClient")
+
+    @Test(description = "implementation through httpClient")
     public void httpClientStatusCode() throws IOException {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet("https://developers.ria.com/auto/info?api_key=0SW6PYn2So4FiFdxIL5HWdKa0rdQiAdZzb6AwIZK&auto_id=19050985");
         CloseableHttpResponse response = httpClient.execute(httpGet);
         Assert.assertEquals(response.getStatusLine().getStatusCode(), 200);
     }
+
     @Test
-    public void httpClientBody()throws IOException{
+    public void httpClientBody() throws IOException {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet("https://developers.ria.com/auto/info?api_key=0SW6PYn2So4FiFdxIL5HWdKa0rdQiAdZzb6AwIZK&auto_id=19050985");
         CloseableHttpResponse response = httpClient.execute(httpGet);
-      HttpEntity entity =  response.getEntity();
-      entity.getContent();
+        HttpEntity entity = response.getEntity();
+        entity.getContent();
 
     }
 }
