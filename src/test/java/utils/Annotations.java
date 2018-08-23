@@ -12,19 +12,17 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
-import static utils.DriverProvider.driver;
 
-public class Annotations {
+public class Annotations extends DriverProvider{
     private Logger log = Logger.getLogger(Annotations.class);
 
 
     @BeforeMethod
     public void setUp() {
         DriverProvider.getDriver();
-        driver.manage().window().maximize();
         ConfigFileReader configFileReader = new ConfigFileReader();
         driver.get(configFileReader.getApplicationUrl());
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(configFileReader.getImplicitlyWait(), TimeUnit.SECONDS);
 
 
     }
@@ -41,9 +39,9 @@ public class Annotations {
     }
 
 
-    @Attachment(value = "Page screenshot", type = "image/png")
+  @Attachment(value = "Page screenshot", type = "image/png")
     private byte[] saveScreenshot(WebDriver driver) {
-        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+      return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }
 

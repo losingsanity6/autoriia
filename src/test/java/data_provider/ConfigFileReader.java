@@ -1,8 +1,9 @@
 package data_provider;
 
-import sun.plugin2.util.BrowserType;
-
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigFileReader {
