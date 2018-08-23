@@ -1,18 +1,23 @@
 package tests;
 
 
-import data_provider.DataProviderSpecific;
+import cucumber.api.java.it.Ma;
+import gherkin.lexer.He;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import tests.dataForTests.DataProviderSpecific;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
-import utils.Annotations;
-import utils.Utils;
+import utils.TestBase;
+import utils.HelpersForTests;
 
-import static utils.DriverProvider.driver;
+import java.util.ArrayList;
+import java.util.List;
 
 
-public class FiltersTest extends Annotations {
+public class FiltersTest extends TestBase {
 
 
     private final Logger log = org.apache.log4j.Logger.getLogger(FiltersTest.class);
@@ -54,8 +59,7 @@ public class FiltersTest extends Annotations {
         mainPage
                 .chooseCarBrand(carBrand);
         ResultPage resultPage = mainPage.clickSearchButton();
-        resultPage.methodToObtainListOfElements();
-        Assert.assertTrue(resultPage.methodToObtainListOfElements().contains(carBrand) && resultPage.textFromHeader().contains(carBrand));
+        Assert.assertTrue(resultPage.methodToObtainListOfElements().contains(carBrand) && resultPage.textFromHeader().contains(carBrand), "Assertation failed");
     }
 
 
@@ -92,7 +96,7 @@ public class FiltersTest extends Annotations {
 
     @Test(description = "Check opening links", dataProvider = "linkNames", dataProviderClass = DataProviderSpecific.class)
     public void checkPages(String firstPageLink, String linkOnSecondPage, String linkOnThirdPage) {
-        Utils utils = new Utils();
+        HelpersForTests helpersForTests = new HelpersForTests();
         log.info("TC check links started");
         MainPage mainPage = new MainPage();
         NewCarsPage newCarsPage = mainPage.clickOnElementByLinkText(firstPageLink);
@@ -112,9 +116,42 @@ public class FiltersTest extends Annotations {
     @Test(dataProvider = "Data to check languages", dataProviderClass = DataProviderSpecific.class)
     public void checkLanguages(String lang, String title, String url) {
         MainPage mainPage = new MainPage();
-        Utils utils = new Utils();
+        HelpersForTests helpersForTests = new HelpersForTests();
         mainPage.clickOnElementByLinkText(lang);
-        Assert.assertTrue(utils.getTitle().contains(title) && utils.getUrl().contains(url));
+        Assert.assertTrue(helpersForTests.getTitle().contains(title) && helpersForTests.getUrl().contains(url));
     }
+
+    @Test(dataProvider = "Data for other Ria services", dataProviderClass = DataProviderSpecific.class)
+    public void checkOtherRiaServices(String linkName, String url, String title) {
+        MainPage mainPage = new MainPage();
+        mainPage.clickOnElementByLinkText(linkName);
+        HelpersForTests helpers = new HelpersForTests();
+        helpers.switchBetweenWindows(1);
+        Assert.assertTrue(driver.getCurrentUrl().equals(url) && driver.getTitle().equals(title), "Assertation failed");
+
+    }
+
+    @Test(dataProvider = "links names for clickOncarTypeDropdowns", dataProviderClass = DataProviderSpecific.class)
+    public void clickOncarTypeDropdowns(String usedCarType, String newCarType) {
+        MainPage mainPage = new MainPage();
+        int links = mainPage.getListSize();
+        for (int i = 0; i < links; i++) {
+            List<WebElement> linksList = mainPage.getListOfElements();
+            WebElement item = linksList.get(i);
+            if (item.getText().equals(usedCarType) || item.getText().equals(newCarType)) {
+                item.click();
+                Assert.assertTrue(mainPage.getContainerContent().isDisplayed());
+            } else {
+                item.click();
+                Assert.assertTrue(mainPage.getOtherContainer().isDisplayed());
+            }
+
+        }
+
+
+    }
+
 }
+
+
 

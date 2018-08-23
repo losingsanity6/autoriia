@@ -1,7 +1,7 @@
 package tests;
 
-import data_provider.ConfigFileReader;
-import data_provider.DataProviderApi;
+import configs.ConfigFileReader;
+import tests.dataForTests.DataProviderApi;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpEntity;

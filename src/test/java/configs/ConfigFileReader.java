@@ -1,4 +1,6 @@
-package data_provider;
+package configs;
+
+import configs.DriverType;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -53,24 +55,28 @@ public class ConfigFileReader {
         else
             throw new RuntimeException("apiKey not specified in the Configuration.properties file.");
     }
-    public String getChromePath(){
-        String chromePath=properties.getProperty("chromePath");
-        if(chromePath!=null)
+
+    public String getChromePath() {
+        String chromePath = properties.getProperty("chromePath");
+        if (chromePath != null)
             return chromePath;
         else
-            throw  new RuntimeException("Chrome path was not found in Configuration properties file");
+            throw new RuntimeException("Chrome path was not found in Configuration properties file");
     }
-    public String getGeckoDriverPath(){
-        String geckoDriver=properties.getProperty("geckDriverPath");
-        if(geckoDriver!=null)
+
+    public String getGeckoDriverPath() {
+        String geckoDriver = properties.getProperty("geckDriverPath");
+        if (geckoDriver != null)
             return geckoDriver;
         else
-            throw  new RuntimeException("Chrome path was not found in Configuration properties file");
+            throw new RuntimeException("Chrome path was not found in Configuration properties file");
     }
+
     public DriverType getBrowser() {
         String browserName = properties.getProperty("browser");
-        if(browserName == null || browserName.equals("chrome")) return DriverType.CHROME;
-        else if(browserName.equalsIgnoreCase("firefox")) return DriverType.FIREFOX;
-        else throw new RuntimeException("Browser Name Key value in Configuration.properties is not matched : " + browserName);
+        if (browserName == null || browserName.equals("chrome")) return DriverType.CHROME;
+        else if (browserName.equalsIgnoreCase("firefox")) return DriverType.FIREFOX;
+        else
+            throw new RuntimeException("Browser Name Key value in Configuration.properties is not matched : " + browserName);
     }
 }

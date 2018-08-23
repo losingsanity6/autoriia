@@ -1,16 +1,9 @@
 package pages;
 
-import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.Utils;
+import utils.HelpersForTests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import java.util.List;
 
 public class ExtendedSearchPage {
     private WebDriver driver;
@@ -20,7 +13,7 @@ public class ExtendedSearchPage {
     private final By showButton = By.xpath("//*[@id='results']/div/a[@class='button large indent_fes']");
 
     private final Logger log = Logger.getLogger(ExtendedSearchPage.class);
-    Utils utils = new Utils();
+    HelpersForTests helpersForTests = new HelpersForTests();
 
     public ExtendedSearchPage(WebDriver driver) {
         this.driver = driver;
@@ -37,7 +30,7 @@ public class ExtendedSearchPage {
     }
 
     public ExtendedSearchPage clickCheckboxes(String carType) {
-        utils.methodToChooseCheckboxes(carCheckbox, carType);
+        helpersForTests.methodToChooseCheckboxes(carCheckbox, carType);
         log.info("click on car type checkbox was perfomed");
         return this;
 
@@ -45,9 +38,9 @@ public class ExtendedSearchPage {
     }
 
     public ExtendedSearchPage ckickOrigin(String country) {
-        Utils utils = new Utils();
-        utils.ScrollWindow(originCheckbox);
-        utils.methodToChooseCheckboxes(originCheckbox, country);
+        HelpersForTests helpersForTests = new HelpersForTests();
+        helpersForTests.ScrollWindow(originCheckbox);
+        helpersForTests.methodToChooseCheckboxes(originCheckbox, country);
         log.info("click on country check box was perfomed");
         return this;
     }

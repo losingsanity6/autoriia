@@ -1,4 +1,4 @@
-package data_provider;
+package tests.dataForTests;
 
 import org.testng.annotations.DataProvider;
 
@@ -100,5 +100,25 @@ public class DataProviderSpecific {
                 {"Укр", "AUTO.RIA™ — Автобазар №1. Купити і продати авто легко як ніко", "https://auto.ria.com/uk/"}
         };
     }
+
+    @DataProvider(name = "Data for other Ria services")
+    public static Object[][] otherRiaservices() {
+        return new Object[][]{
+                {"Недвижимость", "https://dom.ria.com/?utm_source=auto_ria&utm_medium=text_link&utm_content=nedvigimost&utm_campaign=header", "DOM.RIA™ — вся недвижимость Украины. Продажа и аренда любой недвижимости."},
+                {"RIA.com", "https://www.ria.com/", "RIA.com ™ — доска бесплатных частных объявлений Украины."},
+                {"Автотовары", "https://market.ria.com/?utm_source=auto.ria.com&utm_medium=text_link&utm_content=magazin_avtotovarov&utm_campaign=header", "MARKET.RIA — шины, диски и аксессуары для авто по выгодным ценам"},
+                {"Автозапчасти", "https://zapchasti.ria.com/", "1 000 000+ запчастей на авто в Украине на ZAPCHASTI.RIA"}
+        };
+    }
+
+    @DataProvider(name = "links names for clickOncarTypeDropdowns")
+    public static Object[][] linkNamesForCarTypeDropdowns() {
+        return new Object[][]{{"Легковые б/у", "Новые авто"}
+        };
+    }
 }
+
+
+
+
 

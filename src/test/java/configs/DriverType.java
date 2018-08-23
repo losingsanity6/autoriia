@@ -1,4 +1,4 @@
-package data_provider;
+package configs;
 
 public enum DriverType {
     FIREFOX,

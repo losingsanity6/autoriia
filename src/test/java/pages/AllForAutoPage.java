@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 
-import static utils.DriverProvider.driver;
+import static configs.DriverProvider.driver;
 
 public class AllForAutoPage {
     private final By carBrandLocator = By.id("select_category");

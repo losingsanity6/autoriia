@@ -1,14 +1,14 @@
 package tests;
 
-import data_provider.DataProviderSpecific;
+import tests.dataForTests.DataProviderSpecific;
 import org.apache.log4j.Logger;
 import pages.LoginPage;
 import pages.MainPage;
-import utils.Annotations;
+import utils.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest extends Annotations {
+public class LoginTest extends TestBase {
     private final Logger log = Logger.getLogger(LoginTest.class);
 
 

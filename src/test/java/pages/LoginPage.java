@@ -1,14 +1,9 @@
 package pages;
 
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.testng.log4testng.Logger;
-import utils.Utils;
+import utils.HelpersForTests;
 
-import static utils.DriverProvider.driver;
-
-import java.util.ArrayList;
+import static configs.DriverProvider.driver;
 
 public class LoginPage {
     private final static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LoginPage.class);
@@ -34,8 +29,8 @@ public class LoginPage {
 
 
     public LoginPage loginViaFacebook() {
-        Utils utils = new Utils();
-        utils.ScrollWindow(FacebookLocator);
+        HelpersForTests helpersForTests = new HelpersForTests();
+        helpersForTests.ScrollWindow(FacebookLocator);
         driver.findElement(FacebookLocator).click();
         log.info("Click on facebook login button was perfomed");
         return this;
@@ -69,15 +64,15 @@ public class LoginPage {
 
 
     public void LoginFacebook(String email, String pass) {
-        Utils utils = new Utils();
-        utils.switchBetweenWindows(1);
+        HelpersForTests helpersForTests = new HelpersForTests();
+        helpersForTests.switchBetweenWindows(1);
         driver.findElement(facebookEmail).sendKeys(email);
         log.info("Data to e-mail field was inputted");
         driver.findElement(facebookPassword).sendKeys(pass);
         log.info("Data to password field was inputted");
         driver.findElement(facebookLoginButton).click();
         log.info("Click on Facebook login button was perfomed");
-        utils.switchBetweenWindows(0);
+        helpersForTests.switchBetweenWindows(0);
 
     }
 

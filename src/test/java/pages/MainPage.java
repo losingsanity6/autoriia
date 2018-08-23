@@ -1,12 +1,12 @@
 package pages;
 
-import utils.DriverProvider;
-import utils.Utils;
+import configs.DriverProvider;
+import org.openqa.selenium.WebElement;
+import utils.HelpersForTests;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import static utils.DriverProvider.driver;
+import java.util.List;
 
 public class MainPage extends DriverProvider {
     private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainPage.class);
@@ -28,6 +28,9 @@ public class MainPage extends DriverProvider {
     private final By loginLocator = By.linkText("Вход в кабинет");
     private final By regionLocator = By.xpath("//*[@id='regionCenters']");
     private final By allForAutoDropdown = By.id("AllForAuto");
+    private final By carTypeLinksLocator = By.cssSelector("a.item-tt");
+    private final By usedAndNewCarsLinkContainerLocator = By.xpath("//*[@id='favorite-model-section']/nav[@class='catalog-brands boxed']");
+    private final By otherLinkForCarTypeContainersLocator = By.xpath("//*[@id='favorite-model-section']/nav[@class='catalog-referrals open-mobile']");
 
 
     public ExtendedSearchPage clickExtendedSearchButton() {
@@ -43,8 +46,8 @@ public class MainPage extends DriverProvider {
     }
 
     public MainPage chooseCarBrand(String carBrand) {
-        Utils utils = new Utils();
-        utils.waitTimeout(usedCarDropdown);
+        HelpersForTests helpersForTests = new HelpersForTests();
+        helpersForTests.waitTimeout(usedCarDropdown);
         driver.findElement(usedCarDropdown).click();
         log.info("Click on car brand dropdown");
         driver.findElement(usedCarInput).sendKeys(carBrand);
@@ -56,12 +59,12 @@ public class MainPage extends DriverProvider {
 
 
     public MainPage clickModel(String modelInp) {
-        Utils utils = new Utils();
+        HelpersForTests helpersForTests = new HelpersForTests();
         driver.findElement(model)
                 .click();
         driver.findElement(modelInput)
                 .sendKeys(modelInp);
-        utils.waitTimeout(modelAutocompleted);
+        helpersForTests.waitTimeout(modelAutocompleted);
         driver.findElement(modelAutocompleted)
                 .click();
         log.info("Car model was chosen");
@@ -99,8 +102,8 @@ public class MainPage extends DriverProvider {
 
 
     public ResultPage clickSearchButton() {
-        Utils utils = new Utils();
-        utils.waitTimeout(searchButton);
+        HelpersForTests helpersForTests = new HelpersForTests();
+        helpersForTests.waitTimeout(searchButton);
         driver.findElement(searchButton)
                 .click();
         log.info("Click on search button was perfomed");
@@ -132,6 +135,30 @@ public class MainPage extends DriverProvider {
     public MainPage clickAllForAutoDropdown() {
         driver.findElement(allForAutoDropdown).click();
         return this;
+    }
+
+    //  TODO: move to helpers
+    public int getListSize() {
+        HelpersForTests helpersForTests = new HelpersForTests();
+        helpersForTests.ScrollWindow(carTypeLinksLocator);
+        return driver.findElements(carTypeLinksLocator).size();
+    }
+
+    public List<WebElement> getListOfElements() {
+        return driver.findElements(carTypeLinksLocator);
+
+    }
+
+    public String getTextFromCarTypeLinks() {
+        return driver.findElement(carTypeLinksLocator).getText();
+    }
+
+    public WebElement getContainerContent() {
+        return driver.findElement(usedAndNewCarsLinkContainerLocator);
+    }
+
+    public WebElement getOtherContainer() {
+        return driver.findElement(otherLinkForCarTypeContainersLocator);
     }
 
 }

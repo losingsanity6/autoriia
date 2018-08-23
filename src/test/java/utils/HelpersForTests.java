@@ -6,16 +6,15 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.ExtendedSearchPage;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static utils.DriverProvider.driver;
+import static configs.DriverProvider.driver;
 
-public class Utils {
+public class HelpersForTests {
 
-    private final Logger log = Logger.getLogger(Utils.class);
+    private final Logger log = Logger.getLogger(HelpersForTests.class);
 
     public void ScrollWindow(By element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -41,6 +40,9 @@ public class Utils {
     public String getTitle() {
         return driver.getTitle();
     }
+    public String getLinkText(By element){
+        return  driver.findElement(element).getText();
+    }
 
     public void methodToChooseCheckboxes(By element, String textToCompare) {
         List<WebElement> Checkbox = driver.findElements(element);
@@ -57,4 +59,5 @@ public class Utils {
         }
 
     }
+
 }

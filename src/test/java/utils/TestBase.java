@@ -1,6 +1,7 @@
 package utils;
 
-import data_provider.ConfigFileReader;
+import configs.DriverProvider;
+import configs.ConfigFileReader;
 import io.qameta.allure.Attachment;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -13,8 +14,8 @@ import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
 
-public class Annotations extends DriverProvider{
-    private Logger log = Logger.getLogger(Annotations.class);
+public class TestBase extends DriverProvider {
+    private Logger log = Logger.getLogger(TestBase.class);
 
 
     @BeforeMethod

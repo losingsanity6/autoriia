@@ -1,8 +1,8 @@
 package pages;
 
 import org.openqa.selenium.WebElement;
-import utils.DriverProvider;
-import utils.Utils;
+import configs.DriverProvider;
+import utils.HelpersForTests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -30,8 +30,8 @@ public class ResultPage extends DriverProvider {
 
 
     public String getH1Text() {
-        Utils utils = new Utils();
-        utils.waitTimeout(h1ForExtendedSearch);
+        HelpersForTests helpersForTests = new HelpersForTests();
+        helpersForTests.waitTimeout(h1ForExtendedSearch);
         return driver.findElement(h1ForExtendedSearch).getAttribute("innerHTML");
 
 
@@ -45,15 +45,15 @@ public class ResultPage extends DriverProvider {
 
 
     public String getTextFromPriceInputFrom() {
-        Utils utils = new Utils();
-        utils.ScrollWindow(priceInputFrom);
+        HelpersForTests helpersForTests = new HelpersForTests();
+        helpersForTests.ScrollWindow(priceInputFrom);
         return driver.findElement(priceInputFrom).getAttribute("value");
     }
 
 
     public String getInputFromPriceFieldTo() {
-        Utils utils = new Utils();
-        utils.ScrollWindow(priceInputTo);
+        HelpersForTests helpersForTests = new HelpersForTests();
+        helpersForTests.ScrollWindow(priceInputTo);
         return driver.findElement(priceInputTo).getAttribute("value");
     }
 
